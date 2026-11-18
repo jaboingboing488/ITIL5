@@ -1,0 +1,1 @@
+{"name":"focus-tests","private":true,"scripts":{"test":"node validate.js && node run.js"},"dependencies":{"playwright-core":"^1.65.1"}}

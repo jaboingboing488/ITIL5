@@ -1,0 +1,114 @@
+[
+ {
+  "id": "M0",
+  "title": "Baseline and setup",
+  "weightPct": 0,
+  "objective": "Measure the cold starting point and make the tools usable.",
+  "exercises": [],
+  "quizTags": [],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M1",
+  "title": "Key terms",
+  "weightPct": 30,
+  "objective": "Speak the vocabulary: product, service, value, outcome, relationships, roles, SLA.",
+  "exercises": [],
+  "quizTags": [
+   "M1"
+  ],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M2",
+  "title": "Guiding principles",
+  "weightPct": 0,
+  "objective": "Name all seven from memory and apply each.",
+  "exercises": [],
+  "quizTags": [
+   "M2"
+  ],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M3",
+  "title": "Value system: governance, value chain, continual improvement",
+  "weightPct": 40,
+  "objective": "Explain how the value system parts fit together.",
+  "exercises": [],
+  "quizTags": [
+   "M3"
+  ],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M4",
+  "title": "Management practices",
+  "weightPct": 0,
+  "objective": "Connect the practices you already do to the syllabus terms.",
+  "exercises": [],
+  "quizTags": [
+   "M4"
+  ],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M5",
+  "title": "Four dimensions, PESTLE, lifecycle",
+  "weightPct": 20,
+  "objective": "Name the 4 dimensions, PESTLE and the 8 lifecycle activities; lifecycle is non-linear.",
+  "exercises": [],
+  "quizTags": [
+   "M5"
+  ],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M6",
+  "title": "Value streams, AI, other frameworks",
+  "weightPct": 10,
+  "objective": "Core vs enabling value streams; AI topics; DevOps and PRINCE2.",
+  "exercises": [],
+  "quizTags": [
+   "M6"
+  ],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M7",
+  "title": "Integration and simulations",
+  "weightPct": 0,
+  "objective": "Two full 40-question 60-minute simulations from different sources.",
+  "exercises": [],
+  "quizTags": [],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M8",
+  "title": "Readiness gate",
+  "weightPct": 0,
+  "objective": "Three consecutive simulations at 32/40 or higher from 2+ sources.",
+  "exercises": [],
+  "quizTags": [],
+  "criteria": [],
+  "targetDate": ""
+ },
+ {
+  "id": "M9",
+  "title": "Exam day and retention",
+  "weightPct": 0,
+  "objective": "Warm-up, sit the exam, then keep the knowledge alive.",
+  "exercises": [],
+  "quizTags": [],
+  "criteria": [],
+  "targetDate": ""
+ }
+]
