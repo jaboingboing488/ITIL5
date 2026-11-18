@@ -243,36 +243,6 @@
   "id": "Q017",
   "category": "EX",
   "module": "M0",
-  "q": "Which verbs in an assessment criterion indicate Bloom's level 1?",
-  "options": [
-   "Recall and Define",
-   "Describe and Explain",
-   "Apply and Analyse",
-   "Design and Evaluate"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus v5.0 s4 note",
-  "verified": true
- },
- {
-  "id": "Q018",
-  "category": "EX",
-  "module": "M0",
-  "q": "Which verbs in an assessment criterion indicate Bloom's level 2?",
-  "options": [
-   "Describe and Explain",
-   "Recall and Define",
-   "Apply and Analyse",
-   "Create and Evaluate"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus v5.0 s4 note",
-  "verified": true
- },
- {
-  "id": "Q019",
-  "category": "EX",
-  "module": "M0",
   "q": "Which qualifications is ITIL Foundation (Version 5) a prerequisite for?",
   "options": [
    "The ITIL (Version 5) higher level qualifications",
@@ -285,7 +255,7 @@
   "verified": true
  },
  {
-  "id": "Q020",
+  "id": "Q018",
   "category": "EX",
   "module": "M0",
   "q": "The ITIL Foundation (Version 5) exam is intended to assess recall and understanding of what?",
@@ -300,7 +270,7 @@
   "verified": true
  },
  {
-  "id": "Q021",
+  "id": "Q019",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'Key ITIL terms and definitions' carry in the exam?",
@@ -315,7 +285,7 @@
   "verified": true
  },
  {
-  "id": "Q022",
+  "id": "Q020",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'The ITIL Four Dimensions of Product and Service Management' carry in the exam?",
@@ -330,7 +300,7 @@
   "verified": true
  },
  {
-  "id": "Q023",
+  "id": "Q021",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'The ITIL Product and Service Lifecycle' carry in the exam?",
@@ -345,7 +315,7 @@
   "verified": true
  },
  {
-  "id": "Q024",
+  "id": "Q022",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'The ITIL Value System' carry in the exam?",
@@ -360,7 +330,7 @@
   "verified": true
  },
  {
-  "id": "Q025",
+  "id": "Q023",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'Value stream identification, mapping, and management' carry in the exam?",
@@ -375,7 +345,7 @@
   "verified": true
  },
  {
-  "id": "Q026",
+  "id": "Q024",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'ITIL and AI' carry in the exam?",
@@ -390,7 +360,7 @@
   "verified": true
  },
  {
-  "id": "Q027",
+  "id": "Q025",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'ITIL and other frameworks' carry in the exam?",
@@ -405,7 +375,7 @@
   "verified": true
  },
  {
-  "id": "Q028",
+  "id": "Q026",
   "category": "EX",
   "module": "M0",
   "q": "Which category carries the highest weighting?",
@@ -420,7 +390,7 @@
   "verified": true
  },
  {
-  "id": "Q029",
+  "id": "Q027",
   "category": "EX",
   "module": "M0",
   "q": "Which two categories carry the same weighting of 10%?",
@@ -435,7 +405,7 @@
   "verified": true
  },
  {
-  "id": "Q030",
+  "id": "Q028",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -451,7 +421,7 @@
   "termId": "T057"
  },
  {
-  "id": "Q031",
+  "id": "Q029",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -467,7 +437,7 @@
   "termId": "T058"
  },
  {
-  "id": "Q032",
+  "id": "Q030",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -483,7 +453,7 @@
   "termId": "T059"
  },
  {
-  "id": "Q033",
+  "id": "Q031",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -499,7 +469,7 @@
   "termId": "T060"
  },
  {
-  "id": "Q034",
+  "id": "Q032",
   "category": "FD",
   "module": "M5",
   "q": "Which is NOT one of the ITIL Four Dimensions of Product and Service Management?",
@@ -514,7 +484,7 @@
   "verified": true
  },
  {
-  "id": "Q035",
+  "id": "Q033",
   "category": "FD",
   "module": "M5",
   "q": "Which is NOT one of the ITIL Four Dimensions of Product and Service Management?",
@@ -529,7 +499,7 @@
   "verified": true
  },
  {
-  "id": "Q036",
+  "id": "Q034",
   "category": "FD",
   "module": "M5",
   "q": "How many dimensions are in the ITIL Four Dimensions of Product and Service Management?",
@@ -544,7 +514,7 @@
   "verified": true
  },
  {
-  "id": "Q037",
+  "id": "Q035",
   "category": "FD",
   "module": "M5",
   "q": "What does PESTLE stand for in the context of the four dimensions?",
@@ -559,7 +529,7 @@
   "verified": true
  },
  {
-  "id": "Q038",
+  "id": "Q036",
   "category": "FD",
   "module": "M5",
   "q": "PESTLE describes which kind of factors that influence the four dimensions?",
@@ -574,7 +544,7 @@
   "verified": true
  },
  {
-  "id": "Q039",
+  "id": "Q037",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -589,7 +559,7 @@
   "verified": true
  },
  {
-  "id": "Q040",
+  "id": "Q038",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -604,7 +574,7 @@
   "verified": true
  },
  {
-  "id": "Q041",
+  "id": "Q039",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -619,7 +589,7 @@
   "verified": true
  },
  {
-  "id": "Q042",
+  "id": "Q040",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -634,7 +604,7 @@
   "verified": true
  },
  {
-  "id": "Q043",
+  "id": "Q041",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -649,7 +619,7 @@
   "verified": true
  },
  {
-  "id": "Q044",
+  "id": "Q042",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -664,7 +634,7 @@
   "verified": true
  },
  {
-  "id": "Q045",
+  "id": "Q043",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -680,7 +650,7 @@
   "termId": "T063"
  },
  {
-  "id": "Q046",
+  "id": "Q044",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -696,7 +666,7 @@
   "termId": "T064"
  },
  {
-  "id": "Q047",
+  "id": "Q045",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -712,7 +682,7 @@
   "termId": "T065"
  },
  {
-  "id": "Q048",
+  "id": "Q046",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -728,7 +698,7 @@
   "termId": "T066"
  },
  {
-  "id": "Q049",
+  "id": "Q047",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -744,7 +714,7 @@
   "termId": "T067"
  },
  {
-  "id": "Q050",
+  "id": "Q048",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -760,7 +730,7 @@
   "termId": "T068"
  },
  {
-  "id": "Q051",
+  "id": "Q049",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -776,7 +746,7 @@
   "termId": "T069"
  },
  {
-  "id": "Q052",
+  "id": "Q050",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -792,7 +762,7 @@
   "termId": "T070"
  },
  {
-  "id": "Q053",
+  "id": "Q051",
   "category": "LC",
   "module": "M5",
   "q": "Which is NOT one of the eight ITIL Product and Service Lifecycle activities?",
@@ -807,7 +777,7 @@
   "verified": true
  },
  {
-  "id": "Q054",
+  "id": "Q052",
   "category": "LC",
   "module": "M5",
   "q": "Which is NOT one of the eight ITIL Product and Service Lifecycle activities?",
@@ -822,7 +792,7 @@
   "verified": true
  },
  {
-  "id": "Q055",
+  "id": "Q053",
   "category": "LC",
   "module": "M5",
   "q": "Which is NOT one of the eight ITIL Product and Service Lifecycle activities?",
@@ -837,7 +807,7 @@
   "verified": true
  },
  {
-  "id": "Q056",
+  "id": "Q054",
   "category": "LC",
   "module": "M5",
   "q": "How many activities are in the ITIL Product and Service Lifecycle?",
@@ -852,7 +822,7 @@
   "verified": true
  },
  {
-  "id": "Q057",
+  "id": "Q055",
   "category": "LC",
   "module": "M5",
   "q": "Which statement about the lifecycle activities is correct?",
@@ -868,7 +838,7 @@
   "termId": "T071"
  },
  {
-  "id": "Q058",
+  "id": "Q056",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the lifecycle activities?",
@@ -883,7 +853,7 @@
   "verified": true
  },
  {
-  "id": "Q059",
+  "id": "Q057",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -899,7 +869,7 @@
   "termId": "T073"
  },
  {
-  "id": "Q060",
+  "id": "Q058",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -915,7 +885,7 @@
   "termId": "T074"
  },
  {
-  "id": "Q061",
+  "id": "Q059",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -931,7 +901,7 @@
   "termId": "T075"
  },
  {
-  "id": "Q062",
+  "id": "Q060",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -947,7 +917,7 @@
   "termId": "T076"
  },
  {
-  "id": "Q063",
+  "id": "Q061",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -963,7 +933,7 @@
   "termId": "T077"
  },
  {
-  "id": "Q064",
+  "id": "Q062",
   "category": "VS",
   "module": "M3",
   "q": "Which is NOT a component of the ITIL Value System?",
@@ -978,7 +948,7 @@
   "verified": true
  },
  {
-  "id": "Q065",
+  "id": "Q063",
   "category": "VS",
   "module": "M3",
   "q": "Which is NOT a component of the ITIL Value System?",
@@ -993,7 +963,7 @@
   "verified": true
  },
  {
-  "id": "Q066",
+  "id": "Q064",
   "category": "VS",
   "module": "M3",
   "q": "Which is NOT a component of the ITIL Value System?",
@@ -1008,7 +978,7 @@
   "verified": true
  },
  {
-  "id": "Q067",
+  "id": "Q065",
   "category": "VS",
   "module": "M3",
   "q": "How many components of the ITIL Value System does the syllabus list?",
@@ -1023,7 +993,7 @@
   "verified": true
  },
  {
-  "id": "Q068",
+  "id": "Q066",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1039,7 +1009,7 @@
   "termId": "T078"
  },
  {
-  "id": "Q069",
+  "id": "Q067",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1055,7 +1025,7 @@
   "termId": "T079"
  },
  {
-  "id": "Q070",
+  "id": "Q068",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1071,7 +1041,7 @@
   "termId": "T080"
  },
  {
-  "id": "Q071",
+  "id": "Q069",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1087,7 +1057,7 @@
   "termId": "T081"
  },
  {
-  "id": "Q072",
+  "id": "Q070",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1103,7 +1073,7 @@
   "termId": "T082"
  },
  {
-  "id": "Q073",
+  "id": "Q071",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1119,7 +1089,7 @@
   "termId": "T083"
  },
  {
-  "id": "Q074",
+  "id": "Q072",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1135,7 +1105,7 @@
   "termId": "T084"
  },
  {
-  "id": "Q075",
+  "id": "Q073",
   "category": "VS",
   "module": "M2",
   "q": "Which is NOT one of the ITIL Guiding Principles?",
@@ -1150,7 +1120,7 @@
   "verified": true
  },
  {
-  "id": "Q076",
+  "id": "Q074",
   "category": "VS",
   "module": "M2",
   "q": "Which is NOT one of the ITIL Guiding Principles?",
@@ -1165,7 +1135,7 @@
   "verified": true
  },
  {
-  "id": "Q077",
+  "id": "Q075",
   "category": "VS",
   "module": "M2",
   "q": "Which is NOT one of the ITIL Guiding Principles?",
@@ -1180,7 +1150,7 @@
   "verified": true
  },
  {
-  "id": "Q078",
+  "id": "Q076",
   "category": "VS",
   "module": "M2",
   "q": "How many ITIL Guiding Principles does the syllabus list?",
@@ -1195,7 +1165,7 @@
   "verified": true
  },
  {
-  "id": "Q079",
+  "id": "Q077",
   "category": "VS",
   "module": "M4",
   "q": "Which are the management practice groups named in the syllabus?",
@@ -1211,7 +1181,7 @@
   "termId": "T106"
  },
  {
-  "id": "Q080",
+  "id": "Q078",
   "category": "VS",
   "module": "M4",
   "q": "Which is a management practice group named in the syllabus?",
@@ -1227,7 +1197,7 @@
   "termId": "T106"
  },
  {
-  "id": "Q081",
+  "id": "Q079",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1243,7 +1213,7 @@
   "termId": "T088"
  },
  {
-  "id": "Q082",
+  "id": "Q080",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1259,7 +1229,7 @@
   "termId": "T089"
  },
  {
-  "id": "Q083",
+  "id": "Q081",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1275,7 +1245,7 @@
   "termId": "T098"
  },
  {
-  "id": "Q084",
+  "id": "Q082",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1291,7 +1261,7 @@
   "termId": "T099"
  },
  {
-  "id": "Q085",
+  "id": "Q083",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1307,7 +1277,7 @@
   "termId": "T100"
  },
  {
-  "id": "Q086",
+  "id": "Q084",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1323,7 +1293,7 @@
   "termId": "T101"
  },
  {
-  "id": "Q087",
+  "id": "Q085",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1339,7 +1309,7 @@
   "termId": "T102"
  },
  {
-  "id": "Q088",
+  "id": "Q086",
   "category": "VS",
   "module": "M4",
   "q": "Which three terms must a candidate be able to distinguish between?",
@@ -1354,10 +1324,10 @@
   "verified": true
  },
  {
-  "id": "Q089",
+  "id": "Q087",
   "category": "VS",
   "module": "M4",
-  "q": "Which two terms are defined together in criterion 4.5.6?",
+  "q": "Which pair of terms includes critical success factor (CSF)?",
   "options": [
    "Metric and critical success factor (CSF)",
    "Incident and event",
@@ -1369,7 +1339,7 @@
   "verified": true
  },
  {
-  "id": "Q090",
+  "id": "Q088",
   "category": "VS",
   "module": "M3",
   "q": "Which three terms does the syllabus group under continuous practices in the value chain?",
@@ -1384,10 +1354,10 @@
   "verified": true
  },
  {
-  "id": "Q091",
+  "id": "Q089",
   "category": "VS",
   "module": "M3",
-  "q": "Which three terms are defined together in criterion 4.4.6?",
+  "q": "Which set of terms includes Site Reliability Engineering (SRE)?",
   "options": [
    "Reliability, Site Reliability Engineering (SRE) and observability",
    "Release, test and incident",
@@ -1399,10 +1369,10 @@
   "verified": true
  },
  {
-  "id": "Q092",
+  "id": "Q090",
   "category": "VS",
   "module": "M3",
-  "q": "Which two terms are defined together in criterion 4.4.2?",
+  "q": "Which pair of terms includes product specification?",
   "options": [
    "Product specification and product prototype",
    "Release and test",
@@ -1414,10 +1384,10 @@
   "verified": true
  },
  {
-  "id": "Q093",
+  "id": "Q091",
   "category": "VS",
   "module": "M3",
-  "q": "Which two terms are defined together in criterion 4.4.4?",
+  "q": "Which pair of terms includes release?",
   "options": [
    "Release and test",
    "Incident and event",
@@ -1429,10 +1399,10 @@
   "verified": true
  },
  {
-  "id": "Q094",
+  "id": "Q092",
   "category": "VS",
   "module": "M3",
-  "q": "Which term is defined at Bloom's level 1 in criterion 4.4.9 and linked to the organization's purpose in 4.4.12?",
+  "q": "Which term describes how value chain activities and management practices support the organization's purpose?",
   "options": [
    "Operating model",
    "Service catalog",
@@ -1445,7 +1415,7 @@
   "termId": "T103"
  },
  {
-  "id": "Q095",
+  "id": "Q093",
   "category": "VS",
   "module": "M3",
   "q": "What must a candidate do about the steps of the ITIL Continual Improvement Model?",
@@ -1460,7 +1430,7 @@
   "verified": true
  },
  {
-  "id": "Q096",
+  "id": "Q094",
   "category": "VM",
   "module": "M6",
   "q": "Which is a type of value stream named in the syllabus?",
@@ -1476,7 +1446,7 @@
   "termId": "T113"
  },
  {
-  "id": "Q097",
+  "id": "Q095",
   "category": "VM",
   "module": "M6",
   "q": "Which is a type of value stream named in the syllabus?",
@@ -1492,7 +1462,7 @@
   "termId": "T114"
  },
  {
-  "id": "Q098",
+  "id": "Q096",
   "category": "VM",
   "module": "M6",
   "q": "Which pair of value stream types does the syllabus name?",
@@ -1507,7 +1477,7 @@
   "verified": true
  },
  {
-  "id": "Q099",
+  "id": "Q097",
   "category": "VM",
   "module": "M6",
   "q": "Which two concepts does category 5 pair together?",
@@ -1523,10 +1493,10 @@
   "termId": "T115"
  },
  {
-  "id": "Q100",
+  "id": "Q098",
   "category": "VM",
   "module": "M6",
-  "q": "Which concept is defined at Bloom's level 1 in criterion 5.1.3?",
+  "q": "Which of these terms must candidates be able to define?",
   "options": [
    "Complexity thinking",
    "Lean thinking",
@@ -1539,7 +1509,7 @@
   "termId": "T117"
  },
  {
-  "id": "Q101",
+  "id": "Q099",
   "category": "VM",
   "module": "M6",
   "q": "Which syllabus topic says workflows need to be optimized for complexity?",
@@ -1554,7 +1524,7 @@
   "verified": true
  },
  {
-  "id": "Q102",
+  "id": "Q100",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1570,7 +1540,7 @@
   "termId": "T123"
  },
  {
-  "id": "Q103",
+  "id": "Q101",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1586,7 +1556,7 @@
   "termId": "T122"
  },
  {
-  "id": "Q104",
+  "id": "Q102",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1602,7 +1572,7 @@
   "termId": "T124"
  },
  {
-  "id": "Q105",
+  "id": "Q103",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1618,7 +1588,7 @@
   "termId": "T120"
  },
  {
-  "id": "Q106",
+  "id": "Q104",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1634,10 +1604,10 @@
   "termId": "T121"
  },
  {
-  "id": "Q107",
+  "id": "Q105",
   "category": "AI",
   "module": "M6",
-  "q": "Which four terms are defined together in criterion 6.1.1?",
+  "q": "Which set of terms includes GenAI and Agentic AI?",
   "options": [
    "AI, AI maturity, GenAI and Agentic AI",
    "AI, machine learning, RPA and blockchain",
@@ -1649,7 +1619,7 @@
   "verified": true
  },
  {
-  "id": "Q108",
+  "id": "Q106",
   "category": "AI",
   "module": "M6",
   "q": "Which subtopic of ITIL and AI covers defining AI governance?",
@@ -1664,7 +1634,7 @@
   "verified": true
  },
  {
-  "id": "Q109",
+  "id": "Q107",
   "category": "AI",
   "module": "M6",
   "q": "Under which syllabus category does the ITIL AI Capability Model fall?",
@@ -1679,7 +1649,7 @@
   "verified": true
  },
  {
-  "id": "Q110",
+  "id": "Q108",
   "category": "FW",
   "module": "M6",
   "q": "Which framework does the syllabus cover alongside ITIL?",
@@ -1695,7 +1665,7 @@
   "termId": "T126"
  },
  {
-  "id": "Q111",
+  "id": "Q109",
   "category": "FW",
   "module": "M6",
   "q": "Which framework does the syllabus cover alongside ITIL?",
@@ -1711,10 +1681,10 @@
   "termId": "T127"
  },
  {
-  "id": "Q112",
+  "id": "Q110",
   "category": "FW",
   "module": "M6",
-  "q": "The syllabus asks candidates to understand why what is important in ITIL (criterion 7.2.1)?",
+  "q": "Candidates must understand why which of these is important in ITIL?",
   "options": [
    "Project management",
    "Hardware lifecycle",
@@ -1726,7 +1696,7 @@
   "verified": true
  },
  {
-  "id": "Q113",
+  "id": "Q111",
   "category": "FW",
   "module": "M6",
   "q": "Which two frameworks are covered under 'ITIL and other frameworks'?",
@@ -1741,7 +1711,7 @@
   "verified": true
  },
  {
-  "id": "Q114",
+  "id": "Q112",
   "category": "KT",
   "module": "M1",
   "q": "Which is a type of service relationship named in the syllabus?",
@@ -1757,7 +1727,7 @@
   "termId": "T047"
  },
  {
-  "id": "Q115",
+  "id": "Q113",
   "category": "KT",
   "module": "M1",
   "q": "Which is a type of service relationship named in the syllabus?",
@@ -1773,7 +1743,7 @@
   "termId": "T048"
  },
  {
-  "id": "Q116",
+  "id": "Q114",
   "category": "KT",
   "module": "M1",
   "q": "Which is a type of service relationship named in the syllabus?",
@@ -1789,7 +1759,7 @@
   "termId": "T049"
  },
  {
-  "id": "Q117",
+  "id": "Q115",
   "category": "KT",
   "module": "M1",
   "q": "Which role does the syllabus define as a key concept of service relationships?",
@@ -1805,7 +1775,7 @@
   "termId": "T051"
  },
  {
-  "id": "Q118",
+  "id": "Q116",
   "category": "KT",
   "module": "M1",
   "q": "Which role does the syllabus define as a key concept of service relationships?",
@@ -1821,7 +1791,7 @@
   "termId": "T052"
  },
  {
-  "id": "Q119",
+  "id": "Q117",
   "category": "KT",
   "module": "M1",
   "q": "Which role does the syllabus define as a key concept of service relationships?",
@@ -1837,7 +1807,7 @@
   "termId": "T053"
  },
  {
-  "id": "Q120",
+  "id": "Q118",
   "category": "KT",
   "module": "M1",
   "q": "Which three roles does the syllabus define for service relationships?",
@@ -1852,10 +1822,10 @@
   "verified": true
  },
  {
-  "id": "Q121",
+  "id": "Q119",
   "category": "KT",
   "module": "M1",
-  "q": "Which four terms are defined as key concepts of service relationships in criterion 1.5.1?",
+  "q": "Which four terms are the key concepts of service relationships?",
   "options": [
    "Organization, service provider, service consumer, digital product vendor",
    "Sponsor, customer, user, supplier",
@@ -1867,10 +1837,10 @@
   "verified": true
  },
  {
-  "id": "Q122",
+  "id": "Q120",
   "category": "KT",
   "module": "M1",
-  "q": "Which four terms are defined together in criterion 1.1.7?",
+  "q": "Which set of terms includes utility and warranty?",
   "options": [
    "Utility, warranty, user experience and sustainability",
    "Cost, risk, output and outcome",
@@ -1882,10 +1852,10 @@
   "verified": true
  },
  {
-  "id": "Q123",
+  "id": "Q121",
   "category": "KT",
   "module": "M1",
-  "q": "Which pair of terms must a candidate distinguish between at Bloom's level 2 in criterion 1.4.4?",
+  "q": "Which pair of terms must a candidate be able to tell apart?",
   "options": [
    "Output and outcome",
    "Utility and warranty",
@@ -1898,10 +1868,10 @@
   "termId": "T040"
  },
  {
-  "id": "Q124",
+  "id": "Q122",
   "category": "KT",
   "module": "M1",
-  "q": "Which two terms are defined together in criterion 1.4.2?",
+  "q": "Which pair of terms includes risk?",
   "options": [
    "Cost and risk",
    "Output and outcome",
@@ -1913,10 +1883,10 @@
   "verified": true
  },
  {
-  "id": "Q125",
+  "id": "Q123",
   "category": "KT",
   "module": "M1",
-  "q": "Which two terms are defined together in criterion 1.4.3?",
+  "q": "Which pair of terms includes outcome?",
   "options": [
    "Output and outcome",
    "Cost and risk",
@@ -1928,10 +1898,10 @@
   "verified": true
  },
  {
-  "id": "Q126",
+  "id": "Q124",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is defined in criterion 1.5.6?",
+  "q": "Which of these is a key service relationship concept that candidates must define?",
   "options": [
    "Service Level Agreement (SLA)",
    "Operational level agreement",
@@ -1944,10 +1914,10 @@
   "termId": "T056"
  },
  {
-  "id": "Q127",
+  "id": "Q125",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Experience terms listed in criterion 1.2.1?",
+  "q": "Which term belongs to the ITIL Experience group of terms?",
   "options": [
    "Experience level agreement",
    "Service catalog",
@@ -1960,10 +1930,10 @@
   "termId": "T018"
  },
  {
-  "id": "Q128",
+  "id": "Q126",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Experience terms listed in criterion 1.2.1?",
+  "q": "Which term belongs to the ITIL Experience group of terms?",
   "options": [
    "Human-centred design",
    "Waterfall design",
@@ -1976,10 +1946,10 @@
   "termId": "T019"
  },
  {
-  "id": "Q129",
+  "id": "Q127",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Experience terms listed in criterion 1.2.1?",
+  "q": "Which term belongs to the ITIL Experience group of terms?",
   "options": [
    "Trust",
    "Loyalty",
@@ -1992,10 +1962,10 @@
   "termId": "T016"
  },
  {
-  "id": "Q130",
+  "id": "Q128",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Strategy terms listed in criterion 1.2.2?",
+  "q": "Which term belongs to the ITIL Strategy group of terms?",
   "options": [
    "Mission",
    "Budget",
@@ -2008,10 +1978,10 @@
   "termId": "T023"
  },
  {
-  "id": "Q131",
+  "id": "Q129",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Strategy terms listed in criterion 1.2.2?",
+  "q": "Which term belongs to the ITIL Strategy group of terms?",
   "options": [
    "Vision",
    "Roadmap",
@@ -2024,10 +1994,10 @@
   "termId": "T024"
  },
  {
-  "id": "Q132",
+  "id": "Q130",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Strategy terms listed in criterion 1.2.2?",
+  "q": "Which term belongs to the ITIL Strategy group of terms?",
   "options": [
    "Purpose",
    "Playbook",
@@ -2040,10 +2010,10 @@
   "termId": "T025"
  },
  {
-  "id": "Q133",
+  "id": "Q131",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Strategy terms listed in criterion 1.2.2?",
+  "q": "Which term belongs to the ITIL Strategy group of terms?",
   "options": [
    "VUCA",
    "Backlog",
@@ -2056,10 +2026,10 @@
   "termId": "T026"
  },
  {
-  "id": "Q134",
+  "id": "Q132",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Strategy terms listed in criterion 1.2.2?",
+  "q": "Which term belongs to the ITIL Strategy group of terms?",
   "options": [
    "Leadership",
    "Backlog",
@@ -2072,10 +2042,10 @@
   "termId": "T027"
  },
  {
-  "id": "Q135",
+  "id": "Q133",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Transformation terms listed in criterion 1.2.3?",
+  "q": "Which term belongs to the ITIL Transformation group of terms?",
   "options": [
    "Change",
    "Rollback",
@@ -2088,10 +2058,10 @@
   "termId": "T028"
  },
  {
-  "id": "Q136",
+  "id": "Q134",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Transformation terms listed in criterion 1.2.3?",
+  "q": "Which term belongs to the ITIL Transformation group of terms?",
   "options": [
    "Transformation",
    "Rollback",
@@ -2104,10 +2074,10 @@
   "termId": "T029"
  },
  {
-  "id": "Q137",
+  "id": "Q135",
   "category": "KT",
   "module": "M1",
-  "q": "Which term is part of the ITIL Transformation terms listed in criterion 1.2.3?",
+  "q": "Which term belongs to the ITIL Transformation group of terms?",
   "options": [
    "Business as usual (BAU)",
    "Rollback",
@@ -2120,10 +2090,10 @@
   "termId": "T030"
  },
  {
-  "id": "Q138",
+  "id": "Q136",
   "category": "KT",
   "module": "M1",
-  "q": "Which is listed together with service offering and service interactions in category 1.3?",
+  "q": "Which is listed together with service offering and service interactions under service offerings?",
   "options": [
    "Service actions",
    "Service reviews",
@@ -2136,10 +2106,10 @@
   "termId": "T033"
  },
  {
-  "id": "Q139",
+  "id": "Q137",
   "category": "KT",
   "module": "M1",
-  "q": "Which is listed together with service offering and service interactions in category 1.3?",
+  "q": "Which is listed together with service offering and service interactions under service offerings?",
   "options": [
    "Transfer of goods",
    "Service cost recovery",
@@ -2152,10 +2122,10 @@
   "termId": "T034"
  },
  {
-  "id": "Q140",
+  "id": "Q138",
   "category": "KT",
   "module": "M1",
-  "q": "Which is listed together with service offering and service interactions in category 1.3?",
+  "q": "Which is listed together with service offering and service interactions under service offerings?",
   "options": [
    "Access to resources",
    "Service retirement",
@@ -2168,7 +2138,7 @@
   "termId": "T035"
  },
  {
-  "id": "Q141",
+  "id": "Q139",
   "category": "KT",
   "module": "M1",
   "q": "Which topic includes the term 'service journey'?",
@@ -2184,7 +2154,7 @@
   "termId": "T050"
  },
  {
-  "id": "Q142",
+  "id": "Q140",
   "category": "KT",
   "module": "M1",
   "q": "Which topic includes the terms value, cost, risk, output and outcome?",
@@ -2199,10 +2169,10 @@
   "verified": true
  },
  {
-  "id": "Q143",
+  "id": "Q141",
   "category": "KT",
   "module": "M1",
-  "q": "Which topic includes the term feedback (criterion 1.4.8)?",
+  "q": "Which topic includes the term feedback?",
   "options": [
    "Value co-creation",
    "Service offerings",
@@ -2215,7 +2185,7 @@
   "termId": "T042"
  },
  {
-  "id": "Q144",
+  "id": "Q142",
   "category": "KT",
   "module": "M1",
   "q": "The syllabus asks candidates to know the benefits of ITIL for which group?",
@@ -2231,7 +2201,7 @@
   "termId": "T013"
  },
  {
-  "id": "Q145",
+  "id": "Q143",
   "category": "KT",
   "module": "M1",
   "q": "Which three differences between roles of organizations does the syllabus ask candidates to understand?",
@@ -2246,7 +2216,7 @@
   "verified": true
  },
  {
-  "id": "Q146",
+  "id": "Q144",
   "category": "KT",
   "module": "M1",
   "q": "Which category in the exam carries 30%?",
@@ -2261,7 +2231,7 @@
   "verified": true
  },
  {
-  "id": "Q147",
+  "id": "Q145",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Governance' fall?",
@@ -2276,7 +2246,7 @@
   "verified": true
  },
  {
-  "id": "Q148",
+  "id": "Q146",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Human-centred design' fall?",
@@ -2291,7 +2261,7 @@
   "verified": true
  },
  {
-  "id": "Q149",
+  "id": "Q147",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'PESTLE' fall?",
@@ -2306,7 +2276,7 @@
   "verified": true
  },
  {
-  "id": "Q150",
+  "id": "Q148",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Acquire' fall?",
@@ -2321,7 +2291,7 @@
   "verified": true
  },
  {
-  "id": "Q151",
+  "id": "Q149",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Core value stream' fall?",
@@ -2336,7 +2306,7 @@
   "verified": true
  },
  {
-  "id": "Q152",
+  "id": "Q150",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Agentic AI' fall?",
@@ -2351,7 +2321,7 @@
   "verified": true
  },
  {
-  "id": "Q153",
+  "id": "Q151",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'PRINCE2' fall?",
@@ -2366,7 +2336,7 @@
   "verified": true
  },
  {
-  "id": "Q154",
+  "id": "Q152",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Service journey' fall?",
@@ -2381,7 +2351,7 @@
   "verified": true
  },
  {
-  "id": "Q155",
+  "id": "Q153",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Continual Improvement Model' fall?",
@@ -2396,7 +2366,7 @@
   "verified": true
  },
  {
-  "id": "Q156",
+  "id": "Q154",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Complexity thinking' fall?",
@@ -2411,7 +2381,7 @@
   "verified": true
  },
  {
-  "id": "Q157",
+  "id": "Q155",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Observability' fall?",
@@ -2426,7 +2396,7 @@
   "verified": true
  },
  {
-  "id": "Q158",
+  "id": "Q156",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Known error' fall?",
@@ -2441,7 +2411,7 @@
   "verified": true
  },
  {
-  "id": "Q159",
+  "id": "Q157",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Cooperative service relationship' fall?",
@@ -2456,7 +2426,7 @@
   "verified": true
  },
  {
-  "id": "Q160",
+  "id": "Q158",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Partners and suppliers' fall?",
@@ -2471,7 +2441,7 @@
   "verified": true
  },
  {
-  "id": "Q161",
+  "id": "Q159",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'DevOps' fall?",
@@ -2486,7 +2456,7 @@
   "verified": true
  },
  {
-  "id": "Q162",
+  "id": "Q160",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'AI governance' fall?",
@@ -2501,7 +2471,7 @@
   "verified": true
  },
  {
-  "id": "Q163",
+  "id": "Q161",
   "category": "FD",
   "module": "M5",
   "q": "Which TWO are ITIL Four Dimensions of Product and Service Management?\n1. Information and technology\n2. Governance and risk\n3. Partners and suppliers\n4. Budget and cost",
@@ -2516,7 +2486,7 @@
   "verified": true
  },
  {
-  "id": "Q164",
+  "id": "Q162",
   "category": "VS",
   "module": "M2",
   "q": "Which TWO are ITIL Guiding Principles?\n1. Fix it fast\n2. Focus on value\n3. Document everything\n4. Optimize and automate",
@@ -2531,7 +2501,7 @@
   "verified": true
  },
  {
-  "id": "Q165",
+  "id": "Q163",
   "category": "LC",
   "module": "M5",
   "q": "Which TWO are ITIL Product and Service Lifecycle activities?\n1. Retire\n2. Acquire\n3. Operate\n4. Escalate",
@@ -2546,7 +2516,7 @@
   "verified": true
  },
  {
-  "id": "Q166",
+  "id": "Q164",
   "category": "VS",
   "module": "M3",
   "q": "Which TWO are components of the ITIL Value System?\n1. Service desk\n2. Governance\n3. Continual improvement\n4. Risk register",
@@ -2561,7 +2531,7 @@
   "verified": true
  },
  {
-  "id": "Q167",
+  "id": "Q165",
   "category": "KT",
   "module": "M1",
   "q": "Which TWO are service relationship roles defined in the syllabus?\n1. Sponsor\n2. Auditor\n3. Architect\n4. User",
@@ -2576,7 +2546,7 @@
   "verified": true
  },
  {
-  "id": "Q168",
+  "id": "Q166",
   "category": "VM",
   "module": "M6",
   "q": "Which TWO are value stream types named in the syllabus?\n1. Core\n2. Backup\n3. Enabling\n4. Legacy",
@@ -2591,7 +2561,7 @@
   "verified": true
  },
  {
-  "id": "Q169",
+  "id": "Q167",
   "category": "AI",
   "module": "M6",
   "q": "Which TWO are topics in the ITIL and AI category?\n1. AI hardware\n2. Agentic AI\n3. AI marketing\n4. AI governance",
@@ -2606,7 +2576,7 @@
   "verified": true
  },
  {
-  "id": "Q170",
+  "id": "Q168",
   "category": "EX",
   "module": "M0",
   "q": "Which TWO statements about the exam are correct?\n1. There is negative marking\n2. The exam is closed book\n3. The pass mark is 26 marks\n4. The exam lasts 90 minutes",
@@ -2621,7 +2591,7 @@
   "verified": true
  },
  {
-  "id": "Q171",
+  "id": "Q169",
   "category": "EX",
   "module": "M0",
   "q": "Which TWO are question types used in the exam?\n1. Essay\n2. Missing word(s)\n3. List\n4. Practical lab",
