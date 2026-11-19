@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Focus"><meta name="theme-color" content="#f2f2f7"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Focus"><meta name="theme-color" content="#0a1322"><meta name="color-scheme" content="dark"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="robots" content="noindex">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Focus</title>
 <style>
-:root{--bg:#f2f2f7;--card:#ffffff;--ink:#0b1b33;--mut:#697386;--acc:#0a2a66;--ok:#2e9e5b;--bad:#d64545;--line:#d8dce4;--fill:#e9edf3;--tint:#eef2fa}
+:root{--bg:#0a1322;--card:#111d33;--ink:#eaf0fb;--mut:#9aa8c2;--acc:#3a68d4;--head:#9bb9ff;--hero:#1b3b7a;--herotxt:#0a2a66;--ok:#3ecf8e;--bad:#f06b6b;--line:#24324d;--fill:#1a2943;--tint:#14223b;--navbg:rgba(14,24,42,.9);--navoff:#8b99b4;--okbg:#12382a;--oktx:#bff0d6;--badbg:#3d1a1d;--badtx:#f6c2c2;--chev:#5d6d8c;--shadow:0 1px 2px rgba(0,0,0,.4);color-scheme:dark}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;padding-bottom:calc(96px + env(safe-area-inset-bottom));-webkit-font-smoothing:antialiased}
@@ -13,8 +13,8 @@ main{max-width:560px;margin:0 auto;padding:12px 16px;padding-left:max(16px,env(s
 h1{font-size:32px;line-height:1.1;font-weight:700;letter-spacing:-.02em;margin:8px 0 4px}
 .sub{color:var(--mut);font-size:15px;margin:0 0 14px}
 h2{font-size:13px;margin:0 0 8px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
-.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 1px 2px rgba(10,42,102,.07)}
-.hero{background:var(--acc);color:#fff}.hero h2{color:#b8c6e6}.hero .mut{color:#cdd8f0}.hero button{background:#fff;color:var(--acc)}
+.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:var(--shadow)}
+.hero{background:var(--hero);color:#fff}.hero h2{color:#b8c6e6}.hero .mut{color:#cdd8f0}.hero button{background:#fff;color:var(--herotxt)}
 .big{font-size:20px;font-weight:600;line-height:1.3;margin:2px 0 4px}
 .bar{height:8px;background:var(--fill);border-radius:6px;overflow:hidden;margin:6px 0 2px}
 .bar>i{display:block;height:100%;background:var(--acc);border-radius:6px;transition:width .4s}
@@ -23,25 +23,25 @@ h2{font-size:13px;margin:0 0 8px;color:var(--mut);font-weight:600;text-transform
 p{margin:8px 0}ol,ul.plain{padding-left:20px;margin:8px 0}li{margin:6px 0}
 button{background:var(--acc);color:#fff;border:0;border-radius:12px;padding:12px 16px;font-size:17px;font-weight:600;min-height:48px;font-family:inherit}
 button:active{opacity:.85}button[disabled]{opacity:.4}
-button.g{background:var(--fill);color:var(--acc)}button.ok{background:var(--ok);color:#fff}button.bad{background:var(--bad);color:#fff}button.w{width:100%}
+button.g{background:var(--fill);color:var(--head)}button.ok{background:var(--ok);color:#fff}button.bad{background:var(--bad);color:#fff}button.w{width:100%}
 .opt{display:block;width:100%;text-align:left;margin:8px 0;background:var(--fill);color:var(--ink);font-weight:500}
-.opt.right{background:#dff3e7;color:#14532d;box-shadow:inset 0 0 0 2px var(--ok)}.opt.wrong{background:#fbe4e4;color:#7f1d1d;box-shadow:inset 0 0 0 2px var(--bad)}.opt.sel{box-shadow:inset 0 0 0 2px var(--acc)}
-nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:rgba(255,255,255,.9);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-top:.5px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
-nav button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:0;background:none;color:#6f7a8c;font-size:10px;font-weight:500;padding:6px 0 4px;min-height:52px}
-nav button.on{color:var(--acc)}nav svg{width:24px;height:24px}
-.t{font-size:54px;font-weight:700;text-align:center;font-variant-numeric:tabular-nums;margin:8px 0;color:var(--acc)}
+.opt.right{background:var(--okbg);color:var(--oktx);box-shadow:inset 0 0 0 2px var(--ok)}.opt.wrong{background:var(--badbg);color:var(--badtx);box-shadow:inset 0 0 0 2px var(--bad)}.opt.sel{box-shadow:inset 0 0 0 2px var(--acc)}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--navbg);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-top:.5px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:0;background:none;color:var(--navoff);font-size:10px;font-weight:500;padding:6px 0 4px;min-height:52px}
+nav button.on{color:var(--head)}nav svg{width:24px;height:24px}
+.t{font-size:54px;font-weight:700;text-align:center;font-variant-numeric:tabular-nums;margin:8px 0;color:var(--head)}
 label.ck{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:.5px solid var(--line);min-height:44px}
 input[type=checkbox]{width:22px;height:22px;flex:none;accent-color:var(--acc)}
 input[type=number],input[type=text],input[type=password],input[type=date],select,textarea{background:var(--fill);color:var(--ink);border:0;border-radius:10px;padding:11px 12px;font-size:17px;font-family:inherit;width:100%;min-height:46px;margin:4px 0}
-.pill{display:inline-block;padding:2px 9px;border-radius:99px;background:var(--fill);font-size:12px;color:var(--acc);font-weight:600}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;background:var(--fill);font-size:12px;color:var(--head);font-weight:600}
 .note{border-radius:10px;background:var(--tint);padding:10px 12px;margin:8px 0}
 .pre{white-space:pre-line}
 .trow{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;text-align:left;background:none;color:var(--ink);border-bottom:.5px solid var(--line);border-radius:0;font-weight:500;padding:10px 0;min-height:48px}
 details summary{min-height:44px;display:flex;align-items:center;cursor:pointer;list-style:none}details summary::-webkit-details-marker{display:none}
-details summary::after{content:"\203A";margin-left:auto;color:#aab2c0;font-size:22px;transform:rotate(90deg);padding-left:8px}details[open] summary::after{transform:rotate(-90deg)}
-.lesson p,.lesson li{line-height:1.55;margin:8px 0}.lesson h2.lh,.lesson h3.lh{margin:18px 0 6px;color:var(--acc);text-transform:none;letter-spacing:0;font-size:18px}.lesson h3.lh{font-size:16px}
+details summary::after{content:"\203A";margin-left:auto;color:var(--chev);font-size:22px;transform:rotate(90deg);padding-left:8px}details[open] summary::after{transform:rotate(-90deg)}
+.lesson p,.lesson li{line-height:1.55;margin:8px 0}.lesson h2.lh,.lesson h3.lh{margin:18px 0 6px;color:var(--head);text-transform:none;letter-spacing:0;font-size:18px}.lesson h3.lh{font-size:16px}
 .lesson ul,.lesson ol{padding-left:20px}.tw{overflow-x:auto;margin:10px 0;border-radius:10px;border:.5px solid var(--line)}
-.lesson table{border-collapse:collapse;font-size:14px;min-width:100%}.lesson th,.lesson td{border-bottom:.5px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.lesson th{background:var(--fill);color:var(--acc)}.lesson code{background:var(--fill);padding:1px 5px;border-radius:4px}
+.lesson table{border-collapse:collapse;font-size:14px;min-width:100%}.lesson th,.lesson td{border-bottom:.5px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.lesson th{background:var(--fill);color:var(--head)}.lesson code{background:var(--fill);padding:1px 5px;border-radius:4px}
 </style></head><body><main id="app"></main>
 <nav id="nav"></nav>
 <script>

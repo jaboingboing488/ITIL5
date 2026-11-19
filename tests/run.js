@@ -31,6 +31,7 @@ const srv = http.createServer((q, r) => {
     await tab(t);
     ok(await pg.locator("#app h1").count() > 0, "tab " + t);
   }
+  ok(await pg.evaluate(() => getComputedStyle(document.body).backgroundColor === "rgb(10, 19, 34)"), "the app is always dark");
   const small = await pg.evaluate(() => [...document.querySelectorAll("button")].filter(b => b.offsetParent && b.getBoundingClientRect().height < 43).length);
   ok(small === 0, "buttons are at least 44px tall");
   ok(await pg.evaluate(() => document.documentElement.scrollWidth <= 376), "fits 375px width");
