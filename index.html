@@ -207,7 +207,7 @@ function vQuiz(){
   h+='<div class="card"><h2>Mixed practice</h2><button class="w g" data-a="qstart" data-v="mixed">20 mixed questions</button></div>';
   h+='<div class="card"><h2>Simulation</h2><div class="mut">40 random questions, 60 minutes, pass line 26/40. Readiness bar 32/40 is my bar, not official.</div><button class="w" data-a="qstart" data-v="sim" style="margin-top:8px">Start simulation</button></div>';
   h+=gateCard();
-  h+='<div class="card"><div class="mut">Questions cover only what the syllabus copy lists (Syllabus v5.0, Feb 2026, from a third-party courseware copy, not yet checked against the official PDF): names, structures and lists. It gives no definitions, so there are none here. Practice and the simulation leave out exam-fact questions; the Baseline keeps 2. Misses go to the error log and into your review queue.</div></div>';
+  h+='<div class="card"><div class="mut">Questions come from the syllabus copy (v5.0, Feb 2026, unchecked against the official PDF). Practice and the simulation leave out exam-fact questions; the Baseline keeps 2. Misses go to the error log and into your review queue.</div></div>';
   var er=S.log.errors.slice(-8).reverse();if(er.length)h+='<div class="card"><h2>Error log ('+S.log.errors.length+')</h2>'+er.map(function(e){return '<div class="mut" style="margin:6px 0">'+esc(e.q)+'<br><b style="color:var(--ink)">'+esc(e.a)+'</b></div>'}).join("")+'</div>';
   return h}
  if(quiz.done){var n=quiz.items.length;
