@@ -11,7 +11,7 @@
    "50"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -26,7 +26,7 @@
    "75 minutes"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -41,7 +41,7 @@
    "32 (80%)"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -56,7 +56,7 @@
    "The official book"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -71,7 +71,7 @@
    "-1 per wrong answer"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -86,7 +86,7 @@
    "100% (120 minutes in total)"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -101,7 +101,7 @@
    "Levels 2 and 3"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -116,7 +116,7 @@
    "Evaluating two approaches"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
@@ -131,11 +131,56 @@
    "Running a workshop"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
   "id": "Q010",
+  "category": "EX",
+  "module": "M0",
+  "q": "In terms of Bloom's levels, how are the exam questions split?",
+  "options": [
+   "40% level 1 and 60% level 2",
+   "60% level 1 and 40% level 2",
+   "Half level 1 and half level 2",
+   "All level 2"
+  ],
+  "correctIndex": 0,
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
+  "verified": true
+ },
+ {
+  "id": "Q011",
+  "category": "EX",
+  "module": "M0",
+  "q": "Which question style is never negatively worded?",
+  "options": [
+   "List (choose the two correct statements)",
+   "Standard",
+   "Missing word(s)",
+   "All styles may be negative"
+  ],
+  "correctIndex": 0,
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
+  "verified": true
+ },
+ {
+  "id": "Q012",
+  "category": "EX",
+  "module": "M0",
+  "q": "How many answer options does each multiple choice question have?",
+  "options": [
+   "Four",
+   "Three",
+   "Five",
+   "Six"
+  ],
+  "correctIndex": 0,
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
+  "verified": true
+ },
+ {
+  "id": "Q013",
   "category": "EX",
   "module": "M0",
   "q": "How many marks is each question worth?",
@@ -146,11 +191,11 @@
    "Level 2 questions are worth 2 marks"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2 Exam Overview",
+  "sourceRef": "Syllabus v5.1 s2 Exam Overview",
   "verified": true
  },
  {
-  "id": "Q011",
+  "id": "Q014",
   "category": "EX",
   "module": "M0",
   "q": "Which is NOT a question type used in the exam?",
@@ -161,11 +206,11 @@
    "List"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2, s3",
+  "sourceRef": "Syllabus v5.1 s2, s3",
   "verified": true
  },
  {
-  "id": "Q012",
+  "id": "Q015",
   "category": "EX",
   "module": "M0",
   "q": "In a 'List' question, how many of the four statements are correct?",
@@ -176,11 +221,11 @@
    "All four"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3 Question Types",
+  "sourceRef": "Syllabus v5.1 s3 Question Types",
   "verified": true
  },
  {
-  "id": "Q013",
+  "id": "Q016",
   "category": "EX",
   "module": "M0",
   "q": "How many answer options does a 'Standard' question have?",
@@ -191,11 +236,11 @@
    "Six"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2",
+  "sourceRef": "Syllabus v5.1 s2",
   "verified": true
  },
  {
-  "id": "Q014",
+  "id": "Q017",
   "category": "EX",
   "module": "M0",
   "q": "Which statement about 'Negative' questions is correct?",
@@ -206,11 +251,11 @@
    "They lose marks if answered wrongly"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3",
+  "sourceRef": "Syllabus v5.1 s3",
   "verified": true
  },
  {
-  "id": "Q015",
+  "id": "Q018",
   "category": "EX",
   "module": "M0",
   "q": "Which statement about 'List' questions is correct?",
@@ -221,11 +266,11 @@
    "They have three correct statements"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3",
+  "sourceRef": "Syllabus v5.1 s3",
   "verified": true
  },
  {
-  "id": "Q016",
+  "id": "Q019",
   "category": "EX",
   "module": "M0",
   "q": "In a 'Missing word(s)' question, what must the candidate do?",
@@ -236,11 +281,11 @@
    "Choose the statement that is NOT true"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2",
+  "sourceRef": "Syllabus v5.1 s2",
   "verified": true
  },
  {
-  "id": "Q017",
+  "id": "Q020",
   "category": "EX",
   "module": "M0",
   "q": "Which qualifications is ITIL Foundation (Version 5) a prerequisite for?",
@@ -251,11 +296,11 @@
    "Only DevOps certificates"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1 Introduction",
+  "sourceRef": "Syllabus v5.1 s1 Introduction",
   "verified": true
  },
  {
-  "id": "Q018",
+  "id": "Q021",
   "category": "EX",
   "module": "M0",
   "q": "The ITIL Foundation (Version 5) exam is intended to assess recall and understanding of what?",
@@ -266,11 +311,11 @@
    "Project management methods only"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1",
+  "sourceRef": "Syllabus v5.1 s1",
   "verified": true
  },
  {
-  "id": "Q019",
+  "id": "Q022",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'Key ITIL terms and definitions' carry in the exam?",
@@ -281,11 +326,11 @@
    "20%"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q020",
+  "id": "Q023",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'The ITIL Four Dimensions of Product and Service Management' carry in the exam?",
@@ -296,11 +341,11 @@
    "40%"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q021",
+  "id": "Q024",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'The ITIL Product and Service Lifecycle' carry in the exam?",
@@ -311,11 +356,11 @@
    "25%"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q022",
+  "id": "Q025",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'The ITIL Value System' carry in the exam?",
@@ -326,11 +371,11 @@
    "30%"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q023",
+  "id": "Q026",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'Value stream identification, mapping, and management' carry in the exam?",
@@ -341,11 +386,11 @@
    "10%"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q024",
+  "id": "Q027",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'ITIL and AI' carry in the exam?",
@@ -356,11 +401,11 @@
    "30%"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q025",
+  "id": "Q028",
   "category": "EX",
   "module": "M0",
   "q": "What weighting does the category 'ITIL and other frameworks' carry in the exam?",
@@ -371,11 +416,11 @@
    "20%"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q026",
+  "id": "Q029",
   "category": "EX",
   "module": "M0",
   "q": "Which category carries the highest weighting?",
@@ -386,11 +431,11 @@
    "ITIL and AI"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q027",
+  "id": "Q030",
   "category": "EX",
   "module": "M0",
   "q": "Which two categories carry the same weighting of 10%?",
@@ -401,11 +446,11 @@
    "Value streams and Four Dimensions"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5 Exam specification",
+  "sourceRef": "Syllabus v5.1 s5 Exam specification",
   "verified": true
  },
  {
-  "id": "Q028",
+  "id": "Q031",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -416,12 +461,12 @@
    "Budget and cost"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true,
-  "termId": "T057"
+  "termId": "T037"
  },
  {
-  "id": "Q029",
+  "id": "Q032",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -432,12 +477,12 @@
    "Incidents and problems"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true,
-  "termId": "T058"
+  "termId": "T038"
  },
  {
-  "id": "Q030",
+  "id": "Q033",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -448,12 +493,12 @@
    "Incidents and problems"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true,
-  "termId": "T059"
+  "termId": "T039"
  },
  {
-  "id": "Q031",
+  "id": "Q034",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the ITIL Four Dimensions of Product and Service Management?",
@@ -464,12 +509,12 @@
    "Incidents and problems"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true,
-  "termId": "T060"
+  "termId": "T040"
  },
  {
-  "id": "Q032",
+  "id": "Q035",
   "category": "FD",
   "module": "M5",
   "q": "Which is NOT one of the ITIL Four Dimensions of Product and Service Management?",
@@ -480,11 +525,11 @@
    "Information and technology"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true
  },
  {
-  "id": "Q033",
+  "id": "Q036",
   "category": "FD",
   "module": "M5",
   "q": "Which is NOT one of the ITIL Four Dimensions of Product and Service Management?",
@@ -495,11 +540,11 @@
    "Value streams and processes"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true
  },
  {
-  "id": "Q034",
+  "id": "Q037",
   "category": "FD",
   "module": "M5",
   "q": "How many dimensions are in the ITIL Four Dimensions of Product and Service Management?",
@@ -510,26 +555,26 @@
    "Seven"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true
  },
  {
-  "id": "Q035",
+  "id": "Q038",
   "category": "FD",
   "module": "M5",
   "q": "What does PESTLE stand for in the context of the four dimensions?",
   "options": [
-   "Political, economical, social, technology, legal, environmental",
+   "Political, economic, social, technological, legal, environmental",
    "Planning, execution, strategy, tactics, leadership, evaluation",
    "People, equipment, systems, tools, logistics, environment",
    "Policy, ethics, security, testing, learning, evolution"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q036",
+  "id": "Q039",
   "category": "FD",
   "module": "M5",
   "q": "PESTLE describes which kind of factors that influence the four dimensions?",
@@ -540,11 +585,11 @@
    "Contractual factors"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q037",
+  "id": "Q040",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -555,26 +600,26 @@
    "Positional"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q038",
+  "id": "Q041",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
   "options": [
-   "Economical",
+   "Economic",
    "Ethical",
    "Emotional",
    "Executive"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q039",
+  "id": "Q042",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -585,26 +630,26 @@
    "Systemic"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q040",
+  "id": "Q043",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
   "options": [
-   "Technology",
-   "Tactical",
+   "Technological",
+   "Technical",
    "Training",
    "Transactional"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q041",
+  "id": "Q044",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -615,11 +660,11 @@
    "Linear"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q042",
+  "id": "Q045",
   "category": "FD",
   "module": "M5",
   "q": "Which is one of the external factors in PESTLE?",
@@ -630,11 +675,11 @@
    "Enterprise"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s2.2.1",
+  "sourceRef": "Syllabus v5.1 s2.2.1",
   "verified": true
  },
  {
-  "id": "Q043",
+  "id": "Q046",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -645,12 +690,12 @@
    "Plan"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T063"
+  "termId": "T043"
  },
  {
-  "id": "Q044",
+  "id": "Q047",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -661,12 +706,12 @@
    "Plan"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T064"
+  "termId": "T044"
  },
  {
-  "id": "Q045",
+  "id": "Q048",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -677,12 +722,12 @@
    "Retire"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T065"
+  "termId": "T045"
  },
  {
-  "id": "Q046",
+  "id": "Q049",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -693,12 +738,12 @@
    "Archive"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T066"
+  "termId": "T046"
  },
  {
-  "id": "Q047",
+  "id": "Q050",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -709,12 +754,12 @@
    "Escalate"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T067"
+  "termId": "T047"
  },
  {
-  "id": "Q048",
+  "id": "Q051",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -725,12 +770,12 @@
    "Budget"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T068"
+  "termId": "T048"
  },
  {
-  "id": "Q049",
+  "id": "Q052",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -741,12 +786,12 @@
    "Audit"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T069"
+  "termId": "T049"
  },
  {
-  "id": "Q050",
+  "id": "Q053",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the ITIL Product and Service Lifecycle activities?",
@@ -757,12 +802,12 @@
    "Budget"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true,
-  "termId": "T070"
+  "termId": "T050"
  },
  {
-  "id": "Q051",
+  "id": "Q054",
   "category": "LC",
   "module": "M5",
   "q": "Which is NOT one of the eight ITIL Product and Service Lifecycle activities?",
@@ -773,11 +818,11 @@
    "Build"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true
  },
  {
-  "id": "Q052",
+  "id": "Q055",
   "category": "LC",
   "module": "M5",
   "q": "Which is NOT one of the eight ITIL Product and Service Lifecycle activities?",
@@ -788,11 +833,11 @@
    "Acquire"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true
  },
  {
-  "id": "Q053",
+  "id": "Q056",
   "category": "LC",
   "module": "M5",
   "q": "Which is NOT one of the eight ITIL Product and Service Lifecycle activities?",
@@ -803,11 +848,11 @@
    "Acquire"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true
  },
  {
-  "id": "Q054",
+  "id": "Q057",
   "category": "LC",
   "module": "M5",
   "q": "How many activities are in the ITIL Product and Service Lifecycle?",
@@ -818,11 +863,11 @@
    "Seven"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true
  },
  {
-  "id": "Q055",
+  "id": "Q058",
   "category": "LC",
   "module": "M5",
   "q": "Which statement about the lifecycle activities is correct?",
@@ -833,12 +878,12 @@
    "They are completed once per product and never repeated"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.3",
+  "sourceRef": "Syllabus v5.1 s3.1.3",
   "verified": true,
-  "termId": "T071"
+  "termId": "T051"
  },
  {
-  "id": "Q056",
+  "id": "Q059",
   "category": "LC",
   "module": "M5",
   "q": "Which is one of the lifecycle activities?",
@@ -849,11 +894,11 @@
    "Authorize"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true
  },
  {
-  "id": "Q057",
+  "id": "Q060",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -864,12 +909,12 @@
    "Handover"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true,
-  "termId": "T073"
+  "termId": "T053"
  },
  {
-  "id": "Q058",
+  "id": "Q061",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -880,12 +925,12 @@
    "Vendor contracts"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true,
-  "termId": "T074"
+  "termId": "T054"
  },
  {
-  "id": "Q059",
+  "id": "Q062",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -896,12 +941,12 @@
    "Escalation"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true,
-  "termId": "T075"
+  "termId": "T055"
  },
  {
-  "id": "Q060",
+  "id": "Q063",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -912,12 +957,12 @@
    "Handover"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true,
-  "termId": "T076"
+  "termId": "T056"
  },
  {
-  "id": "Q061",
+  "id": "Q064",
   "category": "VS",
   "module": "M3",
   "q": "Which is a component of the ITIL Value System?",
@@ -928,12 +973,12 @@
    "Escalation"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true,
-  "termId": "T077"
+  "termId": "T057"
  },
  {
-  "id": "Q062",
+  "id": "Q065",
   "category": "VS",
   "module": "M3",
   "q": "Which is NOT a component of the ITIL Value System?",
@@ -944,11 +989,11 @@
    "Value chain"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true
  },
  {
-  "id": "Q063",
+  "id": "Q066",
   "category": "VS",
   "module": "M3",
   "q": "Which is NOT a component of the ITIL Value System?",
@@ -959,11 +1004,11 @@
    "Guiding principles"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true
  },
  {
-  "id": "Q064",
+  "id": "Q067",
   "category": "VS",
   "module": "M3",
   "q": "Which is NOT a component of the ITIL Value System?",
@@ -974,11 +1019,11 @@
    "Continual improvement"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true
  },
  {
-  "id": "Q065",
+  "id": "Q068",
   "category": "VS",
   "module": "M3",
   "q": "How many components of the ITIL Value System does the syllabus list?",
@@ -989,11 +1034,11 @@
    "Seven"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true
  },
  {
-  "id": "Q066",
+  "id": "Q069",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1004,12 +1049,12 @@
    "Centralize decisions with senior managers"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true,
-  "termId": "T078"
+  "termId": "T058"
  },
  {
-  "id": "Q067",
+  "id": "Q070",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1020,12 +1065,12 @@
    "Minimize change to protect stability"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true,
-  "termId": "T079"
+  "termId": "T059"
  },
  {
-  "id": "Q068",
+  "id": "Q071",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1036,12 +1081,12 @@
    "Centralize decisions with senior managers"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true,
-  "termId": "T080"
+  "termId": "T060"
  },
  {
-  "id": "Q069",
+  "id": "Q072",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1052,12 +1097,12 @@
    "Deliver everything in one big release"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true,
-  "termId": "T081"
+  "termId": "T061"
  },
  {
-  "id": "Q070",
+  "id": "Q073",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1068,12 +1113,12 @@
    "Deliver everything in one big release"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true,
-  "termId": "T082"
+  "termId": "T062"
  },
  {
-  "id": "Q071",
+  "id": "Q074",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1084,12 +1129,12 @@
    "Plan everything before starting work"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true,
-  "termId": "T083"
+  "termId": "T063"
  },
  {
-  "id": "Q072",
+  "id": "Q075",
   "category": "VS",
   "module": "M2",
   "q": "Which is one of the ITIL Guiding Principles?",
@@ -1100,12 +1145,12 @@
    "Centralize decisions with senior managers"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true,
-  "termId": "T084"
+  "termId": "T064"
  },
  {
-  "id": "Q073",
+  "id": "Q076",
   "category": "VS",
   "module": "M2",
   "q": "Which is NOT one of the ITIL Guiding Principles?",
@@ -1116,11 +1161,11 @@
    "Start where you are"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true
  },
  {
-  "id": "Q074",
+  "id": "Q077",
   "category": "VS",
   "module": "M2",
   "q": "Which is NOT one of the ITIL Guiding Principles?",
@@ -1131,11 +1176,11 @@
    "Keep it simple and practical"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true
  },
  {
-  "id": "Q075",
+  "id": "Q078",
   "category": "VS",
   "module": "M2",
   "q": "Which is NOT one of the ITIL Guiding Principles?",
@@ -1146,11 +1191,11 @@
    "Progress iteratively with feedback"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true
  },
  {
-  "id": "Q076",
+  "id": "Q079",
   "category": "VS",
   "module": "M2",
   "q": "How many ITIL Guiding Principles does the syllabus list?",
@@ -1161,11 +1206,11 @@
    "Four"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true
  },
  {
-  "id": "Q077",
+  "id": "Q080",
   "category": "VS",
   "module": "M4",
   "q": "Which are the management practice groups named in the syllabus?",
@@ -1176,12 +1221,12 @@
    "Internal practices and external practices"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.5.2",
+  "sourceRef": "Syllabus v5.1 s4.5.2",
   "verified": true,
-  "termId": "T106"
+  "termId": "T086"
  },
  {
-  "id": "Q078",
+  "id": "Q081",
   "category": "VS",
   "module": "M4",
   "q": "Which is a management practice group named in the syllabus?",
@@ -1192,12 +1237,12 @@
    "Financial"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.5.2",
+  "sourceRef": "Syllabus v5.1 s4.5.2",
   "verified": true,
-  "termId": "T106"
+  "termId": "T086"
  },
  {
-  "id": "Q079",
+  "id": "Q082",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1208,12 +1253,12 @@
    "Risk appetite"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.3, 4.4.7, 4.4.8",
+  "sourceRef": "Syllabus v5.1 s4.4.3, 4.4.7, 4.4.8",
   "verified": true,
-  "termId": "T088"
+  "termId": "T068"
  },
  {
-  "id": "Q080",
+  "id": "Q083",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1224,12 +1269,12 @@
    "Handover"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.3, 4.4.7, 4.4.8",
+  "sourceRef": "Syllabus v5.1 s4.4.3, 4.4.7, 4.4.8",
   "verified": true,
-  "termId": "T089"
+  "termId": "T069"
  },
  {
-  "id": "Q081",
+  "id": "Q084",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1240,12 +1285,12 @@
    "Change freeze"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.3, 4.4.7, 4.4.8",
+  "sourceRef": "Syllabus v5.1 s4.4.3, 4.4.7, 4.4.8",
   "verified": true,
-  "termId": "T098"
+  "termId": "T078"
  },
  {
-  "id": "Q082",
+  "id": "Q085",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1256,12 +1301,12 @@
    "Backlog item"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.3, 4.4.7, 4.4.8",
+  "sourceRef": "Syllabus v5.1 s4.4.3, 4.4.7, 4.4.8",
   "verified": true,
-  "termId": "T099"
+  "termId": "T079"
  },
  {
-  "id": "Q083",
+  "id": "Q086",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1272,12 +1317,12 @@
    "Escalation"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.3, 4.4.7, 4.4.8",
+  "sourceRef": "Syllabus v5.1 s4.4.3, 4.4.7, 4.4.8",
   "verified": true,
-  "termId": "T100"
+  "termId": "T080"
  },
  {
-  "id": "Q084",
+  "id": "Q087",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1288,12 +1333,12 @@
    "Change freeze"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.3, 4.4.7, 4.4.8",
+  "sourceRef": "Syllabus v5.1 s4.4.3, 4.4.7, 4.4.8",
   "verified": true,
-  "termId": "T101"
+  "termId": "T081"
  },
  {
-  "id": "Q085",
+  "id": "Q088",
   "category": "VS",
   "module": "M4",
   "q": "Which of these terms is listed in the syllabus under the value chain (to be defined at Bloom's level 1)?",
@@ -1304,12 +1349,12 @@
    "Workaround ticket"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.3, 4.4.7, 4.4.8",
+  "sourceRef": "Syllabus v5.1 s4.4.3, 4.4.7, 4.4.8",
   "verified": true,
-  "termId": "T102"
+  "termId": "T082"
  },
  {
-  "id": "Q086",
+  "id": "Q089",
   "category": "VS",
   "module": "M4",
   "q": "Which three terms must a candidate be able to distinguish between?",
@@ -1320,11 +1365,11 @@
    "Metric, CSF and SLA"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.10",
+  "sourceRef": "Syllabus v5.1 s4.4.10",
   "verified": true
  },
  {
-  "id": "Q087",
+  "id": "Q090",
   "category": "VS",
   "module": "M4",
   "q": "Which pair of terms includes critical success factor (CSF)?",
@@ -1335,11 +1380,11 @@
    "Cost and risk"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.5.6",
+  "sourceRef": "Syllabus v5.1 s4.5.6",
   "verified": true
  },
  {
-  "id": "Q088",
+  "id": "Q091",
   "category": "VS",
   "module": "M3",
   "q": "Which three terms does the syllabus group under continuous practices in the value chain?",
@@ -1350,11 +1395,11 @@
    "Continuous monitoring, continuous closure and continuous quality"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.5",
+  "sourceRef": "Syllabus v5.1 s4.4.5",
   "verified": true
  },
  {
-  "id": "Q089",
+  "id": "Q092",
   "category": "VS",
   "module": "M3",
   "q": "Which set of terms includes Site Reliability Engineering (SRE)?",
@@ -1365,11 +1410,11 @@
    "Governance, strategy and mission"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.6",
+  "sourceRef": "Syllabus v5.1 s4.4.6",
   "verified": true
  },
  {
-  "id": "Q090",
+  "id": "Q093",
   "category": "VS",
   "module": "M3",
   "q": "Which pair of terms includes product specification?",
@@ -1380,11 +1425,11 @@
    "Value stream and operating model"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.2",
+  "sourceRef": "Syllabus v5.1 s4.4.2",
   "verified": true
  },
  {
-  "id": "Q091",
+  "id": "Q094",
   "category": "VS",
   "module": "M3",
   "q": "Which pair of terms includes release?",
@@ -1395,11 +1440,11 @@
    "Metric and CSF"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.4",
+  "sourceRef": "Syllabus v5.1 s4.4.4",
   "verified": true
  },
  {
-  "id": "Q092",
+  "id": "Q095",
   "category": "VS",
   "module": "M3",
   "q": "Which term describes how value chain activities and management practices support the organization's purpose?",
@@ -1410,12 +1455,12 @@
    "Release plan"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.4.9, 4.4.12",
+  "sourceRef": "Syllabus v5.1 s4.4.9, 4.4.12",
   "verified": true,
-  "termId": "T103"
+  "termId": "T083"
  },
  {
-  "id": "Q093",
+  "id": "Q096",
   "category": "VS",
   "module": "M3",
   "q": "What must a candidate do about the steps of the ITIL Continual Improvement Model?",
@@ -1426,11 +1471,11 @@
    "Memorize how long each step takes"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4.6.1, 4.6.2",
+  "sourceRef": "Syllabus v5.1 s4.6.1, 4.6.2",
   "verified": true
  },
  {
-  "id": "Q094",
+  "id": "Q097",
   "category": "VM",
   "module": "M6",
   "q": "Which is a type of value stream named in the syllabus?",
@@ -1441,12 +1486,12 @@
    "Primary"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5.1.1",
+  "sourceRef": "Syllabus v5.1 s5.1.1",
   "verified": true,
-  "termId": "T113"
+  "termId": "T093"
  },
  {
-  "id": "Q095",
+  "id": "Q098",
   "category": "VM",
   "module": "M6",
   "q": "Which is a type of value stream named in the syllabus?",
@@ -1457,12 +1502,12 @@
    "Fast"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5.1.1",
+  "sourceRef": "Syllabus v5.1 s5.1.1",
   "verified": true,
-  "termId": "T114"
+  "termId": "T094"
  },
  {
-  "id": "Q096",
+  "id": "Q099",
   "category": "VM",
   "module": "M6",
   "q": "Which pair of value stream types does the syllabus name?",
@@ -1473,11 +1518,11 @@
    "Operational and strategic"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5.1.1",
+  "sourceRef": "Syllabus v5.1 s5.1.1",
   "verified": true
  },
  {
-  "id": "Q097",
+  "id": "Q100",
   "category": "VM",
   "module": "M6",
   "q": "Which two concepts does category 5 pair together?",
@@ -1488,12 +1533,12 @@
    "Process mapping and process closure"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5.1.2",
+  "sourceRef": "Syllabus v5.1 s5.1.2",
   "verified": true,
-  "termId": "T115"
+  "termId": "T095"
  },
  {
-  "id": "Q098",
+  "id": "Q101",
   "category": "VM",
   "module": "M6",
   "q": "Which of these terms must candidates be able to define?",
@@ -1504,12 +1549,12 @@
    "Systems audit"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5.1.3",
+  "sourceRef": "Syllabus v5.1 s5.1.3",
   "verified": true,
-  "termId": "T117"
+  "termId": "T097"
  },
  {
-  "id": "Q099",
+  "id": "Q102",
   "category": "VM",
   "module": "M6",
   "q": "Which syllabus topic says workflows need to be optimized for complexity?",
@@ -1520,11 +1565,11 @@
    "Components of the value system"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5.2.1",
+  "sourceRef": "Syllabus v5.1 s5.2.1",
   "verified": true
  },
  {
-  "id": "Q100",
+  "id": "Q103",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1535,12 +1580,12 @@
    "ITIL Robotics Model"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6",
+  "sourceRef": "Syllabus v5.1 s6",
   "verified": true,
-  "termId": "T123"
+  "termId": "T103"
  },
  {
-  "id": "Q101",
+  "id": "Q104",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1551,12 +1596,12 @@
    "ITIL Cloud Model"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6",
+  "sourceRef": "Syllabus v5.1 s6",
   "verified": true,
-  "termId": "T122"
+  "termId": "T102"
  },
  {
-  "id": "Q102",
+  "id": "Q105",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1567,12 +1612,12 @@
    "AI vendor management"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6",
+  "sourceRef": "Syllabus v5.1 s6",
   "verified": true,
-  "termId": "T124"
+  "termId": "T104"
  },
  {
-  "id": "Q103",
+  "id": "Q106",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1583,12 +1628,12 @@
    "AI marketing"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6",
+  "sourceRef": "Syllabus v5.1 s6",
   "verified": true,
-  "termId": "T120"
+  "termId": "T100"
  },
  {
-  "id": "Q104",
+  "id": "Q107",
   "category": "AI",
   "module": "M6",
   "q": "Which topic is in the ITIL and AI category of the syllabus?",
@@ -1599,12 +1644,12 @@
    "AI marketing"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6",
+  "sourceRef": "Syllabus v5.1 s6",
   "verified": true,
-  "termId": "T121"
+  "termId": "T101"
  },
  {
-  "id": "Q105",
+  "id": "Q108",
   "category": "AI",
   "module": "M6",
   "q": "Which set of terms includes GenAI and Agentic AI?",
@@ -1615,11 +1660,11 @@
    "AI, AI hardware, AI ethics and AI procurement"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6.1.1",
+  "sourceRef": "Syllabus v5.1 s6.1.1",
   "verified": true
  },
  {
-  "id": "Q106",
+  "id": "Q109",
   "category": "AI",
   "module": "M6",
   "q": "Which subtopic of ITIL and AI covers defining AI governance?",
@@ -1630,11 +1675,11 @@
    "AI hardware"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6.2.1",
+  "sourceRef": "Syllabus v5.1 s6.2.1",
   "verified": true
  },
  {
-  "id": "Q107",
+  "id": "Q110",
   "category": "AI",
   "module": "M6",
   "q": "Under which syllabus category does the ITIL AI Capability Model fall?",
@@ -1645,11 +1690,11 @@
    "Key ITIL terms and definitions"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s6.2.2",
+  "sourceRef": "Syllabus v5.1 s6.2.2",
   "verified": true
  },
  {
-  "id": "Q108",
+  "id": "Q111",
   "category": "FW",
   "module": "M6",
   "q": "Which framework does the syllabus cover alongside ITIL?",
@@ -1660,12 +1705,12 @@
    "ISO 9000"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s7.1",
+  "sourceRef": "Syllabus v5.1 s7.1",
   "verified": true,
-  "termId": "T126"
+  "termId": "T106"
  },
  {
-  "id": "Q109",
+  "id": "Q112",
   "category": "FW",
   "module": "M6",
   "q": "Which framework does the syllabus cover alongside ITIL?",
@@ -1676,12 +1721,12 @@
    "Scrum Master Guide"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s7.2",
+  "sourceRef": "Syllabus v5.1 s7.2",
   "verified": true,
-  "termId": "T127"
+  "termId": "T107"
  },
  {
-  "id": "Q110",
+  "id": "Q113",
   "category": "FW",
   "module": "M6",
   "q": "Candidates must understand why which of these is important in ITIL?",
@@ -1692,11 +1737,11 @@
    "Financial audit"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s7.2.1",
+  "sourceRef": "Syllabus v5.1 s7.2.1",
   "verified": true
  },
  {
-  "id": "Q111",
+  "id": "Q114",
   "category": "FW",
   "module": "M6",
   "q": "Which two frameworks are covered under 'ITIL and other frameworks'?",
@@ -1707,11 +1752,11 @@
    "ISO 9000 and PMBOK"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s7",
+  "sourceRef": "Syllabus v5.1 s7",
   "verified": true
  },
  {
-  "id": "Q112",
+  "id": "Q115",
   "category": "KT",
   "module": "M1",
   "q": "Which is a type of service relationship named in the syllabus?",
@@ -1722,12 +1767,12 @@
    "Informal"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.2",
+  "sourceRef": "Syllabus v5.1 s1.4.2",
   "verified": true,
-  "termId": "T047"
+  "termId": "T027"
  },
  {
-  "id": "Q113",
+  "id": "Q116",
   "category": "KT",
   "module": "M1",
   "q": "Which is a type of service relationship named in the syllabus?",
@@ -1738,12 +1783,12 @@
    "Adversarial"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.2",
+  "sourceRef": "Syllabus v5.1 s1.4.2",
   "verified": true,
-  "termId": "T048"
+  "termId": "T028"
  },
  {
-  "id": "Q114",
+  "id": "Q117",
   "category": "KT",
   "module": "M1",
   "q": "Which is a type of service relationship named in the syllabus?",
@@ -1754,12 +1799,12 @@
    "Legacy"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.2",
+  "sourceRef": "Syllabus v5.1 s1.4.2",
   "verified": true,
-  "termId": "T049"
+  "termId": "T029"
  },
  {
-  "id": "Q115",
+  "id": "Q118",
   "category": "KT",
   "module": "M1",
   "q": "Which role does the syllabus define as a key concept of service relationships?",
@@ -1770,12 +1815,12 @@
    "Tester"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.4",
+  "sourceRef": "Syllabus v5.1 s1.4.4",
   "verified": true,
-  "termId": "T051"
+  "termId": "T031"
  },
  {
-  "id": "Q116",
+  "id": "Q119",
   "category": "KT",
   "module": "M1",
   "q": "Which role does the syllabus define as a key concept of service relationships?",
@@ -1786,12 +1831,12 @@
    "Approver"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.4",
+  "sourceRef": "Syllabus v5.1 s1.4.4",
   "verified": true,
-  "termId": "T052"
+  "termId": "T032"
  },
  {
-  "id": "Q117",
+  "id": "Q120",
   "category": "KT",
   "module": "M1",
   "q": "Which role does the syllabus define as a key concept of service relationships?",
@@ -1802,12 +1847,12 @@
    "Approver"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.4",
+  "sourceRef": "Syllabus v5.1 s1.4.4",
   "verified": true,
-  "termId": "T053"
+  "termId": "T033"
  },
  {
-  "id": "Q118",
+  "id": "Q121",
   "category": "KT",
   "module": "M1",
   "q": "Which three roles does the syllabus define for service relationships?",
@@ -1818,11 +1863,11 @@
    "Manager, auditor and architect"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.4",
+  "sourceRef": "Syllabus v5.1 s1.4.4",
   "verified": true
  },
  {
-  "id": "Q119",
+  "id": "Q122",
   "category": "KT",
   "module": "M1",
   "q": "Which four terms are the key concepts of service relationships?",
@@ -1833,11 +1878,11 @@
    "Organization, team, group, department"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.1",
+  "sourceRef": "Syllabus v5.1 s1.4.1",
   "verified": true
  },
  {
-  "id": "Q120",
+  "id": "Q123",
   "category": "KT",
   "module": "M1",
   "q": "Which set of terms includes utility and warranty?",
@@ -1848,11 +1893,11 @@
    "Strategy, mission, vision and purpose"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.1.7",
+  "sourceRef": "Syllabus v5.1 s1.1.7",
   "verified": true
  },
  {
-  "id": "Q121",
+  "id": "Q124",
   "category": "KT",
   "module": "M1",
   "q": "Which pair of terms must a candidate be able to tell apart?",
@@ -1863,12 +1908,12 @@
    "Problem and incident"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.4.4",
+  "sourceRef": "Syllabus v5.1 s1.3.4",
   "verified": true,
-  "termId": "T040"
+  "termId": "T021"
  },
  {
-  "id": "Q122",
+  "id": "Q125",
   "category": "KT",
   "module": "M1",
   "q": "Which pair of terms includes risk?",
@@ -1879,11 +1924,11 @@
    "Product and service"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.4.2",
+  "sourceRef": "Syllabus v5.1 s1.3.2",
   "verified": true
  },
  {
-  "id": "Q123",
+  "id": "Q126",
   "category": "KT",
   "module": "M1",
   "q": "Which pair of terms includes outcome?",
@@ -1894,11 +1939,11 @@
    "Value and cost"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.4.3",
+  "sourceRef": "Syllabus v5.1 s1.3.3",
   "verified": true
  },
  {
-  "id": "Q124",
+  "id": "Q127",
   "category": "KT",
   "module": "M1",
   "q": "Which of these is a key service relationship concept that candidates must define?",
@@ -1909,236 +1954,12 @@
    "Underpinning contract"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.6",
+  "sourceRef": "Syllabus v5.1 s1.4.6",
   "verified": true,
-  "termId": "T056"
- },
- {
-  "id": "Q125",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Experience group of terms?",
-  "options": [
-   "Experience level agreement",
-   "Service catalog",
-   "Release plan",
-   "Capacity plan"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.1",
-  "verified": true,
-  "termId": "T018"
- },
- {
-  "id": "Q126",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Experience group of terms?",
-  "options": [
-   "Human-centred design",
-   "Waterfall design",
-   "Lean design",
-   "Service blueprint"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.1",
-  "verified": true,
-  "termId": "T019"
- },
- {
-  "id": "Q127",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Experience group of terms?",
-  "options": [
-   "Trust",
-   "Loyalty",
-   "Compliance",
-   "Resilience"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.1",
-  "verified": true,
-  "termId": "T016"
+  "termId": "T036"
  },
  {
   "id": "Q128",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Strategy group of terms?",
-  "options": [
-   "Mission",
-   "Budget",
-   "Playbook",
-   "Charter"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.2",
-  "verified": true,
-  "termId": "T023"
- },
- {
-  "id": "Q129",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Strategy group of terms?",
-  "options": [
-   "Vision",
-   "Roadmap",
-   "Backlog",
-   "Playbook"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.2",
-  "verified": true,
-  "termId": "T024"
- },
- {
-  "id": "Q130",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Strategy group of terms?",
-  "options": [
-   "Purpose",
-   "Playbook",
-   "Charter",
-   "Budget"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.2",
-  "verified": true,
-  "termId": "T025"
- },
- {
-  "id": "Q131",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Strategy group of terms?",
-  "options": [
-   "VUCA",
-   "Backlog",
-   "Playbook",
-   "Budget"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.2",
-  "verified": true,
-  "termId": "T026"
- },
- {
-  "id": "Q132",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Strategy group of terms?",
-  "options": [
-   "Leadership",
-   "Backlog",
-   "Roadmap",
-   "Playbook"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.2",
-  "verified": true,
-  "termId": "T027"
- },
- {
-  "id": "Q133",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Transformation group of terms?",
-  "options": [
-   "Change",
-   "Rollback",
-   "Sunset",
-   "Migration"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.3",
-  "verified": true,
-  "termId": "T028"
- },
- {
-  "id": "Q134",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Transformation group of terms?",
-  "options": [
-   "Transformation",
-   "Rollback",
-   "Migration",
-   "Sunset"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.3",
-  "verified": true,
-  "termId": "T029"
- },
- {
-  "id": "Q135",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which term belongs to the ITIL Transformation group of terms?",
-  "options": [
-   "Business as usual (BAU)",
-   "Rollback",
-   "Freeze",
-   "Migration"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.2.3",
-  "verified": true,
-  "termId": "T030"
- },
- {
-  "id": "Q136",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which is listed together with service offering and service interactions under service offerings?",
-  "options": [
-   "Service actions",
-   "Service reviews",
-   "Service retirement",
-   "Service cost recovery"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.3",
-  "verified": true,
-  "termId": "T033"
- },
- {
-  "id": "Q137",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which is listed together with service offering and service interactions under service offerings?",
-  "options": [
-   "Transfer of goods",
-   "Service cost recovery",
-   "Service retirement",
-   "Service reviews"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.3",
-  "verified": true,
-  "termId": "T034"
- },
- {
-  "id": "Q138",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which is listed together with service offering and service interactions under service offerings?",
-  "options": [
-   "Access to resources",
-   "Service retirement",
-   "Service reviews",
-   "Service costing"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.3",
-  "verified": true,
-  "termId": "T035"
- },
- {
-  "id": "Q139",
   "category": "KT",
   "module": "M1",
   "q": "Which topic includes the term 'service journey'?",
@@ -2146,15 +1967,15 @@
    "Service relationships",
    "Value co-creation",
    "Service offerings",
-   "Experience, Strategy and Transformation"
+   "Product and service management"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.3",
+  "sourceRef": "Syllabus v5.1 s1.4.3",
   "verified": true,
-  "termId": "T050"
+  "termId": "T030"
  },
  {
-  "id": "Q140",
+  "id": "Q129",
   "category": "KT",
   "module": "M1",
   "q": "Which topic includes the terms value, cost, risk, output and outcome?",
@@ -2165,58 +1986,11 @@
    "Product and service management"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.4",
+  "sourceRef": "Syllabus v5.1 s1.3",
   "verified": true
  },
  {
-  "id": "Q141",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which topic includes the term feedback?",
-  "options": [
-   "Value co-creation",
-   "Service offerings",
-   "Service relationships",
-   "Experience, Strategy and Transformation"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.4.8",
-  "verified": true,
-  "termId": "T042"
- },
- {
-  "id": "Q142",
-  "category": "KT",
-  "module": "M1",
-  "q": "The syllabus asks candidates to know the benefits of ITIL for which group?",
-  "options": [
-   "Enterprises, managed service providers, digital product vendors and professionals",
-   "Only enterprises",
-   "Only service desk staff",
-   "Only project managers"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.1.8",
-  "verified": true,
-  "termId": "T013"
- },
- {
-  "id": "Q143",
-  "category": "KT",
-  "module": "M1",
-  "q": "Which three differences between roles of organizations does the syllabus ask candidates to understand?",
-  "options": [
-   "Service provider vs consumer, provider vs digital product vendor, consumer vs digital product vendor",
-   "Sponsor vs customer, customer vs user, user vs sponsor",
-   "Core vs enabling, basic vs collaborative, cost vs risk",
-   "Incident vs problem, error vs event, release vs test"
-  ],
-  "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s1.5.7-1.5.9",
-  "verified": true
- },
- {
-  "id": "Q144",
+  "id": "Q130",
   "category": "KT",
   "module": "M1",
   "q": "Which category in the exam carries 30%?",
@@ -2227,266 +2001,266 @@
    "ITIL and AI"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s5",
+  "sourceRef": "Syllabus v5.1 s5",
   "verified": true
  },
  {
-  "id": "Q145",
+  "id": "Q131",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Governance' fall?",
   "options": [
    "The ITIL Value System",
-   "Key ITIL terms and definitions",
    "The ITIL Product and Service Lifecycle",
-   "Value stream identification, mapping, and management"
+   "ITIL and AI",
+   "ITIL and other frameworks"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q146",
+  "id": "Q132",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Human-centred design' fall?",
   "options": [
    "Key ITIL terms and definitions",
-   "The ITIL Value System",
-   "Value stream identification, mapping, and management",
-   "The ITIL Four Dimensions of Product and Service Management"
+   "ITIL and other frameworks",
+   "The ITIL Four Dimensions of Product and Service Management",
+   "The ITIL Product and Service Lifecycle"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q147",
+  "id": "Q133",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'PESTLE' fall?",
   "options": [
    "The ITIL Four Dimensions of Product and Service Management",
-   "ITIL and other frameworks",
+   "The ITIL Product and Service Lifecycle",
    "ITIL and AI",
-   "The ITIL Value System"
+   "Value stream identification, mapping, and management"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q148",
+  "id": "Q134",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Acquire' fall?",
   "options": [
    "The ITIL Product and Service Lifecycle",
-   "Key ITIL terms and definitions",
    "ITIL and AI",
-   "The ITIL Value System"
+   "The ITIL Four Dimensions of Product and Service Management",
+   "ITIL and other frameworks"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q149",
+  "id": "Q135",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Core value stream' fall?",
   "options": [
    "Value stream identification, mapping, and management",
-   "Key ITIL terms and definitions",
-   "The ITIL Product and Service Lifecycle",
-   "ITIL and AI"
+   "ITIL and other frameworks",
+   "The ITIL Four Dimensions of Product and Service Management",
+   "Key ITIL terms and definitions"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q150",
+  "id": "Q136",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Agentic AI' fall?",
   "options": [
    "ITIL and AI",
-   "Value stream identification, mapping, and management",
-   "The ITIL Product and Service Lifecycle",
-   "ITIL and other frameworks"
+   "The ITIL Value System",
+   "The ITIL Four Dimensions of Product and Service Management",
+   "Value stream identification, mapping, and management"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q151",
+  "id": "Q137",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'PRINCE2' fall?",
   "options": [
    "ITIL and other frameworks",
+   "Key ITIL terms and definitions",
    "The ITIL Four Dimensions of Product and Service Management",
-   "The ITIL Value System",
-   "Value stream identification, mapping, and management"
+   "ITIL and AI"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q152",
+  "id": "Q138",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Service journey' fall?",
   "options": [
    "Key ITIL terms and definitions",
-   "ITIL and AI",
-   "ITIL and other frameworks",
-   "The ITIL Value System"
+   "The ITIL Value System",
+   "The ITIL Product and Service Lifecycle",
+   "Value stream identification, mapping, and management"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q153",
+  "id": "Q139",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Continual Improvement Model' fall?",
   "options": [
    "The ITIL Value System",
-   "Value stream identification, mapping, and management",
    "The ITIL Four Dimensions of Product and Service Management",
-   "ITIL and AI"
+   "ITIL and AI",
+   "Key ITIL terms and definitions"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q154",
+  "id": "Q140",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Complexity thinking' fall?",
   "options": [
    "Value stream identification, mapping, and management",
-   "ITIL and AI",
    "The ITIL Value System",
-   "ITIL and other frameworks"
+   "ITIL and other frameworks",
+   "The ITIL Product and Service Lifecycle"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q155",
+  "id": "Q141",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Observability' fall?",
   "options": [
    "The ITIL Value System",
-   "The ITIL Four Dimensions of Product and Service Management",
-   "ITIL and other frameworks",
+   "Value stream identification, mapping, and management",
+   "ITIL and AI",
    "Key ITIL terms and definitions"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q156",
+  "id": "Q142",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Known error' fall?",
   "options": [
    "The ITIL Value System",
-   "The ITIL Product and Service Lifecycle",
-   "Key ITIL terms and definitions",
-   "Value stream identification, mapping, and management"
+   "ITIL and AI",
+   "The ITIL Four Dimensions of Product and Service Management",
+   "ITIL and other frameworks"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q157",
+  "id": "Q143",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Cooperative service relationship' fall?",
   "options": [
    "Key ITIL terms and definitions",
-   "The ITIL Four Dimensions of Product and Service Management",
+   "ITIL and other frameworks",
    "The ITIL Value System",
-   "The ITIL Product and Service Lifecycle"
+   "The ITIL Four Dimensions of Product and Service Management"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q158",
+  "id": "Q144",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'Partners and suppliers' fall?",
   "options": [
    "The ITIL Four Dimensions of Product and Service Management",
    "The ITIL Value System",
-   "ITIL and AI",
-   "Value stream identification, mapping, and management"
+   "Value stream identification, mapping, and management",
+   "ITIL and other frameworks"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q159",
+  "id": "Q145",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'DevOps' fall?",
   "options": [
    "ITIL and other frameworks",
    "The ITIL Value System",
-   "ITIL and AI",
-   "The ITIL Four Dimensions of Product and Service Management"
+   "Key ITIL terms and definitions",
+   "The ITIL Product and Service Lifecycle"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q160",
+  "id": "Q146",
   "category": "EX",
   "module": "M0",
   "q": "Under which syllabus category does 'AI governance' fall?",
   "options": [
    "ITIL and AI",
-   "The ITIL Value System",
-   "The ITIL Product and Service Lifecycle",
-   "ITIL and other frameworks"
+   "Key ITIL terms and definitions",
+   "Value stream identification, mapping, and management",
+   "The ITIL Product and Service Lifecycle"
   ],
   "correctIndex": 0,
-  "sourceRef": "Syllabus copy v5.0 s4 (category structure)",
+  "sourceRef": "Syllabus v5.1 s4 (category structure)",
   "verified": true
  },
  {
-  "id": "Q161",
+  "id": "Q147",
   "category": "FD",
   "module": "M5",
   "q": "Which TWO are ITIL Four Dimensions of Product and Service Management?\n1. Information and technology\n2. Governance and risk\n3. Partners and suppliers\n4. Budget and cost",
   "options": [
    "1 and 2",
    "1 and 3",
-   "2 and 4",
-   "3 and 4"
+   "2 and 3",
+   "2 and 4"
   ],
   "correctIndex": 1,
-  "sourceRef": "Syllabus copy v5.0 s2.1.1",
+  "sourceRef": "Syllabus v5.1 s2.1.1",
   "verified": true
  },
  {
-  "id": "Q162",
+  "id": "Q148",
   "category": "VS",
   "module": "M2",
   "q": "Which TWO are ITIL Guiding Principles?\n1. Fix it fast\n2. Focus on value\n3. Document everything\n4. Optimize and automate",
@@ -2497,41 +2271,41 @@
    "3 and 4"
   ],
   "correctIndex": 2,
-  "sourceRef": "Syllabus copy v5.0 s4.2.1",
+  "sourceRef": "Syllabus v5.1 s4.2.1",
   "verified": true
  },
  {
-  "id": "Q163",
+  "id": "Q149",
   "category": "LC",
   "module": "M5",
   "q": "Which TWO are ITIL Product and Service Lifecycle activities?\n1. Retire\n2. Acquire\n3. Operate\n4. Escalate",
   "options": [
-   "1 and 3",
+   "1 and 2",
    "1 and 4",
    "2 and 3",
-   "2 and 4"
+   "3 and 4"
   ],
   "correctIndex": 2,
-  "sourceRef": "Syllabus copy v5.0 s3.1.1",
+  "sourceRef": "Syllabus v5.1 s3.1.1",
   "verified": true
  },
  {
-  "id": "Q164",
+  "id": "Q150",
   "category": "VS",
   "module": "M3",
   "q": "Which TWO are components of the ITIL Value System?\n1. Service desk\n2. Governance\n3. Continual improvement\n4. Risk register",
   "options": [
-   "1 and 2",
-   "1 and 3",
+   "1 and 4",
    "2 and 3",
-   "2 and 4"
+   "2 and 4",
+   "3 and 4"
   ],
-  "correctIndex": 2,
-  "sourceRef": "Syllabus copy v5.0 s4.1.1",
+  "correctIndex": 1,
+  "sourceRef": "Syllabus v5.1 s4.1.1",
   "verified": true
  },
  {
-  "id": "Q165",
+  "id": "Q151",
   "category": "KT",
   "module": "M1",
   "q": "Which TWO are service relationship roles defined in the syllabus?\n1. Sponsor\n2. Auditor\n3. Architect\n4. User",
@@ -2539,29 +2313,29 @@
    "1 and 3",
    "1 and 4",
    "2 and 3",
-   "2 and 4"
+   "3 and 4"
   ],
   "correctIndex": 1,
-  "sourceRef": "Syllabus copy v5.0 s1.5.4",
+  "sourceRef": "Syllabus v5.1 s1.4.4",
   "verified": true
  },
  {
-  "id": "Q166",
+  "id": "Q152",
   "category": "VM",
   "module": "M6",
   "q": "Which TWO are value stream types named in the syllabus?\n1. Core\n2. Backup\n3. Enabling\n4. Legacy",
   "options": [
-   "1 and 2",
    "1 and 3",
    "1 and 4",
-   "2 and 4"
+   "2 and 3",
+   "3 and 4"
   ],
-  "correctIndex": 1,
-  "sourceRef": "Syllabus copy v5.0 s5.1.1",
+  "correctIndex": 0,
+  "sourceRef": "Syllabus v5.1 s5.1.1",
   "verified": true
  },
  {
-  "id": "Q167",
+  "id": "Q153",
   "category": "AI",
   "module": "M6",
   "q": "Which TWO are topics in the ITIL and AI category?\n1. AI hardware\n2. Agentic AI\n3. AI marketing\n4. AI governance",
@@ -2572,37 +2346,37 @@
    "3 and 4"
   ],
   "correctIndex": 2,
-  "sourceRef": "Syllabus copy v5.0 s6",
+  "sourceRef": "Syllabus v5.1 s6",
   "verified": true
  },
  {
-  "id": "Q168",
+  "id": "Q154",
   "category": "EX",
   "module": "M0",
   "q": "Which TWO statements about the exam are correct?\n1. There is negative marking\n2. The exam is closed book\n3. The pass mark is 26 marks\n4. The exam lasts 90 minutes",
   "options": [
    "1 and 2",
-   "1 and 4",
+   "1 and 3",
    "2 and 3",
-   "2 and 4"
+   "3 and 4"
   ],
   "correctIndex": 2,
-  "sourceRef": "Syllabus copy v5.0 s2",
+  "sourceRef": "Syllabus v5.1 s2",
   "verified": true
  },
  {
-  "id": "Q169",
+  "id": "Q155",
   "category": "EX",
   "module": "M0",
   "q": "Which TWO are question types used in the exam?\n1. Essay\n2. Missing word(s)\n3. List\n4. Practical lab",
   "options": [
    "1 and 2",
-   "1 and 3",
    "2 and 3",
-   "2 and 4"
+   "2 and 4",
+   "3 and 4"
   ],
-  "correctIndex": 2,
-  "sourceRef": "Syllabus copy v5.0 s2, s3",
+  "correctIndex": 1,
+  "sourceRef": "Syllabus v5.1 s2, s3",
   "verified": true
  }
 ]
