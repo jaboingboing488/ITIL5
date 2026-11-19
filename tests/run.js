@@ -66,7 +66,7 @@ const srv = http.createServer((q, r) => {
   await pg.click("[data-a=startrev]");
   await pg.click("[data-a=revshow]"); await pg.click("[data-a=revyes]");
   await pg.click("[data-a=revshow]"); await pg.click("[data-a=revno]");
-  ok(await pg.locator("text=Reviewed").count() === 1, "review finished");
+  ok(await pg.locator("text=Cards you missed come back tomorrow").count() === 1, "review finished");
   await pg.click("[data-a=revdone]");
   st = await state();
   ok(st.terms[1].box === 1 && st.log.errors.length > 0 && st.log.reviews.length === 2, "miss resets box to 1 and writes an error");
@@ -77,6 +77,21 @@ const srv = http.createServer((q, r) => {
   await pg.check(".wdim >> nth=0"); await pg.fill("#wim", "Do X");
   await pg.click("[data-a=wsave]");
   ok((await state()).log.workApps.length === 1, "work application saved");
+  // first-run behaviour for a brand new learner (clean browser profile)
+  {
+    const fctx = await b.newContext({ viewport: { width: 375, height: 740 } });
+    const fp = await fctx.newPage();
+    await fp.goto(url);
+    await fp.click('nav button[data-v="cards"]');
+    ok(await fp.locator("[data-a=startrev]").isEnabled(), "a brand new install already has cards due for review");
+    await fp.click("[data-a=openterm] >> nth=0");
+    await fp.click("[data-a=trecall]");
+    const fst = await fp.evaluate(() => JSON.parse(localStorage.getItem("focus.v2")));
+    ok(fst.terms.some(t => t.id === "T001" && t.rung >= 2 && t.nextReview), "one tap marks a card as recalled and schedules it");
+    await fp.click('nav button[data-v="today"]');
+    ok(await fp.locator("h2", { hasText: "Do this next" }).count() === 1 && await fp.locator(".hero button").count() === 1, "Today always shows one clear next step");
+    await fctx.close();
+  }
   // lessons
   const bundle = JSON.stringify({ lessons: [{ id: "T1", modules: ["M1"], title: "Test lesson", md: "# Test lesson\n\n| A | B |\n|---|---|\n| x | y |\n\nSome **bold** text.\n\n## Self-check\n1. First?\n2. Second?\n\n## Answers\n1. One\n2. Two\n" }] });
   await tab("learn");
