@@ -192,9 +192,10 @@ function startQuiz(mode,mid){
  else if(mode==="baseline"){var quota={EX:2,KT:6,FD:2,LC:2,VS:5,VM:1,AI:1,FW:1},qs=[];
   Object.keys(quota).forEach(function(c){qs=qs.concat(shuffle(S.quiz.filter(function(q){return q.verified&&q.category===c&&q.module!=="M0"||q.verified&&q.category===c&&c==="EX"})).slice(0,quota[c]))});
   items=mkItems(shuffle(qs));title="Baseline"}
+ else if(mode==="weak"){items=mkItems(shuffle(weakPool()).slice(0,20));title="Weak spots"}
  else if(mode==="sim"){items=mkItems(shuffle(S.quiz.filter(function(q){return q.verified&&q.category!=="EX"})).slice(0,40));title="Simulation"}
  else{items=mkItems(shuffle(S.quiz.filter(function(q){return q.verified&&q.category!=="EX"})).slice(0,20));title="Mixed"}
- if(!items.length){msg="No questions for this set yet.";return}
+ if(!items.length){msg=mode==="weak"?"No weak spots yet. Miss a question or a review and it shows up here.":"No questions for this set yet.";return}
  quiz={mode:mode,mid:mid,title:title,items:items,i:0,done:false,t0:Date.now(),deadline:mode==="sim"?Date.now()+3600000:0};msg=""}
 function qAnswer(k){var it=quiz.items[quiz.i];if(it.pick!=null&&quiz.mode!=="sim")return;it.pick=k;
  if(quiz.mode!=="sim")recordMiss(it)}
@@ -211,6 +212,7 @@ function vQuiz(){
   if(msg)h+='<div class="card">'+esc(msg)+'</div>';
   h+='<div class="card"><h2>Baseline</h2><div class="mut">20 cold questions, no studying first.'+(S.log.baseline?' Last: '+S.log.baseline.score+'/'+S.log.baseline.total+' on '+esc(S.log.baseline.date):'')+'</div><button class="w" data-a="qstart" data-v="baseline" style="margin-top:8px">Baseline</button></div>';
   h+='<div class="card"><h2>Module quiz</h2><select id="qm">'+S.modules.filter(function(m){return /^M[1-6]$/.test(m.id)}).map(function(m){return '<option value="'+m.id+'"'+(m.id===currentModule().id?' selected':'')+'>'+m.id+' '+esc(m.title)+' ('+qpool([m.id]).length+')</option>'}).join("")+'</select><button class="w" data-a="qstart" data-v="module" style="margin-top:8px">Start module quiz</button><div class="mut" style="margin-top:6px">From M3 on, 30% of items come from earlier modules.</div></div>';
+  var wk=weakPool().length;h+='<div class="card"><h2>Weak spots</h2><div class="mut">Questions on what you missed ('+wk+').</div><button class="w" data-a="qweak" style="margin-top:8px"'+(wk?'':' disabled')+'>Practice weak spots</button></div>';
   h+='<div class="card"><h2>Mixed practice</h2><button class="w g" data-a="qstart" data-v="mixed">20 mixed questions</button></div>';
   h+='<div class="card"><h2>Simulation</h2><div class="mut">40 random questions, 60 minutes, pass line 26/40. Readiness bar 32/40 is my bar, not official.</div><button class="w" data-a="qstart" data-v="sim" style="margin-top:8px">Start simulation</button></div>';
   h+=gateCard();
@@ -288,13 +290,13 @@ function importCard(){
 function vLearn(){
  if(lsel){var l=LESS.filter(function(x){return x.id===lsel})[0];if(!l){lsel=null}else return vLesson(l)}
  var h='<h1>Learn</h1>';
- if(!LESS.length)return h+'<div class="card"><div>No lessons loaded yet.</div></div>'+importCard();
+ if(!LESS.length)return h+'<div class="card"><div>No lessons loaded yet.</div></div>'+syncCard()+importCard();
  var done=LESS.filter(lessonDone).length;
  h+='<div class="card"><div class="row"><b>Lessons complete</b><b>'+done+' / '+LESS.length+'</b></div>'+bar(done/LESS.length*100)+'<div class="mut">Next: '+(done<LESS.length?esc(LESS.filter(function(x){return !lessonDone(x)})[0].title):'all lessons done, run a simulation')+'</div></div>';
  h+='<div class="card">';
  LESS.forEach(function(x){var p=lp(x.id),c=lastCheck(x.id);
   h+='<button class="trow" data-a="openlesson" data-v="'+esc(x.id)+'"><span>'+(lessonDone(x)?'&#10003; ':'&#9675; ')+esc(x.title)+'</span><span class="mut">'+(c?Math.round(c.right/c.total*100)+'%':(p.read?'read':''))+'</span></button>'});
- return h+'</div><div class="mut" style="margin-top:6px">A lesson counts when you have read it and scored 75%+ on its self-check.</div>'}
+ return h+'</div><div class="mut" style="margin:6px 0">A lesson counts when you have read it and scored 75%+ on its self-check.</div>'+syncCard()}
 function vLesson(l){
  var sp=splitLesson(l.md),p=lp(l.id),c=lastCheck(l.id),mods=lessonMods(l);
  var h='<button class="g" data-a="lback">Back</button><h1 style="margin-top:10px">'+esc(l.title)+'</h1><div class="card lesson">'+mdHtml(sp.body)+'</div>';
@@ -312,6 +314,25 @@ function vLesson(l){
   h+='</div>'}
  h+='<div class="card"><h2>Next</h2>'+mods.filter(function(m){return /^M[1-6]$/.test(m)}).map(function(m){return '<div class="row"><button class="g" data-a="lterms" data-v="'+m+'" style="flex:1">'+m+' term cards</button><button class="g" data-a="lquiz" data-v="'+m+'" style="flex:1">'+m+' quiz</button></div>'}).join("")+'</div>';
  return h}
+
+/* ---------- sync lessons from a private repo (read-only token, kept on this device) ---------- */
+var SKEY="focus.sync",syncMsg="";
+function syncCfg(){try{return JSON.parse(localStorage.getItem(SKEY)||"{}")}catch(e){return{}}}
+function syncSet(o){try{localStorage.setItem(SKEY,JSON.stringify(o))}catch(e){}}
+function syncLessons(){var c=syncCfg();if(!c.token||!c.repo||typeof fetch!=="function")return;
+ syncMsg="Syncing...";
+ fetch("https://api.github.com/repos/"+c.repo+"/contents/lessons.json",{headers:{Authorization:"Bearer "+c.token,Accept:"application/vnd.github.raw+json"}})
+ .then(function(r){if(!r.ok)throw new Error(r.status);return r.text()})
+ .then(function(t){var n=importLessons(t);c.last=Date.now();syncSet(c);syncMsg="Synced "+n+" lessons.";render()})
+ .catch(function(e){syncMsg="Sync failed ("+(e&&e.message||"error")+"). Check the repo name and token.";render()})}
+function syncCard(){var c=syncCfg();
+ var st=c.token&&c.repo?'<div class="row"><span class="mut">'+(c.last?'Last sync '+new Date(c.last).toLocaleString():'Not synced yet')+'</span><button class="g" data-a="syncnow" style="min-width:100px">Sync now</button></div>':'';
+ return '<div class="card"><details'+(c.token&&c.repo?'':' open')+'><summary><b>Sync lessons</b></summary><div class="mut">New lessons arrive automatically each time you open the app. The token is read-only and stays on this device.</div>'+st+
+ '<input type="text" id="srepo" placeholder="owner/repository" value="'+esc(c.repo||"")+'"><input type="password" id="stok" placeholder="Read-only token" value="'+esc(c.token||"")+'"><button class="w" data-a="syncsave" style="margin-top:6px">Save and sync</button></details><div class="mut">'+esc(syncMsg)+'</div></div>'}
+/* ---------- weak spots ---------- */
+function weakPool(){var seen={},ids={};
+ S.log.errors.slice(-60).forEach(function(e){seen[e.q+"|"+e.a]=1;var m=String(e.q).match(/^Review: (.*)$/);if(m){var t=S.terms.filter(function(x){return x.name===m[1]})[0];if(t)ids[t.id]=1}});
+ return S.quiz.filter(function(q){return q.verified&&q.category!=="EX"&&(seen[q.q.split("\n")[0]+"|"+q.options[q.correctIndex]]||(q.termId&&ids[q.termId]))})}
 
 /* cards, review, feynman */
 function vCards(){
@@ -403,6 +424,9 @@ function act(a,v){
  if(a==="gonext"){var cm=currentModule(),nx=crit(cm).filter(function(x){return !x.met})[0];
   if(nx&&nx.key==="lessons"){var nl=nextLesson(cm.id);tab="learn";lsel=nl?nl.id:null;lchk=null;render();window.scrollTo(0,0);return}
   if(cm.id==="M0"&&nx&&nx.key==="base"){tab="quiz";quiz=null}else if(nx&&nx.key==="quiz"){tab="quiz";quiz=null}else if(nx&&nx.key==="terms"){tab="cards";S.cardMod=cm.id;sel=modTerms(cm.id).filter(function(t){return t.rung<3})[0].id}else if(nx&&nx.key==="work"||nx&&nx.key==="ev")tab="work";else tab="quiz";render();return}
+ if(a==="syncsave"){syncSet({repo:val("srepo"),token:val("stok"),last:0});syncLessons();render();return}
+ if(a==="syncnow"){syncLessons();render();return}
+ if(a==="qweak"){startQuiz("weak");save();render();return}
  if(a==="openlesson"){tab="learn";lsel=v;lchk=null;render();window.scrollTo(0,0);return}
  if(a==="lback"){lsel=null;lchk=null;render();window.scrollTo(0,0);return}
  if(a==="lread"){var q1=lp(v);q1.read=q1.read?0:Date.now();save();render();return}
@@ -461,5 +485,6 @@ function act(a,v){
  if(a==="import"){try{var raw=JSON.parse(val("imp"));if(!raw||raw.version!==2||!raw.log)throw 0;S=migrate(raw);save();msg="Imported.";render()}catch(x){var c2=$("#cpm");msg="Import failed: not a valid backup.";render()}return}
 }
 render();
+syncLessons();
 if("serviceWorker" in navigator&&location.protocol.indexOf("http")===0)navigator.serviceWorker.register("sw.js",{scope:"./"}).catch(function(){});
 </script></body></html>

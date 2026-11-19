@@ -93,6 +93,19 @@ const srv = http.createServer((q, r) => {
   await pg.reload(); await tab("learn");
   ok(await pg.locator("text=1 / 1").count() >= 1, "lesson counts as complete after reload");
   ok(await pg.evaluate(() => JSON.parse(localStorage.getItem("focus.lessons")).length === 1), "lesson text stored on device");
+  // sync from private repo (stubbed)
+  await pg.route("https://api.github.com/**", r => r.fulfill({ status: 200, contentType: "text/plain", body: "{\"lessons\": [{\"id\": \"T2\", \"modules\": [\"M2\"], \"title\": \"Synced lesson\", \"md\": \"# Synced lesson\\n\\nBody.\\n\\n## Self-check\\n1. Q?\\n\\n## Answers\\n1. A\\n\"}]}" }));
+  await pg.evaluate(() => localStorage.setItem("focus.sync", JSON.stringify({ repo: "o/r", token: "t", last: 0 })));
+  await pg.reload(); await tab("learn");
+  await pg.waitForSelector("text=Synced lesson");
+  ok(await pg.locator("text=Synced lesson").count() >= 1, "lessons sync on open");
+  // weak spots
+  await tab("quiz");
+  ok(await pg.locator("[data-a=qweak]").count() === 1 && !(await pg.locator("[data-a=qweak]").isDisabled()), "weak spots available after misses");
+  await pg.click("[data-a=qweak]");
+  ok(await pg.locator("[data-a=qpick]").count() >= 2, "weak spots quiz starts");
+  for (let k = 0; k < 25 && await pg.locator("[data-a=qpick]").count() > 0; k++) { await pg.click("[data-a=qpick] >> nth=0"); await pg.click("[data-a=qnext]"); }
+  await pg.click("[data-a=qdone]");
   // simulation
   await tab("quiz");
   await pg.click("[data-a=qstart][data-v=sim]");
