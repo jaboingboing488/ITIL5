@@ -55,7 +55,7 @@ function $$(s){return Array.prototype.slice.call(document.querySelectorAll(s))}
 function val(id){var e=document.getElementById(id);return e?e.value.trim():""}
 
 /* ---------- state ---------- */
-var TERM_KEEP=["rung","box","nextReview","plainWords","workExample","confusableWith","examTrap","gaps","analogy","queued"];
+var TERM_KEEP=["rung","box","nextReview","plainWords","workExample","confusableWith","examTrap","gaps","analogy","queued","u"];
 function freshLog(){return{sessions:[],gate:[],errors:[],workApps:[],feynman:[],reviews:[],sims:[],baseline:null}}
 function fresh(){return{version:2,modules:SEED.modules.map(function(m){var c=JSON.parse(JSON.stringify(m));c.quizzes=[];c.manual={};return c}),terms:JSON.parse(JSON.stringify(SEED.terms)),quiz:SEED.quiz,log:freshLog(),lp:{},up:{}}}
 function mergeSeed(s){
@@ -83,7 +83,7 @@ function load(){
 var UKEY="focus.uq";
 function packQuiz(){if(!quiz||quiz.done)return null;return{mode:quiz.mode,mid:quiz.mid,title:quiz.title,i:quiz.i,t0:quiz.t0,deadline:quiz.deadline,items:quiz.items.map(function(x){return{id:x.q.id,opts:x.opts,ans:x.ans,pick:x.pick,flag:!!x.flag}})}}
 function unpackQuiz(a){if(!a)return null;try{var by={};S.quiz.forEach(function(q){by[q.id]=q});loadUQ().forEach(function(q){by[q.id]=q});var it=a.items.map(function(x){return by[x.id]?{q:by[x.id],opts:x.opts,ans:x.ans,pick:x.pick,flag:x.flag}:null});if(it.some(function(x){return!x}))return null;return{mode:a.mode,mid:a.mid,title:a.title,items:it,i:a.i,done:false,t0:a.t0,deadline:a.deadline}}catch(e){return null}}
-function save(){S.active=packQuiz();S.activeSess=sess;var s=JSON.stringify(S);mem[KEY]=s;try{localStorage.setItem(KEY,s)}catch(e){}}
+function save(){if(typeof stampTerms==="function")stampTerms();S.active=packQuiz();S.activeSess=sess;var s=JSON.stringify(S);mem[KEY]=s;try{localStorage.setItem(KEY,s)}catch(e){}if(typeof pschedule==="function"&&!inP)pschedule()}
 var S=load();
 function T(id){for(var i=0;i<S.terms.length;i++)if(S.terms[i].id===id)return S.terms[i]}
 function M(id){for(var i=0;i<S.modules.length;i++)if(S.modules[i].id===id)return S.modules[i]}
@@ -312,7 +312,7 @@ function vLearn(){
 function vLesson(l){
  var sp=splitLesson(l.md),p=lp(l.id),c=lastCheck(l.id),mods=lessonMods(l);
  var h='<button class="g" data-a="lback">Back</button><h1 style="margin-top:10px">'+esc(l.title)+'</h1><div class="card lesson">'+mdHtml(sp.body)+'</div>';
- h+='<div class="card"><button class="w'+(p.read?' g':'')+'" data-a="lread" data-v="'+esc(l.id)+'">'+(p.read?'Read. Tap to mark unread':'Mark as read')+'</button></div>';
+ h+='<div class="card">'+(p.read?'<div class="mut" style="text-align:center">Marked as read.</div>':'<button class="w" data-a="lread" data-v="'+esc(l.id)+'">Mark as read</button>')+'</div>';
  if(sp.qs.length){
   h+='<div class="card"><h2>Self-check</h2>';
   if(lchk&&lchk.id===l.id&&!lchk.done){var i=lchk.i;
@@ -339,8 +339,47 @@ function syncLessons(){var c=syncCfg();if(!c.token||!c.repo||typeof fetch!=="fun
  .catch(function(e){syncMsg="Sync failed ("+(e&&e.message||"error")+"). Check the repo name and token.";render()})}
 function syncCard(){var c=syncCfg();
  var st=c.token&&c.repo?'<div class="row"><span class="mut">'+(c.last?'Last sync '+new Date(c.last).toLocaleString():'Not synced yet')+'</span><button class="g" data-a="syncnow" style="min-width:100px">Sync now</button></div>':'';
- return '<div class="card"><details'+(c.token&&c.repo?'':' open')+'><summary><b>Sync lessons</b></summary><div class="mut">New lessons arrive automatically each time you open the app. The token is read-only and stays on this device.</div>'+st+
- '<input type="text" id="srepo" placeholder="owner/repository" value="'+esc(c.repo||"")+'"><input type="password" id="stok" placeholder="Read-only token" value="'+esc(c.token||"")+'"><button class="w" data-a="syncsave" style="margin-top:6px">Save and sync</button></details><div class="mut">'+esc(syncMsg)+'</div></div>'}
+ return '<div class="card"><div class="row"><b>Sync</b></div>'+st+'<details'+(c.token&&c.repo?'':' open')+'><summary>Settings</summary><div class="mut">Lessons and your progress sync through a private repository each time you open the app and a few seconds after you make changes. Progress from your phone and computer is merged, never overwritten. The token stays on this device and needs Read and write access to Contents.</div>'+
+ '<input type="text" id="srepo" placeholder="owner/repository" value="'+esc(c.repo||"")+'"><input type="password" id="stok" placeholder="Token (Contents: read and write)" value="'+esc(c.token||"")+'"><button class="w" data-a="syncsave" style="margin-top:6px">Save and sync</button></details><div class="mut">'+esc(syncMsg)+'</div><div class="mut">'+esc(pmsg)+'</div></div>'}
+/* ---------- progress sync: merge between devices, never overwrite ---------- */
+var PFILE="progress.json",pmsg="",pbusy=false,ptimer=null,inP=false,TSNAP={};
+function termSig(t){return JSON.stringify(TERM_KEEP.filter(function(k){return k!=="u"}).map(function(k){return t[k]}))}
+function stampTerms(){S.terms.forEach(function(t){var j=termSig(t);if(TSNAP[t.id]===undefined)TSNAP[t.id]=j;else if(TSNAP[t.id]!==j){t.u=Date.now();TSNAP[t.id]=j}})}
+function snapTerms(){S.terms.forEach(function(t){TSNAP[t.id]=termSig(t)})}
+function pschedule(){var c=syncCfg();if(!c.token||!c.repo||c.progress===false)return;clearTimeout(ptimer);ptimer=setTimeout(function(){syncProgress()},6000)}
+function pexport(){return{v:1,ts:Date.now(),modules:S.modules.map(function(m){return{id:m.id,quizzes:m.quizzes||[],manual:m.manual||{}}}),terms:S.terms.map(function(t){var o={id:t.id};TERM_KEEP.forEach(function(k){o[k]=t[k]});return o}),log:S.log,lp:S.lp||{},up:S.up||{}}}
+function pcanon(o){var c=JSON.parse(JSON.stringify(o));delete c.ts;return JSON.stringify(c)}
+function pkey(x){return x&&x.ts?x.ts:(x&&Date.parse(x.date))||0}
+function uni(a,b){var seen={},o=[];(a||[]).concat(b||[]).forEach(function(x){var k=JSON.stringify(x);if(!seen[k]){seen[k]=1;o.push(x)}});return o}
+function sortc(a){return a.map(function(x,i){return[x,i]}).sort(function(p,q){return pkey(p[0])-pkey(q[0])||p[1]-q[1]}).map(function(p){return p[0]})}
+function mergeRemote(r){if(!r||r.v!==1)return;
+ ["sessions","gate","errors","workApps","feynman","reviews","sims"].forEach(function(k){S.log[k]=sortc(uni(S.log[k],r.log&&r.log[k]))});
+ var rb=r.log&&r.log.baseline;if(rb&&(!S.log.baseline||(rb.ts||0)>(S.log.baseline.ts||0)))S.log.baseline=rb;
+ (r.modules||[]).forEach(function(rm){var m=M(rm.id);if(!m)return;m.quizzes=sortc(uni(m.quizzes,rm.quizzes));m.manual=m.manual||{};Object.keys(rm.manual||{}).forEach(function(k){if(rm.manual[k])m.manual[k]=true})});
+ (r.terms||[]).forEach(function(rt){var t=T(rt.id);if(!t)return;if((rt.u||0)>(t.u||0))TERM_KEEP.forEach(function(k){if(rt[k]!=null)t[k]=rt[k]})});
+ S.lp=S.lp||{};Object.keys(r.lp||{}).forEach(function(id){var a=lp(id),b=r.lp[id]||{};a.read=Math.max(a.read||0,b.read||0);a.checks=sortc(uni(a.checks,b.checks))});
+ S.up=S.up||{};Object.keys(r.up||{}).forEach(function(m){S.up[m]=sortc(uni(S.up[m],r.up[m]))})}
+function b64(s){return btoa(unescape(encodeURIComponent(s)))}
+function unb64(s){return decodeURIComponent(escape(atob(String(s).replace(/\s/g,""))))}
+function syncProgress(retry){var c=syncCfg();if(!c.token||!c.repo||c.progress===false||pbusy||typeof fetch!=="function")return;pbusy=true;
+ var url="https://api.github.com/repos/"+c.repo+"/contents/"+PFILE,h={Authorization:"Bearer "+c.token,Accept:"application/vnd.github+json"};
+ function done(m){pbusy=false;pmsg=m;render()}
+ fetch(url,{headers:h}).then(function(r){if(r.status===404)return null;if(!r.ok)throw new Error("read "+r.status);return r.json()})
+ .then(function(f){var remote=null,sha=null;if(f){sha=f.sha;try{remote=JSON.parse(unb64(f.content))}catch(e){}}
+  if(remote)mergeRemote(remote);
+  snapTerms();inP=true;save();inP=false;
+  var out=pexport();
+  if(remote&&pcanon(remote)===pcanon(out)){done("Progress up to date ("+new Date().toLocaleTimeString()+").");return}
+  var body={message:"Update progress",content:b64(JSON.stringify(out))};if(sha)body.sha=sha;
+  return fetch(url,{method:"PUT",headers:{Authorization:"Bearer "+c.token,Accept:"application/vnd.github+json","Content-Type":"application/json"},body:JSON.stringify(body)})
+   .then(function(r){if(r.ok){done("Progress synced ("+new Date().toLocaleTimeString()+").");return}
+    if((r.status===409||r.status===422)&&!retry){pbusy=false;syncProgress(true);return}
+    if(r.status===403||r.status===404){done("Progress not saved: the token needs Read and write access to Contents.");return}
+    throw new Error("write "+r.status)})})
+ .catch(function(e){done("Progress sync failed ("+(e&&e.message||"error")+"). It will retry.")})}
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden"&&!inP){var c=syncCfg();if(c.token&&c.repo&&c.progress!==false)syncProgress()}});
+stampTerms();
+
 /* ---------- weak spots ---------- */
 function weakPool(){var seen={},ids={};
  S.log.errors.slice(-60).forEach(function(e){seen[e.q+"|"+e.a]=1;var m=String(e.q).match(/^Review: (.*)$/);if(m){var t=S.terms.filter(function(x){return x.name===m[1]})[0];if(t)ids[t.id]=1}});
@@ -437,13 +476,13 @@ function act(a,v){
   if(nx&&nx.key==="uq"){tab="quiz";quiz=null;render();return}
   if(nx&&nx.key==="lessons"){var nl=nextLesson(cm.id);tab="learn";lsel=nl?nl.id:null;lchk=null;render();window.scrollTo(0,0);return}
   if(cm.id==="M0"&&nx&&nx.key==="base"){tab="quiz";quiz=null}else if(nx&&nx.key==="quiz"){tab="quiz";quiz=null}else if(nx&&nx.key==="terms"){tab="cards";S.cardMod=cm.id;sel=modTerms(cm.id).filter(function(t){return t.rung<3})[0].id}else if(nx&&nx.key==="work"||nx&&nx.key==="ev")tab="work";else tab="quiz";render();return}
- if(a==="syncsave"){syncSet({repo:val("srepo"),token:val("stok"),last:0});syncLessons();render();return}
- if(a==="syncnow"){syncLessons();render();return}
+ if(a==="syncsave"){syncSet({repo:val("srepo"),token:val("stok"),last:0});syncLessons();syncProgress();render();return}
+ if(a==="syncnow"){syncLessons();syncProgress();render();return}
  if(a==="uqstart"){startQuiz("uq",val("uqm")||"ALL");save();render();return}
  if(a==="qweak"){startQuiz("weak");save();render();return}
  if(a==="openlesson"){tab="learn";lsel=v;lchk=null;render();window.scrollTo(0,0);return}
  if(a==="lback"){lsel=null;lchk=null;render();window.scrollTo(0,0);return}
- if(a==="lread"){var q1=lp(v);q1.read=q1.read?0:Date.now();save();render();return}
+ if(a==="lread"){var q1=lp(v);if(!q1.read)q1.read=Date.now();save();render();return}
  if(a==="lstart"){lchk={id:v,i:0,show:false,right:0,done:false};render();return}
  if(a==="lshow"){lchk.show=true;render();return}
  if(a==="lyes"||a==="lno"){var ls=LESS.filter(function(x){return x.id===lchk.id})[0],sp2=splitLesson(ls.md);
@@ -500,5 +539,6 @@ function act(a,v){
 }
 render();
 syncLessons();
+syncProgress();
 if("serviceWorker" in navigator&&location.protocol.indexOf("http")===0)navigator.serviceWorker.register("sw.js",{scope:"./"}).catch(function(){});
 </script></body></html>
