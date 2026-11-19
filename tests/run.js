@@ -80,9 +80,12 @@ const srv = http.createServer((q, r) => {
   // lessons
   const bundle = JSON.stringify({ lessons: [{ id: "T1", modules: ["M1"], title: "Test lesson", md: "# Test lesson\n\n| A | B |\n|---|---|\n| x | y |\n\nSome **bold** text.\n\n## Self-check\n1. First?\n2. Second?\n\n## Answers\n1. One\n2. Two\n" }] });
   await tab("learn");
+  ok(await pg.locator("[data-a=openlesson]").count() >= 8, "lessons are built in on first load");
+  await tab("export");
   await pg.fill("#lpaste", bundle); await pg.click("[data-a=limport]");
-  ok(await pg.locator("text=Test lesson").count() >= 1, "lesson loaded from import");
-  await pg.click("[data-a=openlesson]");
+  await tab("learn");
+  ok(await pg.locator("text=Test lesson").count() >= 1, "extra lesson can be added from a file");
+  await pg.click("[data-a=openlesson][data-v=T1]");
   ok(await pg.locator(".lesson table").count() === 1 && await pg.locator(".lesson b").count() === 1, "lesson renders table and bold");
   await pg.click("[data-a=lread]");
   await pg.click("[data-a=lstart]");
@@ -91,8 +94,8 @@ const srv = http.createServer((q, r) => {
   st = await state();
   ok(st.lp && st.lp.T1 && st.lp.T1.read && st.lp.T1.checks.length === 1 && st.lp.T1.checks[0].right === 2, "lesson read and self-check saved");
   await pg.reload(); await tab("learn");
-  ok(await pg.locator("text=1 / 1").count() >= 1, "lesson counts as complete after reload");
-  ok(await pg.evaluate(() => JSON.parse(localStorage.getItem("focus.lessons")).length === 1), "lesson text stored on device");
+  ok((await state()).lp.T1.read > 0, "lesson progress survives a reload");
+  ok(await pg.evaluate(() => JSON.parse(localStorage.getItem("focus.lessons")).some(l => l.id === "T1")), "added lesson stored on device");
   // sync from private repo (stubbed)
   await pg.route("https://api.github.com/**", r => r.fulfill({ status: 200, contentType: "text/plain", body: "{\"lessons\": [{\"id\": \"T2\", \"modules\": [\"M2\"], \"title\": \"Synced lesson\", \"md\": \"# Synced lesson\\n\\nBody.\\n\\n## Self-check\\n1. Q?\\n\\n## Answers\\n1. A\\n\"}], \"questions\": [{\"id\": \"UT1\", \"module\": \"M1\", \"type\": \"mc\", \"q\": \"Output or outcome?\", \"options\": [\"Output\", \"Outcome\", \"Cost\", \"Risk\"], \"correctIndex\": 1, \"explain\": \"Because it is the result.\", \"source\": \"test\"}, {\"id\": \"UT2\", \"module\": \"M1\", \"type\": \"list\", \"q\": \"Pick two\\n1. a\\n2. b\\n3. c\\n4. d\", \"options\": [\"1 and 2\", \"1 and 3\", \"1 and 4\", \"2 and 3\"], \"correctIndex\": 0, \"explain\": \"Because.\", \"source\": \"test\"}]}" }));
   await pg.evaluate(() => localStorage.setItem("focus.sync", JSON.stringify({ repo: "o/r", token: "t", last: 0 })));
@@ -101,11 +104,11 @@ const srv = http.createServer((q, r) => {
   ok(await pg.locator("text=Synced lesson").count() >= 1, "lessons sync on open");
   // understanding practice
   await tab("quiz");
-  ok(await pg.locator("[data-a=uqstart]").count() === 1, "understanding practice offered after sync");
+  ok(await pg.locator("[data-a=uqstart]").count() === 1, "understanding practice is built in");
   await pg.selectOption("#uqm", "M1"); await pg.click("[data-a=uqstart]");
   await pg.click("[data-a=qpick] >> nth=0");
   ok(await pg.locator(".note").count() >= 1, "explanation shown after an answer");
-  for (let k = 0; k < 5 && await pg.locator("[data-a=qpick]").count() > 0; k++) { await pg.click("[data-a=qnext]"); if (await pg.locator("[data-a=qpick]").count() > 0) await pg.click("[data-a=qpick] >> nth=0"); }
+  for (let k = 0; k < 30 && await pg.locator("[data-a=qpick]").count() > 0; k++) { if (await pg.locator("[data-a=qnext]").count() > 0) await pg.click("[data-a=qnext]"); if (await pg.locator("[data-a=qpick]").count() > 0) await pg.click("[data-a=qpick] >> nth=0"); }
   await pg.click("[data-a=qdone]");
   st = await state();
   ok(st.up && st.up.M1 && st.up.M1.length === 1, "understanding result saved per module");

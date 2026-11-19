@@ -119,6 +119,23 @@ const srv = http.createServer((q, r) => {
   await syncNow(pc); await pc.pg.waitForTimeout(2500);
   const a = (await phone.state()).log.workApps.length, c = (await pc.state()).log.workApps.length;
   ok(a === 4 && c === 4, "concurrent edits on both devices merged to the same four events");
+  // zero-setup path: copy progress from one device, merge on the other, nothing lost
+  const solo1 = await b.newContext({ viewport: { width: 375, height: 740 } }), solo2 = await b.newContext({ viewport: { width: 375, height: 740 } });
+  const d1 = await solo1.newPage(), d2 = await solo2.newPage();
+  await d1.goto(url); await d2.goto(url);
+  const logWork = async (pg, what) => {
+    await pg.click('nav button[data-v="work"]');
+    await pg.fill("#wwhat", what); await pg.fill("#wlab", "Incident");
+    await pg.selectOption("#wst", "Operate"); await pg.selectOption("#wpr", "Focus on value"); await pg.fill("#wim", "x");
+    await pg.click("[data-a=wsave]");
+  };
+  await logWork(d1, "Only on device one"); await logWork(d2, "Only on device two");
+  await d1.click('nav button[data-v="export"]');
+  const code = await d1.inputValue("#bk");
+  await d2.click('nav button[data-v="export"]');
+  await d2.fill("#imp", code); await d2.click("[data-a=import]");
+  const w2 = (await d2.evaluate(() => JSON.parse(localStorage.getItem("focus.v2")))).log.workApps.map(w => w.what).sort();
+  ok(w2.length === 2 && w2[0] === "Only on device one" && w2[1] === "Only on device two", "copy and merge combines both devices without losing either");
   ok(phone.errs.length === 0 && pc.errs.length === 0, "no page errors on either device");
   console.log("ALL PASSED (" + n + " checks)");
   await b.close(); srv.close();

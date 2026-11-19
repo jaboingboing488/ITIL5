@@ -22,5 +22,6 @@ terms.forEach(t => {
 });
 const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
 if (PRIV.test(html)) bad.push("index.html mentions a private name");
+if (/peoplecert|jaron/i.test(html)) bad.push("index.html mentions a personal or marked name");
 if (bad.length) { console.error("VALIDATION FAILED", bad); process.exit(1); }
 console.log("validation ok: " + quiz.length + " questions, " + terms.length + " terms");
