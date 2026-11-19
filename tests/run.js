@@ -77,6 +77,22 @@ const srv = http.createServer((q, r) => {
   await pg.check(".wdim >> nth=0"); await pg.fill("#wim", "Do X");
   await pg.click("[data-a=wsave]");
   ok((await state()).log.workApps.length === 1, "work application saved");
+  // lessons
+  const bundle = JSON.stringify({ lessons: [{ id: "T1", modules: ["M1"], title: "Test lesson", md: "# Test lesson\n\n| A | B |\n|---|---|\n| x | y |\n\nSome **bold** text.\n\n## Self-check\n1. First?\n2. Second?\n\n## Answers\n1. One\n2. Two\n" }] });
+  await tab("learn");
+  await pg.fill("#lpaste", bundle); await pg.click("[data-a=limport]");
+  ok(await pg.locator("text=Test lesson").count() >= 1, "lesson loaded from import");
+  await pg.click("[data-a=openlesson]");
+  ok(await pg.locator(".lesson table").count() === 1 && await pg.locator(".lesson b").count() === 1, "lesson renders table and bold");
+  await pg.click("[data-a=lread]");
+  await pg.click("[data-a=lstart]");
+  await pg.click("[data-a=lshow]"); await pg.click("[data-a=lyes]");
+  await pg.click("[data-a=lshow]"); await pg.click("[data-a=lyes]");
+  st = await state();
+  ok(st.lp && st.lp.T1 && st.lp.T1.read && st.lp.T1.checks.length === 1 && st.lp.T1.checks[0].right === 2, "lesson read and self-check saved");
+  await pg.reload(); await tab("learn");
+  ok(await pg.locator("text=1 / 1").count() >= 1, "lesson counts as complete after reload");
+  ok(await pg.evaluate(() => JSON.parse(localStorage.getItem("focus.lessons")).length === 1), "lesson text stored on device");
   // simulation
   await tab("quiz");
   await pg.click("[data-a=qstart][data-v=sim]");

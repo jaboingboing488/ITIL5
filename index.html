@@ -29,6 +29,7 @@ input[type=number],input[type=text],select,textarea{background:var(--line);color
 .pre{white-space:pre-line}
 .trow{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;text-align:left;background:none;color:var(--ink);border-bottom:1px solid var(--line);border-radius:0;font-weight:500;padding:10px 0}
 details summary{min-height:44px;display:flex;align-items:center;cursor:pointer}
+.lesson p,.lesson li{line-height:1.5;margin:6px 0}.lesson h2.lh,.lesson h3.lh{margin:16px 0 6px}.lesson ul,.lesson ol{padding-left:20px}.tw{overflow-x:auto;margin:8px 0}.lesson table{border-collapse:collapse;font-size:14px;min-width:100%}.lesson th,.lesson td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.lesson th{background:var(--line)}.lesson code{background:var(--line);padding:1px 4px;border-radius:4px}
 </style></head><body><main id="app"></main>
 <nav id="nav"></nav>
 <script>
@@ -56,7 +57,7 @@ function val(id){var e=document.getElementById(id);return e?e.value.trim():""}
 /* ---------- state ---------- */
 var TERM_KEEP=["rung","box","nextReview","plainWords","workExample","confusableWith","examTrap","gaps","analogy","queued"];
 function freshLog(){return{sessions:[],gate:[],errors:[],workApps:[],feynman:[],reviews:[],sims:[],baseline:null}}
-function fresh(){return{version:2,modules:SEED.modules.map(function(m){var c=JSON.parse(JSON.stringify(m));c.quizzes=[];c.manual={};return c}),terms:JSON.parse(JSON.stringify(SEED.terms)),quiz:SEED.quiz,log:freshLog()}}
+function fresh(){return{version:2,modules:SEED.modules.map(function(m){var c=JSON.parse(JSON.stringify(m));c.quizzes=[];c.manual={};return c}),terms:JSON.parse(JSON.stringify(SEED.terms)),quiz:SEED.quiz,log:freshLog(),lp:{}}}
 function mergeSeed(s){
  var f=fresh();s.log=Object.assign(freshLog(),s.log||{});
  var mm={};(s.modules||[]).forEach(function(m){mm[m.id]=m});
@@ -64,7 +65,7 @@ function mergeSeed(s){
  var tm={};(s.terms||[]).forEach(function(t){tm[t.id]=t});
  f.terms.forEach(function(t){var o=tm[t.id];if(o)TERM_KEEP.forEach(function(k){if(o[k]!=null&&!(k==="confusableWith"&&o[k]===""))t[k]=o[k]});
   if(t.core&&!t.queued&&!t.nextReview){t.nextReview=today();t.queued=true}});
- return{version:2,modules:f.modules,terms:f.terms,quiz:f.quiz,log:s.log,active:s.active||null,activeSess:s.activeSess||null}}
+ return{version:2,modules:f.modules,terms:f.terms,quiz:f.quiz,log:s.log,lp:s.lp||{},active:s.active||null,activeSess:s.activeSess||null}}
 function migrate(raw){
  if(raw&&raw.version===2)return mergeSeed(raw);
  var s={version:2,log:freshLog()};
@@ -101,6 +102,8 @@ function crit(m){var id=m.id,L=[];
   c("src","First source uploaded to your notes tool (tick when done)",m.manual.src,"Upload the first source");
   c("ev","3 real work events described in plain words ("+Math.min(3,S.log.workApps.length)+"/3)",S.log.workApps.length>=3,"Log 3 events in the Work tab")}
  else if(/^M[1-6]$/.test(id)){
+  var ml=modLessons(id);
+  if(ml.length){var dn=ml.filter(lessonDone).length,nl=ml.filter(function(x){return !lessonDone(x)})[0];c("lessons","Lessons read, self-check 75%+ ("+dn+"/"+ml.length+")",dn===ml.length,nl?"Read: "+nl.title:"")}
   var best=(m.quizzes||[]).reduce(function(a,x){return Math.max(a,x.pct)},0);
   c("quiz","Quiz 85%+ twice, 48h apart (best "+best+"%)",quizPass(m),"Take the "+m.id+" quiz");
   var ts=modTerms(id),low=ts.filter(function(t){return t.rung<(t.core?3:2)});
@@ -121,7 +124,7 @@ function addError(q,a,why,conf){S.log.errors.push({date:today(),q:q,a:a,why:why|
 
 /* ---------- views ---------- */
 var tab="today",sub=null,quiz=unpackQuiz(S.active),rev=null,fey=null,sess=S.activeSess||null,timer=null,msg="",sel=null;
-var TABS=[["today","Today"],["session","Session"],["quiz","Quiz"],["cards","Cards"],["work","Work"],["export","Export"]];
+var TABS=[["today","Today"],["learn","Learn"],["session","Session"],["quiz","Quiz"],["cards","Cards"],["work","Work"],["export","Export"]];
 function nav(){$("#nav").innerHTML=TABS.map(function(t){return '<button class="'+(t[0]===tab?"on":"")+'" data-a="tab" data-v="'+t[0]+'">'+t[1]+'</button>'}).join("")}
 
 function vToday(){
@@ -158,8 +161,12 @@ function ladder(m){
 
 var PH=[[0,300,"Cold quiz","Answer from memory before reading anything."],[300,1200,"Learn","One topic only. Read or listen."],[1200,1620,"Translate","Write one example from your own work for it."],[1620,1800,"Log the win","One line: what you can now explain."]];
 function sessTarget(){return 1800+(sess.extra||0)}
+function lessonCard(){var cm=currentModule(),nl=nextLesson(cm.id)||LESS.filter(function(x){return !lessonDone(x)})[0];
+ if(!LESS.length)return '<div class="card"><div class="mut">Load lessons in the Learn tab to read them here.</div></div>';
+ return '<div class="card"><h2>Learn block</h2>'+(nl?'<div>'+esc(nl.title)+'</div><button class="w" data-a="openlesson" data-v="'+esc(nl.id)+'" style="margin-top:8px">Open lesson</button>':'<div>All lessons done.</div><button class="w g" data-a="tab" data-v="learn" style="margin-top:8px">Open Learn</button>')+'</div>'}
 function vSession(){
  var h='<h1>Session</h1>';
+ h+=lessonCard();
  if(!sess){h+='<div class="card"><div class="mut">30 minutes. Phone face down except this screen.</div><button class="w" data-a="sstart" style="margin-top:10px">Start</button></div>';
   h+='<div class="card"><h2>Phases</h2>'+PH.map(function(p){return '<div class="row"><span>'+p[2]+'</span><span class="mut">'+fmt(p[0])+'-'+fmt(p[1])+'</span></div>'}).join("")+'</div>';
   var rc=S.log.sessions.slice(-5).reverse();if(rc.length)h+='<div class="card"><h2>Recent</h2>'+rc.map(function(s){return '<div class="mut">'+esc(s.date)+' · '+Math.round(s.sec/60)+' min</div>'}).join("")+'</div>';return h}
@@ -232,6 +239,79 @@ function gateCard(){var g=gateInfo(),hist=S.log.gate.slice().reverse().slice(0,8
  h+='<div class="row" style="margin-top:8px"><input type="number" id="gs" min="0" max="40" placeholder="Score /40" style="flex:1"><input type="text" id="gsrc2" placeholder="Source name" style="flex:2"></div><button class="w g" data-a="gateman">Add a test from another source</button>';
  if(hist.length)h+=hist.map(function(x){return '<div class="row" style="padding:6px 0;border-top:1px solid var(--line)"><span>'+esc(x.date)+' · '+esc(x.src||"-")+'</span><b style="color:'+(x.score>=32?"var(--ok)":(x.score>=26?"var(--ink)":"var(--bad)"))+'">'+x.score+'/40</b></div>'}).join("");
  return h+'</div>'}
+
+/* ---------- lessons (stored on this device only) ---------- */
+var LKEY="focus.lessons",lmem={},lsel=null,lchk=null;
+function loadLessons(){var r=null;try{r=localStorage.getItem(LKEY)}catch(e){}if(!r)r=lmem[LKEY];try{var a=JSON.parse(r||"[]");return Array.isArray(a)?a:[]}catch(e){return[]}}
+function saveLessons(a){var s=JSON.stringify(a);lmem[LKEY]=s;try{localStorage.setItem(LKEY,s)}catch(e){}}
+var LESS=loadLessons();
+function lessonMods(l){return Array.isArray(l.modules)?l.modules:(l.module?[l.module]:[])}
+function modLessons(id){return LESS.filter(function(l){return lessonMods(l).indexOf(id)>=0})}
+function lp(id){S.lp=S.lp||{};return S.lp[id]||(S.lp[id]={read:0,checks:[]})}
+function lastCheck(id){var c=lp(id).checks;return c.length?c[c.length-1]:null}
+function lessonDone(l){var p=lp(l.id),c=lastCheck(l.id);return !!p.read&&!!c&&c.right/c.total>=0.75}
+function splitLesson(md){
+ var t=md.replace(/^---[\s\S]*?---\s*/,"");
+ var iq=t.search(/^## Self-check/m),ia=t.search(/^## Answers/m);
+ var body=iq>=0?t.slice(0,iq):t,qs=[],as=[];
+ function nums(s){return s.split("\n").map(function(x){var m=x.match(/^\s*(\d+)\.\s+(.*)$/);return m?m[2].trim():null}).filter(function(x){return x})}
+ if(iq>=0){var qtxt=t.slice(iq,ia>=0?ia:t.length);qs=nums(qtxt)}
+ if(ia>=0)as=nums(t.slice(ia));
+ return{body:body,qs:qs,as:as}}
+function inl(s){return esc(s).replace(/\[\[([^\]|]+)(\|[^\]]+)?\]\]/g,"$1").replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/`([^`]+)`/g,"<code>$1</code>")}
+function mdHtml(md){
+ var L=md.split("\n"),o=[],i=0;
+ function cells(r){return r.replace(/^\s*\|/,"").replace(/\|\s*$/,"").split("|").map(function(x){return x.trim()})}
+ while(i<L.length){var ln=L[i];
+  if(/^Hub:/.test(ln)||/^\s*$/.test(ln)){i++;continue}
+  var m;
+  if(m=ln.match(/^(#{1,3})\s+(.*)$/)){var lv=m[1].length+1;o.push("<h"+lv+" class=\"lh\">"+inl(m[2])+"</h"+lv+">");i++;continue}
+  if(/^\s*\|/.test(ln)&&i+1<L.length&&/^\s*\|[\s\-:|]+\|\s*$/.test(L[i+1])){
+   var hd=cells(ln);i+=2;var rows=[];while(i<L.length&&/^\s*\|/.test(L[i])){rows.push(cells(L[i]));i++}
+   o.push("<div class=\"tw\"><table><tr>"+hd.map(function(c){return "<th>"+inl(c)+"</th>"}).join("")+"</tr>"+rows.map(function(r){return "<tr>"+r.map(function(c){return "<td>"+inl(c)+"</td>"}).join("")+"</tr>"}).join("")+"</table></div>");continue}
+  if(/^\s*[-*]\s+/.test(ln)){var it=[];while(i<L.length&&/^\s*[-*]\s+/.test(L[i])){it.push(L[i].replace(/^\s*[-*]\s+/,""));i++}o.push("<ul>"+it.map(function(x){return "<li>"+inl(x)+"</li>"}).join("")+"</ul>");continue}
+  if(/^\s*\d+\.\s+/.test(ln)){var it2=[];while(i<L.length&&/^\s*\d+\.\s+/.test(L[i])){it2.push(L[i].replace(/^\s*\d+\.\s+/,""));i++}o.push("<ol>"+it2.map(function(x){return "<li>"+inl(x)+"</li>"}).join("")+"</ol>");continue}
+  var p=[];while(i<L.length&&!/^\s*$/.test(L[i])&&!/^(#{1,3}\s|\s*\||\s*[-*]\s|\s*\d+\.\s)/.test(L[i])){p.push(L[i]);i++}
+  if(!p.length){i++;continue}
+  o.push("<p>"+inl(p.join(" "))+"</p>")}
+ return o.join("")}
+function importLessons(txt){
+ var d=JSON.parse(txt),arr=Array.isArray(d)?d:d.lessons;
+ if(!Array.isArray(arr)||!arr.length)throw 0;
+ var by={};LESS.forEach(function(l){by[l.id]=l});
+ arr.forEach(function(l){if(l&&l.id&&l.title&&l.md)by[l.id]={id:String(l.id),modules:l.modules||(l.module?[l.module]:[]),title:l.title,md:l.md}});
+ LESS=Object.keys(by).map(function(k){return by[k]}).sort(function(a,b){return a.id<b.id?-1:1});
+ saveLessons(LESS);return arr.length}
+function nextLesson(modId){var l=modLessons(modId);return l.filter(function(x){return !lessonDone(x)})[0]||null}
+function importCard(){
+ return '<div class="card"><h2>Load lessons</h2><div class="mut">Lessons are stored on this device only. Choose the lessons file or paste its contents.</div><input type="file" id="lfile" data-a="lfile" accept=".json,application/json"><textarea id="lpaste" rows="3" placeholder="Or paste the lessons file here"></textarea><button class="w" data-a="limport" style="margin-top:8px">Load</button><div class="mut">'+esc(msg)+'</div></div>'}
+function vLearn(){
+ if(lsel){var l=LESS.filter(function(x){return x.id===lsel})[0];if(!l){lsel=null}else return vLesson(l)}
+ var h='<h1>Learn</h1>';
+ if(!LESS.length)return h+'<div class="card"><div>No lessons loaded yet.</div></div>'+importCard();
+ var done=LESS.filter(lessonDone).length;
+ h+='<div class="card"><div class="row"><b>Lessons complete</b><b>'+done+' / '+LESS.length+'</b></div>'+bar(done/LESS.length*100)+'<div class="mut">Next: '+(done<LESS.length?esc(LESS.filter(function(x){return !lessonDone(x)})[0].title):'all lessons done, run a simulation')+'</div></div>';
+ h+='<div class="card">';
+ LESS.forEach(function(x){var p=lp(x.id),c=lastCheck(x.id);
+  h+='<button class="trow" data-a="openlesson" data-v="'+esc(x.id)+'"><span>'+(lessonDone(x)?'&#10003; ':'&#9675; ')+esc(x.title)+'</span><span class="mut">'+(c?Math.round(c.right/c.total*100)+'%':(p.read?'read':''))+'</span></button>'});
+ return h+'</div><div class="mut" style="margin-top:6px">A lesson counts when you have read it and scored 75%+ on its self-check.</div>'}
+function vLesson(l){
+ var sp=splitLesson(l.md),p=lp(l.id),c=lastCheck(l.id),mods=lessonMods(l);
+ var h='<button class="g" data-a="lback">Back</button><h1 style="margin-top:10px">'+esc(l.title)+'</h1><div class="card lesson">'+mdHtml(sp.body)+'</div>';
+ h+='<div class="card"><button class="w'+(p.read?' g':'')+'" data-a="lread" data-v="'+esc(l.id)+'">'+(p.read?'Read. Tap to mark unread':'Mark as read')+'</button></div>';
+ if(sp.qs.length){
+  h+='<div class="card"><h2>Self-check</h2>';
+  if(lchk&&lchk.id===l.id&&!lchk.done){var i=lchk.i;
+   h+='<div class="row"><span class="mut">'+(i+1)+' / '+sp.qs.length+'</span></div>'+bar(i/sp.qs.length*100)+'<p class="pre"><b>'+inl(sp.qs[i])+'</b></p><div class="mut">Say it out loud first.</div>';
+   if(lchk.show)h+='<div class="note pre">'+inl(sp.as[i]||"")+'</div><div class="row"><button class="bad" data-a="lno" style="flex:1">Missed</button><button class="ok" data-a="lyes" style="flex:1">Got it</button></div>';
+   else h+='<button class="w" data-a="lshow" style="margin-top:8px">Reveal</button>'}
+  else{
+   if(lchk&&lchk.id===l.id&&lchk.done)h+='<div class="t">'+lchk.right+' / '+sp.qs.length+'</div>';
+   else if(c)h+='<div class="row"><span>Last score</span><b>'+c.right+' / '+c.total+'</b></div>';
+   h+='<button class="w" data-a="lstart" data-v="'+esc(l.id)+'" style="margin-top:8px">'+(c?'Retry the self-check':'Start the self-check')+'</button>'}
+  h+='</div>'}
+ h+='<div class="card"><h2>Next</h2>'+mods.filter(function(m){return /^M[1-6]$/.test(m)}).map(function(m){return '<div class="row"><button class="g" data-a="lterms" data-v="'+m+'" style="flex:1">'+m+' term cards</button><button class="g" data-a="lquiz" data-v="'+m+'" style="flex:1">'+m+' quiz</button></div>'}).join("")+'</div>';
+ return h}
 
 /* cards, review, feynman */
 function vCards(){
@@ -306,22 +386,36 @@ function exportMd(){
  L.push("","### Sessions");S.log.sessions.forEach(function(s){L.push("- "+s.date+" "+Math.round(s.sec/60)+" min"+(s.win?": "+s.win:""))});
  return L.join("\n")}
 function vExport(){
- var bk=JSON.stringify({version:2,modules:S.modules.map(function(m){return{id:m.id,quizzes:m.quizzes,manual:m.manual}}),terms:S.terms.map(function(t){var o={id:t.id};TERM_KEEP.forEach(function(k){o[k]=t[k]});return o}),log:S.log});
+ var bk=JSON.stringify({version:2,modules:S.modules.map(function(m){return{id:m.id,quizzes:m.quizzes,manual:m.manual}}),terms:S.terms.map(function(t){var o={id:t.id};TERM_KEEP.forEach(function(k){o[k]=t[k]});return o}),log:S.log,lp:S.lp||{}});
  return '<h1>Export</h1><div class="card"><h2>Markdown</h2><div class="mut">Paste into your notes.</div><textarea id="ex" rows="10" readonly>'+esc(exportMd())+'</textarea><button class="w" data-a="copy" data-v="ex" style="margin-top:8px">Copy</button><div id="cpm" class="mut">'+esc(msg)+'</div></div>'+
  '<div class="card"><h2>JSON backup</h2><textarea id="bk" rows="5" readonly>'+esc(bk)+'</textarea><button class="w g" data-a="copy" data-v="bk" style="margin-top:8px">Copy backup</button></div>'+
- '<div class="card"><h2>Import</h2><textarea id="imp" rows="4" placeholder="Paste a JSON backup here"></textarea><button class="w" data-a="import" style="margin-top:8px">Import</button></div>'}
+ importCard()+'<div class="card"><h2>Import</h2><textarea id="imp" rows="4" placeholder="Paste a JSON backup here"></textarea><button class="w" data-a="import" style="margin-top:8px">Import</button></div>'}
 
-function render(){nav();var v={today:vToday,session:vSession,quiz:vQuiz,cards:vCards,work:vWork,"export":vExport}[tab];$("#app").innerHTML=v()}
+function render(){nav();var v={today:vToday,learn:vLearn,session:vSession,quiz:vQuiz,cards:vCards,work:vWork,"export":vExport}[tab];$("#app").innerHTML=v()}
 
 /* ---------- actions ---------- */
 function go(t){tab=t;render();window.scrollTo(0,0)}
-document.addEventListener("change",function(e){var el=e.target;if(el.dataset.a==="manual"){M(el.dataset.m).manual[el.dataset.v]=el.checked;save();render()}else if(el.dataset.a==="cmod"){S.cardMod=el.value;render()}});
-document.addEventListener("click",function(e){var el=e.target.closest("[data-a]");if(!el||el.tagName==="SELECT"||el.type==="checkbox")return;e.preventDefault();var a=el.dataset.a,v=el.dataset.v;
+document.addEventListener("change",function(e){var el=e.target;if(el.dataset.a==="manual"){M(el.dataset.m).manual[el.dataset.v]=el.checked;save();render()}else if(el.dataset.a==="cmod"){S.cardMod=el.value;render()}else if(el.dataset.a==="lfile"&&el.files&&el.files[0]){var fr=new FileReader();fr.onload=function(){try{msg="Loaded "+importLessons(String(fr.result))+" lessons."}catch(x){msg="Could not load: not a valid lessons file."}render()};fr.readAsText(el.files[0])}});
+document.addEventListener("click",function(e){var el=e.target.closest("[data-a]");if(!el||el.tagName==="SELECT"||el.type==="checkbox"||el.type==="file")return;e.preventDefault();var a=el.dataset.a,v=el.dataset.v;
  try{act(a,v)}catch(err){console.warn(err)}});
 function act(a,v){
  if(a==="tab"){if(v!=="cards"){sel=null}tab=v;msg="";render();return}
  if(a==="gonext"){var cm=currentModule(),nx=crit(cm).filter(function(x){return !x.met})[0];
+  if(nx&&nx.key==="lessons"){var nl=nextLesson(cm.id);tab="learn";lsel=nl?nl.id:null;lchk=null;render();window.scrollTo(0,0);return}
   if(cm.id==="M0"&&nx&&nx.key==="base"){tab="quiz";quiz=null}else if(nx&&nx.key==="quiz"){tab="quiz";quiz=null}else if(nx&&nx.key==="terms"){tab="cards";S.cardMod=cm.id;sel=modTerms(cm.id).filter(function(t){return t.rung<3})[0].id}else if(nx&&nx.key==="work"||nx&&nx.key==="ev")tab="work";else tab="quiz";render();return}
+ if(a==="openlesson"){tab="learn";lsel=v;lchk=null;render();window.scrollTo(0,0);return}
+ if(a==="lback"){lsel=null;lchk=null;render();window.scrollTo(0,0);return}
+ if(a==="lread"){var q1=lp(v);q1.read=q1.read?0:Date.now();save();render();return}
+ if(a==="lstart"){lchk={id:v,i:0,show:false,right:0,done:false};render();return}
+ if(a==="lshow"){lchk.show=true;render();return}
+ if(a==="lyes"||a==="lno"){var ls=LESS.filter(function(x){return x.id===lchk.id})[0],sp2=splitLesson(ls.md);
+  if(a==="lyes")lchk.right++;else addError("Lesson: "+ls.title+" - "+sp2.qs[lchk.i],sp2.as[lchk.i]||"","","");
+  lchk.i++;lchk.show=false;
+  if(lchk.i>=sp2.qs.length){lp(ls.id).checks.push({ts:Date.now(),right:lchk.right,total:sp2.qs.length});lchk.done=true}
+  save();render();return}
+ if(a==="lterms"){tab="cards";S.cardMod=v;sel=null;fey=null;rev=null;render();window.scrollTo(0,0);return}
+ if(a==="lquiz"){tab="quiz";quiz=null;render();window.scrollTo(0,0);return}
+ if(a==="limport"){try{var n=importLessons(val("lpaste"));msg="Loaded "+n+" lessons."}catch(x){msg="Could not load: not a valid lessons file."}render();return}
  if(a==="openterm"){tab="cards";sel=v;fey=null;rev=null;render();window.scrollTo(0,0);return}
  if(a==="back"){sel=null;render();return}
  if(a==="sstart"){sess={t0:Date.now(),extra:0};save();render();return}
