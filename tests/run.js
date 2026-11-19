@@ -94,11 +94,21 @@ const srv = http.createServer((q, r) => {
   ok(await pg.locator("text=1 / 1").count() >= 1, "lesson counts as complete after reload");
   ok(await pg.evaluate(() => JSON.parse(localStorage.getItem("focus.lessons")).length === 1), "lesson text stored on device");
   // sync from private repo (stubbed)
-  await pg.route("https://api.github.com/**", r => r.fulfill({ status: 200, contentType: "text/plain", body: "{\"lessons\": [{\"id\": \"T2\", \"modules\": [\"M2\"], \"title\": \"Synced lesson\", \"md\": \"# Synced lesson\\n\\nBody.\\n\\n## Self-check\\n1. Q?\\n\\n## Answers\\n1. A\\n\"}]}" }));
+  await pg.route("https://api.github.com/**", r => r.fulfill({ status: 200, contentType: "text/plain", body: "{\"lessons\": [{\"id\": \"T2\", \"modules\": [\"M2\"], \"title\": \"Synced lesson\", \"md\": \"# Synced lesson\\n\\nBody.\\n\\n## Self-check\\n1. Q?\\n\\n## Answers\\n1. A\\n\"}], \"questions\": [{\"id\": \"UT1\", \"module\": \"M1\", \"type\": \"mc\", \"q\": \"Output or outcome?\", \"options\": [\"Output\", \"Outcome\", \"Cost\", \"Risk\"], \"correctIndex\": 1, \"explain\": \"Because it is the result.\", \"source\": \"test\"}, {\"id\": \"UT2\", \"module\": \"M1\", \"type\": \"list\", \"q\": \"Pick two\\n1. a\\n2. b\\n3. c\\n4. d\", \"options\": [\"1 and 2\", \"1 and 3\", \"1 and 4\", \"2 and 3\"], \"correctIndex\": 0, \"explain\": \"Because.\", \"source\": \"test\"}]}" }));
   await pg.evaluate(() => localStorage.setItem("focus.sync", JSON.stringify({ repo: "o/r", token: "t", last: 0 })));
   await pg.reload(); await tab("learn");
   await pg.waitForSelector("text=Synced lesson");
   ok(await pg.locator("text=Synced lesson").count() >= 1, "lessons sync on open");
+  // understanding practice
+  await tab("quiz");
+  ok(await pg.locator("[data-a=uqstart]").count() === 1, "understanding practice offered after sync");
+  await pg.selectOption("#uqm", "M1"); await pg.click("[data-a=uqstart]");
+  await pg.click("[data-a=qpick] >> nth=0");
+  ok(await pg.locator(".note").count() >= 1, "explanation shown after an answer");
+  for (let k = 0; k < 5 && await pg.locator("[data-a=qpick]").count() > 0; k++) { await pg.click("[data-a=qnext]"); if (await pg.locator("[data-a=qpick]").count() > 0) await pg.click("[data-a=qpick] >> nth=0"); }
+  await pg.click("[data-a=qdone]");
+  st = await state();
+  ok(st.up && st.up.M1 && st.up.M1.length === 1, "understanding result saved per module");
   // weak spots
   await tab("quiz");
   ok(await pg.locator("[data-a=qweak]").count() === 1 && !(await pg.locator("[data-a=qweak]").isDisabled()), "weak spots available after misses");

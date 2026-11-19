@@ -57,7 +57,7 @@ function val(id){var e=document.getElementById(id);return e?e.value.trim():""}
 /* ---------- state ---------- */
 var TERM_KEEP=["rung","box","nextReview","plainWords","workExample","confusableWith","examTrap","gaps","analogy","queued"];
 function freshLog(){return{sessions:[],gate:[],errors:[],workApps:[],feynman:[],reviews:[],sims:[],baseline:null}}
-function fresh(){return{version:2,modules:SEED.modules.map(function(m){var c=JSON.parse(JSON.stringify(m));c.quizzes=[];c.manual={};return c}),terms:JSON.parse(JSON.stringify(SEED.terms)),quiz:SEED.quiz,log:freshLog(),lp:{}}}
+function fresh(){return{version:2,modules:SEED.modules.map(function(m){var c=JSON.parse(JSON.stringify(m));c.quizzes=[];c.manual={};return c}),terms:JSON.parse(JSON.stringify(SEED.terms)),quiz:SEED.quiz,log:freshLog(),lp:{},up:{}}}
 function mergeSeed(s){
  var f=fresh();s.log=Object.assign(freshLog(),s.log||{});
  var mm={};(s.modules||[]).forEach(function(m){mm[m.id]=m});
@@ -65,7 +65,7 @@ function mergeSeed(s){
  var tm={};(s.terms||[]).forEach(function(t){tm[t.id]=t});
  f.terms.forEach(function(t){var o=tm[t.id];if(o)TERM_KEEP.forEach(function(k){if(o[k]!=null&&!(k==="confusableWith"&&o[k]===""))t[k]=o[k]});
   if(t.core&&!t.queued&&!t.nextReview){t.nextReview=today();t.queued=true}});
- return{version:2,modules:f.modules,terms:f.terms,quiz:f.quiz,log:s.log,lp:s.lp||{},active:s.active||null,activeSess:s.activeSess||null}}
+ return{version:2,modules:f.modules,terms:f.terms,quiz:f.quiz,log:s.log,lp:s.lp||{},up:s.up||{},active:s.active||null,activeSess:s.activeSess||null}}
 function migrate(raw){
  if(raw&&raw.version===2)return mergeSeed(raw);
  var s={version:2,log:freshLog()};
@@ -80,8 +80,9 @@ function load(){
  if(mem[KEY])try{return mergeSeed(JSON.parse(mem[KEY]))}catch(e){}
  try{var o=localStorage.getItem(KEY1);if(o)return migrate(JSON.parse(o))}catch(e){}
  return fresh()}
+var UKEY="focus.uq";
 function packQuiz(){if(!quiz||quiz.done)return null;return{mode:quiz.mode,mid:quiz.mid,title:quiz.title,i:quiz.i,t0:quiz.t0,deadline:quiz.deadline,items:quiz.items.map(function(x){return{id:x.q.id,opts:x.opts,ans:x.ans,pick:x.pick,flag:!!x.flag}})}}
-function unpackQuiz(a){if(!a)return null;try{var by={};S.quiz.forEach(function(q){by[q.id]=q});var it=a.items.map(function(x){return by[x.id]?{q:by[x.id],opts:x.opts,ans:x.ans,pick:x.pick,flag:x.flag}:null});if(it.some(function(x){return!x}))return null;return{mode:a.mode,mid:a.mid,title:a.title,items:it,i:a.i,done:false,t0:a.t0,deadline:a.deadline}}catch(e){return null}}
+function unpackQuiz(a){if(!a)return null;try{var by={};S.quiz.forEach(function(q){by[q.id]=q});loadUQ().forEach(function(q){by[q.id]=q});var it=a.items.map(function(x){return by[x.id]?{q:by[x.id],opts:x.opts,ans:x.ans,pick:x.pick,flag:x.flag}:null});if(it.some(function(x){return!x}))return null;return{mode:a.mode,mid:a.mid,title:a.title,items:it,i:a.i,done:false,t0:a.t0,deadline:a.deadline}}catch(e){return null}}
 function save(){S.active=packQuiz();S.activeSess=sess;var s=JSON.stringify(S);mem[KEY]=s;try{localStorage.setItem(KEY,s)}catch(e){}}
 var S=load();
 function T(id){for(var i=0;i<S.terms.length;i++)if(S.terms[i].id===id)return S.terms[i]}
@@ -105,6 +106,7 @@ function crit(m){var id=m.id,L=[];
   var ml=modLessons(id);
   if(ml.length){var dn=ml.filter(lessonDone).length,nl=ml.filter(function(x){return !lessonDone(x)})[0];c("lessons","Lessons read, self-check 75%+ ("+dn+"/"+ml.length+")",dn===ml.length,nl?"Read: "+nl.title:"")}
   var best=(m.quizzes||[]).reduce(function(a,x){return Math.max(a,x.pct)},0);
+  if(uqPool(id).length){var ub=uqBest(id);c("uq","Understanding practice 80%+ (best "+ub+"%)",ub>=80,"Take the understanding practice for "+id)}
   c("quiz","Quiz 85%+ twice, 48h apart (best "+best+"%)",quizPass(m),"Take the "+m.id+" quiz");
   var ts=modTerms(id),low=ts.filter(function(t){return t.rung<(t.core?3:2)});
   c("terms","Confusable terms at rung 3+, all others at rung 2+ ("+(ts.length-low.length)+"/"+ts.length+")",low.length===0,low.length?"Feynman: "+low[0].name:"");
@@ -183,7 +185,7 @@ setInterval(function(){tick();quizTick();feyTick()},1000);
 
 /* quiz */
 function qpool(ids){return S.quiz.filter(function(q){return q.verified&&ids.indexOf(q.module)>=0})}
-function mkItems(qs){return qs.map(function(q){var o=shuffle(q.options.map(function(t,i){return{t:t,c:i===q.correctIndex}}));return{q:q,opts:o.map(function(x){return x.t}),ans:o.findIndex(function(x){return x.c}),pick:null}})}
+function mkItems(qs){return qs.map(function(q){var o0=q.options.map(function(t,i){return{t:t,c:i===q.correctIndex}});var o=q.type==="list"?o0:shuffle(o0);return{q:q,opts:o.map(function(x){return x.t}),ans:o.findIndex(function(x){return x.c}),pick:null}})}
 function startQuiz(mode,mid){
  var items=[],title="";
  if(mode==="module"){var m=M(mid),own=qpool([mid]),idx=S.modules.indexOf(m),earlier=idx>=3?qpool(S.modules.slice(1,idx).map(function(x){return x.id})):[];
@@ -192,10 +194,11 @@ function startQuiz(mode,mid){
  else if(mode==="baseline"){var quota={EX:2,KT:6,FD:2,LC:2,VS:5,VM:1,AI:1,FW:1},qs=[];
   Object.keys(quota).forEach(function(c){qs=qs.concat(shuffle(S.quiz.filter(function(q){return q.verified&&q.category===c&&q.module!=="M0"||q.verified&&q.category===c&&c==="EX"})).slice(0,quota[c]))});
   items=mkItems(shuffle(qs));title="Baseline"}
+ else if(mode==="uq"){items=mkItems(shuffle(uqPool(mid)).slice(0,20));title="Understanding "+(mid==="ALL"?"mixed":mid)}
  else if(mode==="weak"){items=mkItems(shuffle(weakPool()).slice(0,20));title="Weak spots"}
  else if(mode==="sim"){items=mkItems(shuffle(S.quiz.filter(function(q){return q.verified&&q.category!=="EX"})).slice(0,40));title="Simulation"}
  else{items=mkItems(shuffle(S.quiz.filter(function(q){return q.verified&&q.category!=="EX"})).slice(0,20));title="Mixed"}
- if(!items.length){msg=mode==="weak"?"No weak spots yet. Miss a question or a review and it shows up here.":"No questions for this set yet.";return}
+ if(!items.length){msg=mode==="uq"?"No understanding questions loaded yet. Sync lessons in the Learn tab.":mode==="weak"?"No weak spots yet. Miss a question or a review and it shows up here.":"No questions for this set yet.";return}
  quiz={mode:mode,mid:mid,title:title,items:items,i:0,done:false,t0:Date.now(),deadline:mode==="sim"?Date.now()+3600000:0};msg=""}
 function qAnswer(k){var it=quiz.items[quiz.i];if(it.pick!=null&&quiz.mode!=="sim")return;it.pick=k;
  if(quiz.mode!=="sim")recordMiss(it)}
@@ -203,6 +206,7 @@ function recordMiss(it){if(it.pick!==it.ans){addError(it.q.q.split("\n")[0],it.o
 function finishQuiz(){var n=quiz.items.length,sc=quiz.items.filter(function(x){return x.pick===x.ans}).length,pct=Math.round(sc/n*100);
  if(quiz.mode==="sim"){quiz.items.forEach(function(it){if(it.pick!==it.ans)recordMiss(it)});S.log.sims.push({ts:Date.now(),score:sc,total:n})}
  if(quiz.mode==="module"){M(quiz.mid).quizzes.push({ts:Date.now(),pct:pct})}
+ if(quiz.mode==="uq"){S.up=S.up||{};(S.up[quiz.mid]=S.up[quiz.mid]||[]).push({ts:Date.now(),pct:pct})}
  if(quiz.mode==="baseline"){var bc={};quiz.items.forEach(function(it){var c=it.q.category;bc[c]=bc[c]||[0,0];bc[c][1]++;if(it.pick===it.ans)bc[c][0]++});S.log.baseline={ts:Date.now(),date:today(),score:sc,total:n,byCat:bc}}
  quiz.done=true;quiz.score=sc;quiz.pct=pct;save()}
 function quizTick(){if(!quiz||quiz.done||tab!=="quiz"||!quiz.deadline)return;var left=Math.round((quiz.deadline-Date.now())/1000),c=$("#qclk");if(c)c.textContent=fmt(left);if(left<=0){finishQuiz();render()}}
@@ -212,6 +216,8 @@ function vQuiz(){
   if(msg)h+='<div class="card">'+esc(msg)+'</div>';
   h+='<div class="card"><h2>Baseline</h2><div class="mut">20 cold questions, no studying first.'+(S.log.baseline?' Last: '+S.log.baseline.score+'/'+S.log.baseline.total+' on '+esc(S.log.baseline.date):'')+'</div><button class="w" data-a="qstart" data-v="baseline" style="margin-top:8px">Baseline</button></div>';
   h+='<div class="card"><h2>Module quiz</h2><select id="qm">'+S.modules.filter(function(m){return /^M[1-6]$/.test(m.id)}).map(function(m){return '<option value="'+m.id+'"'+(m.id===currentModule().id?' selected':'')+'>'+m.id+' '+esc(m.title)+' ('+qpool([m.id]).length+')</option>'}).join("")+'</select><button class="w" data-a="qstart" data-v="module" style="margin-top:8px">Start module quiz</button><div class="mut" style="margin-top:6px">From M3 on, 30% of items come from earlier modules.</div></div>';
+  if(UQ.length){var uopts=['<option value="ALL">All modules ('+UQ.length+')</option>'].concat(["M1","M2","M3","M4","M5","M6"].filter(function(m){return uqPool(m).length}).map(function(m){return '<option value="'+m+'">'+m+' ('+uqPool(m).length+(uqBest(m)?', best '+uqBest(m)+'%':'')+')</option>'})).join("");
+   h+='<div class="card"><h2>Understanding practice</h2><div class="mut">What terms mean and how they differ, with a one-line explanation after each answer. Written from the study book and online guides (independent sources, not the syllabus).</div><select id="uqm">'+uopts+'</select><button class="w" data-a="uqstart" style="margin-top:8px">Start</button></div>'}
   var wk=weakPool().length;h+='<div class="card"><h2>Weak spots</h2><div class="mut">Questions on what you missed ('+wk+').</div><button class="w" data-a="qweak" style="margin-top:8px"'+(wk?'':' disabled')+'>Practice weak spots</button></div>';
   h+='<div class="card"><h2>Mixed practice</h2><button class="w g" data-a="qstart" data-v="mixed">20 mixed questions</button></div>';
   h+='<div class="card"><h2>Simulation</h2><div class="mut">40 random questions, 60 minutes, pass line 26/40. Readiness bar 32/40 is my bar, not official.</div><button class="w" data-a="qstart" data-v="sim" style="margin-top:8px">Start simulation</button></div>';
@@ -224,12 +230,12 @@ function vQuiz(){
   if(quiz.mode==="sim")h+='<div class="card"><h2>Add to readiness gate</h2><input type="text" id="gsrc" value="Focus app" placeholder="Source name"><button class="w" data-a="gateadd" data-v="'+quiz.score+'" style="margin-top:6px">Save to gate</button></div>';
   if(quiz.mode==="baseline"){h+='<div class="card"><h2>By category</h2>'+Object.keys(S.log.baseline.byCat).map(function(c){var b=S.log.baseline.byCat[c];return '<div class="row"><span>'+esc(CATS[c])+'</span><b>'+b[0]+'/'+b[1]+'</b></div>'}).join("")+'<div class="mut">Written to the M0 criteria.</div></div>'}
   var miss=quiz.items.filter(function(x){return x.pick!==x.ans});
-  if(miss.length)h+='<div class="card"><h2>Missed ('+miss.length+')</h2>'+miss.map(function(x){return '<div style="margin:8px 0" class="pre">'+esc(x.q.q)+'<br><b>'+esc(x.opts[x.ans])+'</b><div class="mut">'+esc(x.q.sourceRef)+'</div></div>'}).join("")+'</div>';
+  if(miss.length)h+='<div class="card"><h2>Missed ('+miss.length+')</h2>'+miss.map(function(x){return '<div style="margin:8px 0" class="pre">'+esc(x.q.q)+'<br><b>'+esc(x.opts[x.ans])+'</b>'+(x.q.explain?'<div class="mut">'+esc(x.q.explain)+'</div>':'')+'<div class="mut">'+esc(x.q.sourceRef||x.q.source||'')+'</div></div>'}).join("")+'</div>';
   return h+'<button class="w" data-a="qdone">Done</button>'}
  var it=quiz.items[quiz.i],sim=quiz.mode==="sim";
- h+='<div class="card"><div class="row"><span class="pill">'+esc(CATS[it.q.category])+'</span>'+(sim?'<b id="qclk">'+fmt((quiz.deadline-Date.now())/1000)+'</b>':'')+'<span class="mut">'+(quiz.i+1)+' / '+quiz.items.length+'</span></div>'+bar(quiz.i/quiz.items.length*100)+'<p class="pre"><b>'+esc(it.q.q)+'</b></p>'+
+ h+='<div class="card"><div class="row"><span class="pill">'+esc(CATS[it.q.category]||('Understanding '+it.q.module))+'</span>'+(sim?'<b id="qclk">'+fmt((quiz.deadline-Date.now())/1000)+'</b>':'')+'<span class="mut">'+(quiz.i+1)+' / '+quiz.items.length+'</span></div>'+bar(quiz.i/quiz.items.length*100)+'<p class="pre"><b>'+esc(it.q.q)+'</b></p>'+
   it.opts.map(function(o,i){var cls="opt";if(sim){if(it.pick===i)cls+=" sel"}else if(it.pick!=null){if(i===it.ans)cls+=" right";else if(i===it.pick)cls+=" wrong"}return '<button class="'+cls+'" data-a="qpick" data-v="'+i+'">'+esc(o)+'</button>'}).join("")+
-  (it.pick!=null&&!sim?'<div class="mut">'+esc(it.q.sourceRef)+'</div>':'')+
+  (it.pick!=null&&!sim?(it.q.explain?'<div class="note">'+esc(it.q.explain)+'</div>':'')+'<div class="mut">'+esc(it.q.sourceRef||it.q.source||'')+'</div>':'')+
   (sim?simNav():(it.pick!=null?'<button class="w" data-a="qnext" style="margin-top:8px">'+(quiz.i+1>=quiz.items.length?"Finish":"Next")+'</button>':""))+'</div>';
  return h}
 function simNav(){var n=quiz.items.length,un=quiz.items.filter(function(x){return x.pick==null}).length,fl=quiz.items.filter(function(x){return x.flag}).length,it=quiz.items[quiz.i];
@@ -247,6 +253,11 @@ var LKEY="focus.lessons",lmem={},lsel=null,lchk=null;
 function loadLessons(){var r=null;try{r=localStorage.getItem(LKEY)}catch(e){}if(!r)r=lmem[LKEY];try{var a=JSON.parse(r||"[]");return Array.isArray(a)?a:[]}catch(e){return[]}}
 function saveLessons(a){var s=JSON.stringify(a);lmem[LKEY]=s;try{localStorage.setItem(LKEY,s)}catch(e){}}
 var LESS=loadLessons();
+function loadUQ(){var r=null;try{r=localStorage.getItem(UKEY)}catch(e){}if(!r)r=(typeof lmem==="object"&&lmem?lmem[UKEY]:null);try{var a=JSON.parse(r||"[]");return Array.isArray(a)?a:[]}catch(e){return[]}}
+function saveUQ(a){var s=JSON.stringify(a);lmem[UKEY]=s;try{localStorage.setItem(UKEY,s)}catch(e){}}
+var UQ=loadUQ();
+function uqPool(m){return UQ.filter(function(q){return m==="ALL"||q.module===m})}
+function uqBest(m){var a=(S.up&&S.up[m])||[];return a.reduce(function(x,y){return Math.max(x,y.pct)},0)}
 function lessonMods(l){return Array.isArray(l.modules)?l.modules:(l.module?[l.module]:[])}
 function modLessons(id){return LESS.filter(function(l){return lessonMods(l).indexOf(id)>=0})}
 function lp(id){S.lp=S.lp||{};return S.lp[id]||(S.lp[id]={read:0,checks:[]})}
@@ -279,7 +290,8 @@ function mdHtml(md){
  return o.join("")}
 function importLessons(txt){
  var d=JSON.parse(txt),arr=Array.isArray(d)?d:d.lessons;
- if(!Array.isArray(arr)||!arr.length)throw 0;
+ if(d&&Array.isArray(d.questions)&&d.questions.length){var qb={};UQ.forEach(function(q){qb[q.id]=q});d.questions.forEach(function(q){if(q&&q.id&&q.q&&Array.isArray(q.options)&&q.options.length===4)qb[q.id]=q});UQ=Object.keys(qb).map(function(k){return qb[k]}).sort(function(a,b){return a.id<b.id?-1:1});saveUQ(UQ)}
+ if(!Array.isArray(arr)||!arr.length){if(d&&Array.isArray(d.questions)&&d.questions.length)return d.questions.length;throw 0}
  var by={};LESS.forEach(function(l){by[l.id]=l});
  arr.forEach(function(l){if(l&&l.id&&l.title&&l.md)by[l.id]={id:String(l.id),modules:l.modules||(l.module?[l.module]:[]),title:l.title,md:l.md}});
  LESS=Object.keys(by).map(function(k){return by[k]}).sort(function(a,b){return a.id<b.id?-1:1});
@@ -407,7 +419,7 @@ function exportMd(){
  L.push("","### Sessions");S.log.sessions.forEach(function(s){L.push("- "+s.date+" "+Math.round(s.sec/60)+" min"+(s.win?": "+s.win:""))});
  return L.join("\n")}
 function vExport(){
- var bk=JSON.stringify({version:2,modules:S.modules.map(function(m){return{id:m.id,quizzes:m.quizzes,manual:m.manual}}),terms:S.terms.map(function(t){var o={id:t.id};TERM_KEEP.forEach(function(k){o[k]=t[k]});return o}),log:S.log,lp:S.lp||{}});
+ var bk=JSON.stringify({version:2,modules:S.modules.map(function(m){return{id:m.id,quizzes:m.quizzes,manual:m.manual}}),terms:S.terms.map(function(t){var o={id:t.id};TERM_KEEP.forEach(function(k){o[k]=t[k]});return o}),log:S.log,lp:S.lp||{},up:S.up||{}});
  return '<h1>Export</h1><div class="card"><h2>Markdown</h2><div class="mut">Paste into your notes.</div><textarea id="ex" rows="10" readonly>'+esc(exportMd())+'</textarea><button class="w" data-a="copy" data-v="ex" style="margin-top:8px">Copy</button><div id="cpm" class="mut">'+esc(msg)+'</div></div>'+
  '<div class="card"><h2>JSON backup</h2><textarea id="bk" rows="5" readonly>'+esc(bk)+'</textarea><button class="w g" data-a="copy" data-v="bk" style="margin-top:8px">Copy backup</button></div>'+
  importCard()+'<div class="card"><h2>Import</h2><textarea id="imp" rows="4" placeholder="Paste a JSON backup here"></textarea><button class="w" data-a="import" style="margin-top:8px">Import</button></div>'}
@@ -422,10 +434,12 @@ document.addEventListener("click",function(e){var el=e.target.closest("[data-a]"
 function act(a,v){
  if(a==="tab"){if(v!=="cards"){sel=null}tab=v;msg="";render();return}
  if(a==="gonext"){var cm=currentModule(),nx=crit(cm).filter(function(x){return !x.met})[0];
+  if(nx&&nx.key==="uq"){tab="quiz";quiz=null;render();return}
   if(nx&&nx.key==="lessons"){var nl=nextLesson(cm.id);tab="learn";lsel=nl?nl.id:null;lchk=null;render();window.scrollTo(0,0);return}
   if(cm.id==="M0"&&nx&&nx.key==="base"){tab="quiz";quiz=null}else if(nx&&nx.key==="quiz"){tab="quiz";quiz=null}else if(nx&&nx.key==="terms"){tab="cards";S.cardMod=cm.id;sel=modTerms(cm.id).filter(function(t){return t.rung<3})[0].id}else if(nx&&nx.key==="work"||nx&&nx.key==="ev")tab="work";else tab="quiz";render();return}
  if(a==="syncsave"){syncSet({repo:val("srepo"),token:val("stok"),last:0});syncLessons();render();return}
  if(a==="syncnow"){syncLessons();render();return}
+ if(a==="uqstart"){startQuiz("uq",val("uqm")||"ALL");save();render();return}
  if(a==="qweak"){startQuiz("weak");save();render();return}
  if(a==="openlesson"){tab="learn";lsel=v;lchk=null;render();window.scrollTo(0,0);return}
  if(a==="lback"){lsel=null;lchk=null;render();window.scrollTo(0,0);return}
