@@ -428,6 +428,7 @@ function feyTick(){if(!fey||fey.step!==5||tab!=="cards")return;var c=$("#fclk");
 /* work application log */
 function vWork(){
  var h='<h1>Work</h1><div class="card"><h2>Log a work event (LPPDI)</h2><div class="mut">Label, Place, Principle, Dimensions, Improve. Stays on this device.</div>';
+ h+='<details style="margin:6px 0"><summary>See an example</summary><div class="mut">What happened: a user could not sign in for an hour and the team found out from the user, not from monitoring.<br>L: Incident. P (place): Support. Value stream: Core. P (principle): Collaborate and promote visibility. D: organizations and people; information and technology. I: add a status message and an alert so the team sees it first.</div></details>';
  h+='<textarea id="wwhat" rows="3" placeholder="What happened, in plain words"></textarea>';
  h+='<input type="text" id="wlab" list="tl" placeholder="L - Label: which ITIL term or practice?"><datalist id="tl">'+S.terms.map(function(t){return '<option value="'+esc(t.name)+'">'}).join("")+'</datalist>';
  h+='<select id="wst"><option value="">P - Place: lifecycle activity</option>'+STAGES.map(function(s){return '<option>'+s+'</option>'}).join("")+'</select>';
