@@ -60,7 +60,7 @@ const srv = http.createServer((q, r) => {
   let st = await state();
   ok(st.terms[0].rung >= 3 && st.log.feynman.length === 1 && st.terms[0].nextReview, "feynman pass saved and review scheduled");
   // review
-  await pg.evaluate(() => { const s = JSON.parse(localStorage.getItem("focus.v2")); s.terms[0].nextReview = "2000-01-01"; s.terms[1].nextReview = "2000-01-01"; localStorage.setItem("focus.v2", JSON.stringify(s)); });
+  await pg.evaluate(() => { const s = JSON.parse(localStorage.getItem("focus.v2")); s.terms.forEach(t => { t.nextReview = "2099-01-01"; }); s.terms[0].nextReview = "2000-01-01"; s.terms[1].nextReview = "2000-01-01"; localStorage.setItem("focus.v2", JSON.stringify(s)); });
   await pg.reload();
   await tab("cards");
   await pg.click("[data-a=startrev]");
@@ -80,7 +80,14 @@ const srv = http.createServer((q, r) => {
   // simulation
   await tab("quiz");
   await pg.click("[data-a=qstart][data-v=sim]");
-  for (let i = 0; i < 40; i++) { await pg.click("[data-a=qpick] >> nth=0"); await pg.click("[data-a=qnext]"); }
+  await pg.click("[data-a=qpick] >> nth=0"); await pg.click("[data-a=qflag]");
+  await pg.reload(); await tab("quiz");
+  ok(await pg.locator("#qclk").count() === 1 && await pg.locator("text=1 flagged").count() === 1, "simulation survives a reload with its flag");
+  await pg.click("[data-a=qnext]"); await pg.click("[data-a=qback]");
+  await pg.click("[data-a=qjump][data-v=\"5\"]");
+  ok(await pg.locator("text=6 / 40").count() === 1, "jump to a question");
+  for (let i = 0; i < 40; i++) { await pg.click("[data-a=qjump][data-v=\"" + i + "\"]"); await pg.click("[data-a=qpick] >> nth=0"); }
+  await pg.click("[data-a=qfinish]");
   ok(await pg.locator("text=Simulation result").count() === 1, "simulation finished");
   await pg.fill("#gsrc", "Source A"); await pg.click("[data-a=gateadd]");
   ok((await state()).log.gate.length === 1, "gate entry saved");

@@ -13,7 +13,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T002",
@@ -29,7 +31,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T003",
@@ -45,7 +49,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T004",
@@ -61,7 +67,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T005",
@@ -77,7 +85,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T006",
@@ -93,7 +103,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T007",
@@ -109,7 +121,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T008",
@@ -125,7 +139,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T009",
@@ -140,8 +156,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Warranty",
+  "examTrap": "",
+  "core": true,
+  "hint": "What the product or service does: the functionality that meets a need (fit for purpose)."
  },
  {
   "id": "T010",
@@ -156,8 +174,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Utility",
+  "examTrap": "",
+  "core": true,
+  "hint": "The assurance that it will meet agreed requirements, such as availability, capacity, security and continuity (fit for use)."
  },
  {
   "id": "T011",
@@ -173,7 +193,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T012",
@@ -189,7 +211,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T013",
@@ -205,7 +229,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T014",
@@ -221,7 +247,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T015",
@@ -237,7 +265,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T016",
@@ -253,7 +283,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T017",
@@ -269,7 +301,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T018",
@@ -285,7 +319,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T019",
@@ -301,7 +337,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T020",
@@ -317,7 +355,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T021",
@@ -333,7 +373,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T022",
@@ -349,7 +391,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T023",
@@ -365,7 +409,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T024",
@@ -381,7 +427,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T025",
@@ -397,7 +445,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T026",
@@ -413,7 +463,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T027",
@@ -429,7 +481,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T028",
@@ -445,7 +499,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T029",
@@ -461,7 +517,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T030",
@@ -477,7 +535,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T031",
@@ -492,8 +552,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Service interactions",
+  "examTrap": "",
+  "core": true,
+  "hint": "A formal description of one or more services, designed to meet the needs of a target consumer group."
  },
  {
   "id": "T032",
@@ -509,7 +571,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T033",
@@ -525,7 +589,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T034",
@@ -541,7 +607,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T035",
@@ -557,7 +625,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T036",
@@ -572,8 +642,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Value co-creation",
+  "examTrap": "",
+  "core": true,
+  "hint": "The perceived benefits, usefulness and importance of something."
  },
  {
   "id": "T037",
@@ -589,7 +661,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T038",
@@ -604,8 +678,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Risk",
+  "examTrap": "",
+  "core": true,
+  "hint": "The money spent on an activity or resource, which the consumer is responsible for."
  },
  {
   "id": "T039",
@@ -620,8 +696,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Cost",
+  "examTrap": "",
+  "core": true,
+  "hint": "A possible event that could cause harm or loss, or make it harder to reach objectives."
  },
  {
   "id": "T040",
@@ -636,8 +714,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Outcome",
+  "examTrap": "",
+  "core": true,
+  "hint": "A tangible or intangible deliverable of an activity. What gets produced."
  },
  {
   "id": "T041",
@@ -652,8 +732,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Output",
+  "examTrap": "",
+  "core": true,
+  "hint": "A result for a stakeholder that one or more outputs help achieve. What the output makes happen."
  },
  {
   "id": "T042",
@@ -669,7 +751,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T043",
@@ -685,7 +769,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T044",
@@ -701,7 +787,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T045",
@@ -717,7 +805,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T046",
@@ -733,7 +823,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T047",
@@ -748,8 +840,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Collaborative service relationship",
+  "examTrap": "",
+  "core": true,
+  "hint": "The simplest type: the provider delivers and the consumer consumes, with little shared work."
  },
  {
   "id": "T048",
@@ -764,8 +858,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Collaborative service relationship",
+  "examTrap": "",
+  "core": true,
+  "hint": "Provider and consumer share information and work together to improve, but stay separate parties."
  },
  {
   "id": "T049",
@@ -780,8 +876,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Cooperative service relationship",
+  "examTrap": "",
+  "core": true,
+  "hint": "A close partnership with shared goals, where both sides jointly work toward them."
  },
  {
   "id": "T050",
@@ -797,7 +895,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T051",
@@ -812,8 +912,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Customer",
+  "examTrap": "",
+  "core": true,
+  "hint": "Authorizes the budget for service consumption."
  },
  {
   "id": "T052",
@@ -828,8 +930,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "User",
+  "examTrap": "",
+  "core": true,
+  "hint": "Defines the requirements for a service and takes responsibility for the outcomes."
  },
  {
   "id": "T053",
@@ -844,8 +948,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Customer",
+  "examTrap": "",
+  "core": true,
+  "hint": "Uses the services."
  },
  {
   "id": "T054",
@@ -861,7 +967,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T055",
@@ -877,7 +985,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T056",
@@ -892,8 +1002,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Experience level agreement",
+  "examTrap": "",
+  "core": true,
+  "hint": "A documented agreement between a provider and a consumer on the services required and the expected level of service."
  },
  {
   "id": "T057",
@@ -909,7 +1021,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T058",
@@ -925,7 +1039,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T059",
@@ -941,7 +1057,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T060",
@@ -957,7 +1075,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T061",
@@ -973,7 +1093,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T062",
@@ -989,7 +1111,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T063",
@@ -1005,7 +1129,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T064",
@@ -1021,7 +1147,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T065",
@@ -1037,7 +1165,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T066",
@@ -1053,7 +1183,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T067",
@@ -1069,7 +1201,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T068",
@@ -1085,7 +1219,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T069",
@@ -1101,7 +1237,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T070",
@@ -1117,7 +1255,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T071",
@@ -1133,7 +1273,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T072",
@@ -1149,7 +1291,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T073",
@@ -1165,7 +1309,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T074",
@@ -1180,8 +1326,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Management practices (component)",
+  "examTrap": "",
+  "core": true,
+  "hint": "The means by which an organization is directed and controlled."
  },
  {
   "id": "T075",
@@ -1196,8 +1344,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Value stream",
+  "examTrap": "",
+  "core": true,
+  "hint": "The operating model of activities an organization uses to create and deliver products and services."
  },
  {
   "id": "T076",
@@ -1213,7 +1363,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T077",
@@ -1229,7 +1381,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T078",
@@ -1245,7 +1399,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T079",
@@ -1261,7 +1417,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T080",
@@ -1277,7 +1435,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T081",
@@ -1293,7 +1453,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T082",
@@ -1309,7 +1471,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T083",
@@ -1325,7 +1489,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T084",
@@ -1341,7 +1507,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T085",
@@ -1357,7 +1525,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T086",
@@ -1373,7 +1543,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T087",
@@ -1389,7 +1561,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T088",
@@ -1404,8 +1578,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Problem",
+  "examTrap": "",
+  "core": true,
+  "hint": "An unplanned interruption to a service, or a drop in its quality."
  },
  {
   "id": "T089",
@@ -1420,8 +1596,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Incident",
+  "examTrap": "",
+  "core": true,
+  "hint": "Any change of state that matters for managing a service or other item."
  },
  {
   "id": "T090",
@@ -1436,8 +1614,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Test",
+  "examTrap": "",
+  "core": true,
+  "hint": "A version of a service or other item, or a group of them, made available for use."
  },
  {
   "id": "T091",
@@ -1453,7 +1633,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T092",
@@ -1469,7 +1651,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T093",
@@ -1485,7 +1669,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T094",
@@ -1501,7 +1687,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T095",
@@ -1516,8 +1704,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Observability",
+  "examTrap": "",
+  "core": true,
+  "hint": "The ability to perform the intended function consistently, for a stated time, under stated conditions."
  },
  {
   "id": "T096",
@@ -1533,7 +1723,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T097",
@@ -1548,8 +1740,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Reliability",
+  "examTrap": "",
+  "core": true,
+  "hint": "The ability to understand what is happening inside a system from the data it produces."
  },
  {
   "id": "T098",
@@ -1564,8 +1758,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Incident",
+  "examTrap": "",
+  "core": true,
+  "hint": "A request from a user for something agreed as a normal part of the service, such as access."
  },
  {
   "id": "T099",
@@ -1581,7 +1777,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T100",
@@ -1596,8 +1794,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Incident",
+  "examTrap": "",
+  "core": true,
+  "hint": "A cause, or potential cause, of one or more incidents."
  },
  {
   "id": "T101",
@@ -1613,7 +1813,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T102",
@@ -1628,8 +1830,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Problem",
+  "examTrap": "",
+  "core": true,
+  "hint": "A problem that has been analysed but not resolved."
  },
  {
   "id": "T103",
@@ -1645,7 +1849,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T104",
@@ -1661,7 +1867,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T105",
@@ -1677,7 +1885,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T106",
@@ -1693,7 +1903,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T107",
@@ -1709,7 +1921,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T108",
@@ -1725,7 +1939,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T109",
@@ -1740,8 +1956,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Critical success factor (CSF)",
+  "examTrap": "",
+  "core": true,
+  "hint": "A measurement or calculation that is monitored and reported to support decisions."
  },
  {
   "id": "T110",
@@ -1756,8 +1974,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Metric",
+  "examTrap": "",
+  "core": true,
+  "hint": "A necessary precondition for achieving the intended results."
  },
  {
   "id": "T111",
@@ -1773,7 +1993,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T112",
@@ -1788,8 +2010,10 @@
   "nextReview": "",
   "plainWords": "",
   "workExample": "",
-  "confusableWith": "",
-  "examTrap": ""
+  "confusableWith": "Value chain",
+  "examTrap": "",
+  "core": true,
+  "hint": "The series of steps an organization takes to create and deliver products and services to consumers."
  },
  {
   "id": "T113",
@@ -1805,7 +2029,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T114",
@@ -1821,7 +2047,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T115",
@@ -1837,7 +2065,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T116",
@@ -1853,7 +2083,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T117",
@@ -1869,7 +2101,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T118",
@@ -1885,7 +2119,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T119",
@@ -1901,7 +2137,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T120",
@@ -1917,7 +2155,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T121",
@@ -1933,7 +2173,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T122",
@@ -1949,7 +2191,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T123",
@@ -1965,7 +2209,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T124",
@@ -1981,7 +2227,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T125",
@@ -1997,7 +2245,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T126",
@@ -2013,7 +2263,9 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  },
  {
   "id": "T127",
@@ -2029,6 +2281,8 @@
   "plainWords": "",
   "workExample": "",
   "confusableWith": "",
-  "examTrap": ""
+  "examTrap": "",
+  "core": false,
+  "hint": ""
  }
 ]

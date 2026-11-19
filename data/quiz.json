@@ -827,10 +827,10 @@
   "module": "M5",
   "q": "Which statement about the lifecycle activities is correct?",
   "options": [
-   "They are not sequential nor linear and can be used iteratively",
-   "They must run strictly in order once",
-   "They apply only to new products",
-   "They are run once per year"
+   "They are neither sequential nor linear and can be used iteratively",
+   "They must run in a fixed order, one after another",
+   "They apply only when building a new product",
+   "They are completed once per product and never repeated"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s3.1.3",
@@ -999,9 +999,9 @@
   "q": "Which is one of the ITIL Guiding Principles?",
   "options": [
    "Focus on value",
-   "Measure and punish",
-   "Focus on cost",
-   "Minimize change"
+   "Minimize change to protect stability",
+   "Deliver everything in one big release",
+   "Centralize decisions with senior managers"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1015,9 +1015,9 @@
   "q": "Which is one of the ITIL Guiding Principles?",
   "options": [
    "Start where you are",
-   "Document everything",
-   "Fix it fast",
-   "Focus on cost"
+   "Plan everything before starting work",
+   "Measure individual performance closely",
+   "Minimize change to protect stability"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1031,9 +1031,9 @@
   "q": "Which is one of the ITIL Guiding Principles?",
   "options": [
    "Progress iteratively with feedback",
-   "Measure and punish",
-   "Centralize decisions",
-   "Work independently"
+   "Document everything before acting",
+   "Focus on cost reduction first",
+   "Centralize decisions with senior managers"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1047,9 +1047,9 @@
   "q": "Which is one of the ITIL Guiding Principles?",
   "options": [
    "Collaborate and promote visibility",
-   "Document everything",
-   "Deliver in one release",
-   "Standardize and freeze"
+   "Measure individual performance closely",
+   "Centralize decisions with senior managers",
+   "Deliver everything in one big release"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1063,9 +1063,9 @@
   "q": "Which is one of the ITIL Guiding Principles?",
   "options": [
    "Think and work holistically",
-   "Focus on cost",
-   "Minimize change",
-   "Escalate early"
+   "Standardize every process first",
+   "Centralize decisions with senior managers",
+   "Deliver everything in one big release"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1079,9 +1079,9 @@
   "q": "Which is one of the ITIL Guiding Principles?",
   "options": [
    "Keep it simple and practical",
-   "Document everything",
-   "Minimize change",
-   "Centralize decisions"
+   "Document everything before acting",
+   "Centralize decisions with senior managers",
+   "Plan everything before starting work"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1095,9 +1095,9 @@
   "q": "Which is one of the ITIL Guiding Principles?",
   "options": [
    "Optimize and automate",
-   "Document everything",
-   "Fix it fast",
-   "Minimize change"
+   "Deliver everything in one big release",
+   "Work independently to avoid delays",
+   "Centralize decisions with senior managers"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1111,9 +1111,9 @@
   "q": "Which is NOT one of the ITIL Guiding Principles?",
   "options": [
    "Fix it fast",
-   "Progress iteratively with feedback",
-   "Start where you are",
-   "Collaborate and promote visibility"
+   "Collaborate and promote visibility",
+   "Think and work holistically",
+   "Start where you are"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1127,8 +1127,8 @@
   "options": [
    "Escalate early",
    "Think and work holistically",
-   "Start where you are",
-   "Optimize and automate"
+   "Collaborate and promote visibility",
+   "Keep it simple and practical"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.2.1",
@@ -1141,7 +1141,7 @@
   "q": "Which is NOT one of the ITIL Guiding Principles?",
   "options": [
    "Document everything",
-   "Collaborate and promote visibility",
+   "Keep it simple and practical",
    "Optimize and automate",
    "Progress iteratively with feedback"
   ],
@@ -1329,10 +1329,10 @@
   "module": "M4",
   "q": "Which pair of terms includes critical success factor (CSF)?",
   "options": [
-   "Metric and critical success factor (CSF)",
-   "Incident and event",
+   "Metric and critical success factor",
+   "Incident and known error",
    "Utility and warranty",
-   "Output and outcome"
+   "Cost and risk"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.5.6",
@@ -1360,8 +1360,8 @@
   "q": "Which set of terms includes Site Reliability Engineering (SRE)?",
   "options": [
    "Reliability, Site Reliability Engineering (SRE) and observability",
-   "Release, test and incident",
-   "Event, error and disaster",
+   "Incident, event and service request",
+   "Product specification, prototype and release",
    "Governance, strategy and mission"
   ],
   "correctIndex": 0,
@@ -1421,9 +1421,9 @@
   "q": "What must a candidate do about the steps of the ITIL Continual Improvement Model?",
   "options": [
    "List them (Bloom's level 1) and understand them (level 2)",
-   "Only list them",
-   "Only explain them",
-   "Memorize their durations"
+   "Only list them, at Bloom's level 1",
+   "Only explain them, at Bloom's level 2",
+   "Memorize how long each step takes"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s4.6.1, 4.6.2",
@@ -1547,7 +1547,7 @@
   "options": [
    "Agentic AI",
    "Edge AI",
-   "Analog AI",
+   "AI cost recovery",
    "ITIL Cloud Model"
   ],
   "correctIndex": 0,
@@ -1564,7 +1564,7 @@
    "ITIL AI Capability Model",
    "AI marketing",
    "AI procurement",
-   "Quantum AI"
+   "AI vendor management"
   ],
   "correctIndex": 0,
   "sourceRef": "Syllabus v5.0 s6",
