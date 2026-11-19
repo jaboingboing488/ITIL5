@@ -5,7 +5,7 @@
   "category": "KT",
   "name": "Digital product and service management",
   "whereItSits": "Key ITIL terms and definitions / 1.1 Product and service management",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -15,7 +15,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The set of organizational capabilities that lets customers get value from digital products and services."
  },
  {
   "id": "T002",
@@ -23,7 +23,7 @@
   "category": "KT",
   "name": "Product",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -33,7 +33,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A configuration of an organization's resources designed to offer value to a consumer."
  },
  {
   "id": "T003",
@@ -41,7 +41,7 @@
   "category": "KT",
   "name": "Service",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -51,7 +51,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A way to enable value co-creation by helping consumers reach the outcomes they want without managing the specific costs and risks themselves."
  },
  {
   "id": "T004",
@@ -59,7 +59,7 @@
   "category": "KT",
   "name": "Digital product",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -69,7 +69,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A product built from resources that rely on digital technology and design."
  },
  {
   "id": "T005",
@@ -77,7 +77,7 @@
   "category": "KT",
   "name": "Digital service",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -87,7 +87,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A service that fully or mostly relies on digital products."
  },
  {
   "id": "T006",
@@ -95,7 +95,7 @@
   "category": "KT",
   "name": "Continual improvement",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -105,7 +105,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A recurring activity at every level of the organization to keep meeting stakeholders' expectations."
  },
  {
   "id": "T007",
@@ -113,7 +113,7 @@
   "category": "KT",
   "name": "ITIL Product and Service Lifecycle",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.5",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -123,7 +123,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The model for managing products and services through eight activities: discover, design, acquire, build, transition, operate, deliver, support. They are iterative, not a straight line."
  },
  {
   "id": "T008",
@@ -131,7 +131,7 @@
   "category": "KT",
   "name": "Good",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.6",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.6",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -141,7 +141,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Tangible resources passed from provider to consumer, with ownership and the related rights and responsibilities."
  },
  {
   "id": "T009",
@@ -149,7 +149,7 @@
   "category": "KT",
   "name": "Utility",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.7",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.7",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -167,7 +167,7 @@
   "category": "KT",
   "name": "Warranty",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.7",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.7",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -185,7 +185,7 @@
   "category": "KT",
   "name": "User experience",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.7",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.7",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -195,7 +195,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The functional and emotional interactions with the service and provider, as perceived by a user."
  },
  {
   "id": "T012",
@@ -203,7 +203,7 @@
   "category": "KT",
   "name": "Sustainability",
   "whereItSits": "Key ITIL terms and definitions / 1.1",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.7",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.7",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -213,7 +213,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Assurance that a product or service keeps meeting its requirements for environmental, social and economic wellbeing."
  },
  {
   "id": "T013",
@@ -221,7 +221,7 @@
   "category": "KT",
   "name": "Benefits of ITIL",
   "whereItSits": "Key ITIL terms and definitions / 1.1 (enterprises, managed service providers, digital product vendors, professionals)",
-  "sourceRef": "Syllabus v5.0 criterion 1.1.8",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.1.8",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -231,7 +231,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Enterprises: alignment, governance, value creation. Managed service providers: consistent, measurable delivery. Digital product vendors: building and improving products. Professionals: capability and certification."
  },
  {
   "id": "T014",
@@ -239,7 +239,7 @@
   "category": "KT",
   "name": "Experience",
   "whereItSits": "Key ITIL terms and definitions / 1.2 Experience, Strategy and Transformation (ITIL Experience)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -257,7 +257,7 @@
   "category": "KT",
   "name": "Digital experience",
   "whereItSits": "Key ITIL terms and definitions / 1.2 Experience, Strategy and Transformation (ITIL Experience)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -275,7 +275,7 @@
   "category": "KT",
   "name": "Trust",
   "whereItSits": "Key ITIL terms and definitions / 1.2 Experience, Strategy and Transformation (ITIL Experience)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -293,7 +293,7 @@
   "category": "KT",
   "name": "Customer experience (CX)",
   "whereItSits": "Key ITIL terms and definitions / 1.2 Experience, Strategy and Transformation (ITIL Experience)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -303,7 +303,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The functional and emotional interactions with the service and provider, as perceived by a customer."
  },
  {
   "id": "T018",
@@ -311,7 +311,7 @@
   "category": "KT",
   "name": "Experience level agreement",
   "whereItSits": "Key ITIL terms and definitions / 1.2 Experience, Strategy and Transformation (ITIL Experience)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -321,7 +321,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "An agreement about the experience users, customers or stakeholders expect or perceive, rather than only technical measures."
  },
  {
   "id": "T019",
@@ -329,7 +329,7 @@
   "category": "KT",
   "name": "Human-centred design",
   "whereItSits": "Key ITIL terms and definitions / 1.2 Experience, Strategy and Transformation (ITIL Experience)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -339,7 +339,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A practical approach where designers build solutions around the needs of the people who use them, while meeting organizational needs."
  },
  {
   "id": "T020",
@@ -347,7 +347,7 @@
   "category": "KT",
   "name": "Strategy",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -365,7 +365,7 @@
   "category": "KT",
   "name": "Business strategy",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -375,7 +375,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The direction and approach an organization uses to reach its business objectives."
  },
  {
   "id": "T022",
@@ -383,7 +383,7 @@
   "category": "KT",
   "name": "Digital strategy",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -393,7 +393,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "How the organization plans to use digital technology and capabilities to reach its goals and create value."
  },
  {
   "id": "T023",
@@ -401,7 +401,7 @@
   "category": "KT",
   "name": "Mission",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -411,7 +411,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A short but complete statement of the organization's overall purpose and intentions."
  },
  {
   "id": "T024",
@@ -419,7 +419,7 @@
   "category": "KT",
   "name": "Vision",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -429,7 +429,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "What the organization aspires to become in the future."
  },
  {
   "id": "T025",
@@ -437,7 +437,7 @@
   "category": "KT",
   "name": "Purpose",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -455,7 +455,7 @@
   "category": "KT",
   "name": "VUCA",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -465,7 +465,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Volatility, uncertainty, complexity and ambiguity in the organization's environment."
  },
  {
   "id": "T027",
@@ -473,7 +473,7 @@
   "category": "KT",
   "name": "Leadership",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Strategy)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -483,7 +483,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The ability to guide, influence and enable people to reach shared objectives."
  },
  {
   "id": "T028",
@@ -491,7 +491,7 @@
   "category": "KT",
   "name": "Change",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Transformation)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -501,7 +501,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The addition, change or removal of anything that could directly or indirectly affect products and services."
  },
  {
   "id": "T029",
@@ -509,7 +509,7 @@
   "category": "KT",
   "name": "Transformation",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Transformation)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -519,7 +519,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A significant organizational change that alters how the organization works, delivers or creates value."
  },
  {
   "id": "T030",
@@ -527,7 +527,7 @@
   "category": "KT",
   "name": "Business as usual (BAU)",
   "whereItSits": "Key ITIL terms and definitions / 1.2 (ITIL Transformation)",
-  "sourceRef": "Syllabus v5.0 criterion 1.2.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.2.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -537,7 +537,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The normal, ongoing operation of the organization or of a product or service."
  },
  {
   "id": "T031",
@@ -545,7 +545,7 @@
   "category": "KT",
   "name": "Service offering",
   "whereItSits": "Key ITIL terms and definitions / 1.3 Service offerings",
-  "sourceRef": "Syllabus v5.0 criterion 1.3.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.3.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -563,7 +563,7 @@
   "category": "KT",
   "name": "Service interactions",
   "whereItSits": "Key ITIL terms and definitions / 1.3",
-  "sourceRef": "Syllabus v5.0 criterion 1.3.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.3.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -573,7 +573,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "What happens inside a service offering: service actions, access to resources and transfer of goods."
  },
  {
   "id": "T033",
@@ -581,7 +581,7 @@
   "category": "KT",
   "name": "Service actions",
   "whereItSits": "Key ITIL terms and definitions / 1.3",
-  "sourceRef": "Syllabus v5.0 criterion 1.3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -591,7 +591,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Actions performed by the provider, or by provider and consumer together."
  },
  {
   "id": "T034",
@@ -599,7 +599,7 @@
   "category": "KT",
   "name": "Transfer of goods",
   "whereItSits": "Key ITIL terms and definitions / 1.3",
-  "sourceRef": "Syllabus v5.0 criterion 1.3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -617,7 +617,7 @@
   "category": "KT",
   "name": "Access to resources",
   "whereItSits": "Key ITIL terms and definitions / 1.3",
-  "sourceRef": "Syllabus v5.0 criterion 1.3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -635,7 +635,7 @@
   "category": "KT",
   "name": "Value",
   "whereItSits": "Key ITIL terms and definitions / 1.4 Value co-creation",
-  "sourceRef": "Syllabus v5.0 criterion 1.4.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.4.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -653,7 +653,7 @@
   "category": "KT",
   "name": "Value co-creation",
   "whereItSits": "Key ITIL terms and definitions / 1.4",
-  "sourceRef": "Syllabus v5.0 criterion 1.4.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.4.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -663,7 +663,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Value created jointly by providers, consumers and other stakeholders through products and services."
  },
  {
   "id": "T038",
@@ -671,7 +671,7 @@
   "category": "KT",
   "name": "Cost",
   "whereItSits": "Key ITIL terms and definitions / 1.4",
-  "sourceRef": "Syllabus v5.0 criterion 1.4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -689,7 +689,7 @@
   "category": "KT",
   "name": "Risk",
   "whereItSits": "Key ITIL terms and definitions / 1.4",
-  "sourceRef": "Syllabus v5.0 criterion 1.4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -707,7 +707,7 @@
   "category": "KT",
   "name": "Output",
   "whereItSits": "Key ITIL terms and definitions / 1.4",
-  "sourceRef": "Syllabus v5.0 criterion 1.4.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.4.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -725,7 +725,7 @@
   "category": "KT",
   "name": "Outcome",
   "whereItSits": "Key ITIL terms and definitions / 1.4",
-  "sourceRef": "Syllabus v5.0 criterion 1.4.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.4.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -743,7 +743,7 @@
   "category": "KT",
   "name": "Feedback",
   "whereItSits": "Key ITIL terms and definitions / 1.4",
-  "sourceRef": "Syllabus v5.0 criterion 1.4.8",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.4.8",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -761,7 +761,7 @@
   "category": "KT",
   "name": "Organization",
   "whereItSits": "Key ITIL terms and definitions / 1.5 Service relationships",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -771,7 +771,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A person or group with its own functions, responsibilities, authorities and relationships, working toward its objectives."
  },
  {
   "id": "T044",
@@ -779,7 +779,7 @@
   "category": "KT",
   "name": "Service provider",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -789,7 +789,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The organization responsible for delivering services and supporting them."
  },
  {
   "id": "T045",
@@ -797,7 +797,7 @@
   "category": "KT",
   "name": "Service consumer",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -807,7 +807,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The organization responsible for procuring and using services."
  },
  {
   "id": "T046",
@@ -815,7 +815,7 @@
   "category": "KT",
   "name": "Digital product vendor",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -825,7 +825,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "An organization responsible for creating and continually improving digital products and their related service offerings."
  },
  {
   "id": "T047",
@@ -833,43 +833,7 @@
   "category": "KT",
   "name": "Basic service relationship",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.2",
-  "verified": true,
-  "rung": 1,
-  "box": 1,
-  "nextReview": "",
-  "plainWords": "",
-  "workExample": "",
-  "confusableWith": "Collaborative service relationship",
-  "examTrap": "",
-  "core": true,
-  "hint": "The simplest type: the provider delivers and the consumer consumes, with little shared work."
- },
- {
-  "id": "T048",
-  "module": "M1",
-  "category": "KT",
-  "name": "Cooperative service relationship",
-  "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.2",
-  "verified": true,
-  "rung": 1,
-  "box": 1,
-  "nextReview": "",
-  "plainWords": "",
-  "workExample": "",
-  "confusableWith": "Collaborative service relationship",
-  "examTrap": "",
-  "core": true,
-  "hint": "Provider and consumer share information and work together to improve, but stay separate parties."
- },
- {
-  "id": "T049",
-  "module": "M1",
-  "category": "KT",
-  "name": "Collaborative service relationship",
-  "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -879,7 +843,43 @@
   "confusableWith": "Cooperative service relationship",
   "examTrap": "",
   "core": true,
-  "hint": "A close partnership with shared goals, where both sides jointly work toward them."
+  "hint": "Limited interaction: the provider delivers, the consumer uses it, with little joint activity."
+ },
+ {
+  "id": "T048",
+  "module": "M1",
+  "category": "KT",
+  "name": "Cooperative service relationship",
+  "whereItSits": "Key ITIL terms and definitions / 1.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.2",
+  "verified": true,
+  "rung": 1,
+  "box": 1,
+  "nextReview": "",
+  "plainWords": "",
+  "workExample": "",
+  "confusableWith": "Collaborative service relationship",
+  "examTrap": "",
+  "core": true,
+  "hint": "Provider and consumer coordinate, share information and work together to improve the outcomes."
+ },
+ {
+  "id": "T049",
+  "module": "M1",
+  "category": "KT",
+  "name": "Collaborative service relationship",
+  "whereItSits": "Key ITIL terms and definitions / 1.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.2",
+  "verified": true,
+  "rung": 1,
+  "box": 1,
+  "nextReview": "",
+  "plainWords": "",
+  "workExample": "",
+  "confusableWith": "Cooperative service relationship",
+  "examTrap": "",
+  "core": true,
+  "hint": "A deeper partnership where provider and consumer plan together, improve together and co-create value."
  },
  {
   "id": "T050",
@@ -887,7 +887,7 @@
   "category": "KT",
   "name": "Service journey",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -897,7 +897,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "All the activities and interactions of the organizations in a service relationship, as each fulfils its role."
  },
  {
   "id": "T051",
@@ -905,7 +905,7 @@
   "category": "KT",
   "name": "Sponsor",
   "whereItSits": "Key ITIL terms and definitions / 1.5 (role)",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -923,7 +923,7 @@
   "category": "KT",
   "name": "Customer",
   "whereItSits": "Key ITIL terms and definitions / 1.5 (role)",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -941,7 +941,7 @@
   "category": "KT",
   "name": "User",
   "whereItSits": "Key ITIL terms and definitions / 1.5 (role)",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -959,7 +959,7 @@
   "category": "KT",
   "name": "Service quality",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.5",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -969,7 +969,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "How well the characteristics of a service satisfy stated and implied needs."
  },
  {
   "id": "T055",
@@ -977,7 +977,7 @@
   "category": "KT",
   "name": "Service level",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.5",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -987,7 +987,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A set of metrics describing the expected or achieved quality of a service."
  },
  {
   "id": "T056",
@@ -995,7 +995,7 @@
   "category": "KT",
   "name": "Service Level Agreement (SLA)",
   "whereItSits": "Key ITIL terms and definitions / 1.5",
-  "sourceRef": "Syllabus v5.0 criterion 1.5.6",
+  "sourceRef": "Syllabus copy v5.0 criterion 1.5.6",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1013,7 +1013,7 @@
   "category": "FD",
   "name": "Organizations and people",
   "whereItSits": "The ITIL Four Dimensions of Product and Service Management",
-  "sourceRef": "Syllabus v5.0 criterion 2.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 2.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1031,7 +1031,7 @@
   "category": "FD",
   "name": "Partners and suppliers",
   "whereItSits": "The ITIL Four Dimensions of Product and Service Management",
-  "sourceRef": "Syllabus v5.0 criterion 2.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 2.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1049,7 +1049,7 @@
   "category": "FD",
   "name": "Information and technology",
   "whereItSits": "The ITIL Four Dimensions of Product and Service Management",
-  "sourceRef": "Syllabus v5.0 criterion 2.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 2.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1067,7 +1067,7 @@
   "category": "FD",
   "name": "Value streams and processes",
   "whereItSits": "The ITIL Four Dimensions of Product and Service Management",
-  "sourceRef": "Syllabus v5.0 criterion 2.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 2.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1085,7 +1085,7 @@
   "category": "FD",
   "name": "Holistic approach of the four dimensions",
   "whereItSits": "The ITIL Four Dimensions of Product and Service Management",
-  "sourceRef": "Syllabus v5.0 criterion 2.1.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 2.1.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1103,7 +1103,7 @@
   "category": "FD",
   "name": "PESTLE",
   "whereItSits": "The ITIL Four Dimensions of Product and Service Management / 2.2 external factors (political, economical, social, technology, legal, environmental)",
-  "sourceRef": "Syllabus v5.0 criterion 2.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 2.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1121,7 +1121,7 @@
   "category": "LC",
   "name": "Discover (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1131,7 +1131,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Find needs, opportunities, demand and possible value before anything is designed or changed."
  },
  {
   "id": "T064",
@@ -1139,7 +1139,7 @@
   "category": "LC",
   "name": "Design (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1149,7 +1149,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Shape the product or service so it meets stakeholder needs and supports the expected outcomes."
  },
  {
   "id": "T065",
@@ -1157,7 +1157,7 @@
   "category": "LC",
   "name": "Acquire (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1167,7 +1167,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Obtain the resources, components, products, services or supplier capabilities that are needed."
  },
  {
   "id": "T066",
@@ -1175,7 +1175,7 @@
   "category": "LC",
   "name": "Build (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1185,7 +1185,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Create, configure, develop and integrate the components."
  },
  {
   "id": "T067",
@@ -1193,7 +1193,7 @@
   "category": "LC",
   "name": "Transition (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1203,7 +1203,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Move new or changed products and services into controlled environments through release, testing and deployment."
  },
  {
   "id": "T068",
@@ -1211,7 +1211,7 @@
   "category": "LC",
   "name": "Operate (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1221,7 +1221,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Keep live products and services running reliably and effectively."
  },
  {
   "id": "T069",
@@ -1229,7 +1229,7 @@
   "category": "LC",
   "name": "Deliver (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1239,7 +1239,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Make products and services available to consumers so the agreed outcomes can happen."
  },
  {
   "id": "T070",
@@ -1247,7 +1247,7 @@
   "category": "LC",
   "name": "Support (lifecycle activity)",
   "whereItSits": "The ITIL Product and Service Lifecycle / activity",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.1, 3.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.1, 3.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1257,7 +1257,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Respond to user needs, incidents, problems, service requests and resilience issues."
  },
  {
   "id": "T071",
@@ -1265,7 +1265,7 @@
   "category": "LC",
   "name": "Lifecycle activities are not sequential or linear",
   "whereItSits": "The ITIL Product and Service Lifecycle",
-  "sourceRef": "Syllabus v5.0 criterion 3.1.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 3.1.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1275,7 +1275,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The eight activities can run in any order, in parallel and repeatedly. Work loops back as feedback arrives."
  },
  {
   "id": "T072",
@@ -1283,7 +1283,7 @@
   "category": "VS",
   "name": "ITIL Value System",
   "whereItSits": "The ITIL Value System / 4.1 Components",
-  "sourceRef": "Syllabus v5.0 criterion 4.1.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.1.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1293,7 +1293,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The overall model showing how the five components work together so the organization creates value."
  },
  {
   "id": "T073",
@@ -1301,7 +1301,7 @@
   "category": "VS",
   "name": "Guiding principles (component)",
   "whereItSits": "The ITIL Value System / 4.1 component",
-  "sourceRef": "Syllabus v5.0 criterion 4.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1319,7 +1319,7 @@
   "category": "VS",
   "name": "Governance",
   "whereItSits": "The ITIL Value System / 4.1 component, 4.3",
-  "sourceRef": "Syllabus v5.0 criterion 4.1.1, 4.3.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.1.1, 4.3.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1337,7 +1337,7 @@
   "category": "VS",
   "name": "Value chain",
   "whereItSits": "The ITIL Value System / 4.1 component, 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.1.1, 4.4.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.1.1, 4.4.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1355,7 +1355,7 @@
   "category": "VS",
   "name": "Management practices (component)",
   "whereItSits": "The ITIL Value System / 4.1 component, 4.5",
-  "sourceRef": "Syllabus v5.0 criterion 4.1.1, 4.5.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.1.1, 4.5.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1373,7 +1373,7 @@
   "category": "VS",
   "name": "Continual improvement (component)",
   "whereItSits": "The ITIL Value System / 4.1 component",
-  "sourceRef": "Syllabus v5.0 criterion 4.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1391,7 +1391,7 @@
   "category": "VS",
   "name": "Focus on value",
   "whereItSits": "The ITIL Value System / 4.2 Guiding principle",
-  "sourceRef": "Syllabus v5.0 criterion 4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1409,7 +1409,7 @@
   "category": "VS",
   "name": "Start where you are",
   "whereItSits": "The ITIL Value System / 4.2 Guiding principle",
-  "sourceRef": "Syllabus v5.0 criterion 4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1427,7 +1427,7 @@
   "category": "VS",
   "name": "Progress iteratively with feedback",
   "whereItSits": "The ITIL Value System / 4.2 Guiding principle",
-  "sourceRef": "Syllabus v5.0 criterion 4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1445,7 +1445,7 @@
   "category": "VS",
   "name": "Collaborate and promote visibility",
   "whereItSits": "The ITIL Value System / 4.2 Guiding principle",
-  "sourceRef": "Syllabus v5.0 criterion 4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1463,7 +1463,7 @@
   "category": "VS",
   "name": "Think and work holistically",
   "whereItSits": "The ITIL Value System / 4.2 Guiding principle",
-  "sourceRef": "Syllabus v5.0 criterion 4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1481,7 +1481,7 @@
   "category": "VS",
   "name": "Keep it simple and practical",
   "whereItSits": "The ITIL Value System / 4.2 Guiding principle",
-  "sourceRef": "Syllabus v5.0 criterion 4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1499,7 +1499,7 @@
   "category": "VS",
   "name": "Optimize and automate",
   "whereItSits": "The ITIL Value System / 4.2 Guiding principle",
-  "sourceRef": "Syllabus v5.0 criterion 4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1517,7 +1517,7 @@
   "category": "VS",
   "name": "Interaction of the guiding principles",
   "whereItSits": "The ITIL Value System / 4.2",
-  "sourceRef": "Syllabus v5.0 criterion 4.2.9",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.2.9",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1535,7 +1535,7 @@
   "category": "VS",
   "name": "Product specification",
   "whereItSits": "The ITIL Value System / 4.4 Value chain",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1545,7 +1545,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A written description of the properties, requirements and characteristics of a product, service or item."
  },
  {
   "id": "T087",
@@ -1553,7 +1553,7 @@
   "category": "VS",
   "name": "Product prototype",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1563,7 +1563,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "An early version used to show form, function and operation before full development or release."
  },
  {
   "id": "T088",
@@ -1571,7 +1571,7 @@
   "category": "VS",
   "name": "Incident",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1589,7 +1589,7 @@
   "category": "VS",
   "name": "Event",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1607,7 +1607,7 @@
   "category": "VS",
   "name": "Release",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1625,7 +1625,7 @@
   "category": "VS",
   "name": "Test",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1643,7 +1643,7 @@
   "category": "VS",
   "name": "Continuous integration",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.5",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1653,7 +1653,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Developers merge code often into a central repository, followed by automated builds and tests."
  },
  {
   "id": "T093",
@@ -1661,7 +1661,7 @@
   "category": "VS",
   "name": "Continuous delivery",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.5",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1671,7 +1671,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Updates can be deployed to production at any time, but each deployment is decided case by case."
  },
  {
   "id": "T094",
@@ -1679,7 +1679,7 @@
   "category": "VS",
   "name": "Continuous deployment",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.5",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1697,7 +1697,7 @@
   "category": "VS",
   "name": "Reliability",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.6",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.6",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1715,7 +1715,7 @@
   "category": "VS",
   "name": "Site Reliability Engineering (SRE)",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.6",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.6",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1725,7 +1725,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Applying software engineering to infrastructure and operations problems, to build scalable, highly reliable systems."
  },
  {
   "id": "T097",
@@ -1733,7 +1733,7 @@
   "category": "VS",
   "name": "Observability",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.6",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.6",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1751,7 +1751,7 @@
   "category": "VS",
   "name": "Service request",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.7",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.7",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1769,7 +1769,7 @@
   "category": "VS",
   "name": "Disaster",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.8",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.8",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1787,7 +1787,7 @@
   "category": "VS",
   "name": "Problem",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.8, 4.4.10",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.8, 4.4.10",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1805,7 +1805,7 @@
   "category": "VS",
   "name": "Error",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.8, 4.4.10",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.8, 4.4.10",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1823,7 +1823,7 @@
   "category": "VS",
   "name": "Known error",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.8, 4.4.10",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.8, 4.4.10",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1841,7 +1841,7 @@
   "category": "VS",
   "name": "Operating model",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.9, 4.4.12",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.9, 4.4.12",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1859,7 +1859,7 @@
   "category": "VS",
   "name": "Key success metrics of the value chain activities",
   "whereItSits": "The ITIL Value System / 4.4",
-  "sourceRef": "Syllabus v5.0 criterion 4.4.11",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.4.11",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1877,7 +1877,7 @@
   "category": "VS",
   "name": "Management practice",
   "whereItSits": "The ITIL Value System / 4.5 Management practices",
-  "sourceRef": "Syllabus v5.0 criterion 4.5.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.5.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1887,7 +1887,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "An organizational capability for a defined purpose. The guide's Appendix B gives a purpose for each practice, for example incident management and change enablement."
  },
  {
   "id": "T106",
@@ -1895,7 +1895,7 @@
   "category": "VS",
   "name": "Management practice groups",
   "whereItSits": "The ITIL Value System / 4.5 (general; product and service management)",
-  "sourceRef": "Syllabus v5.0 criterion 4.5.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.5.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1913,7 +1913,7 @@
   "category": "VS",
   "name": "Role of management practices in the value system",
   "whereItSits": "The ITIL Value System / 4.5",
-  "sourceRef": "Syllabus v5.0 criterion 4.5.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.5.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1931,7 +1931,7 @@
   "category": "VS",
   "name": "ITIL Practice Guides",
   "whereItSits": "The ITIL Value System / 4.5 (structure and benefits)",
-  "sourceRef": "Syllabus v5.0 criterion 4.5.4, 4.5.5",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.5.4, 4.5.5",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1949,7 +1949,7 @@
   "category": "VS",
   "name": "Metric",
   "whereItSits": "The ITIL Value System / 4.5",
-  "sourceRef": "Syllabus v5.0 criterion 4.5.6",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.5.6",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1967,7 +1967,7 @@
   "category": "VS",
   "name": "Critical success factor (CSF)",
   "whereItSits": "The ITIL Value System / 4.5",
-  "sourceRef": "Syllabus v5.0 criterion 4.5.6",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.5.6",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -1985,7 +1985,7 @@
   "category": "VS",
   "name": "ITIL Continual Improvement Model",
   "whereItSits": "The ITIL Value System / 4.6",
-  "sourceRef": "Syllabus v5.0 criterion 4.6.1, 4.6.2, 4.6.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 4.6.1, 4.6.2, 4.6.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2003,7 +2003,7 @@
   "category": "VM",
   "name": "Value stream",
   "whereItSits": "Value stream identification, mapping, and management",
-  "sourceRef": "Syllabus v5.0 criterion 5.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 5.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2021,7 +2021,7 @@
   "category": "VM",
   "name": "Core value stream",
   "whereItSits": "Value stream identification, mapping, and management",
-  "sourceRef": "Syllabus v5.0 criterion 5.1.1, 5.1.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 5.1.1, 5.1.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2031,7 +2031,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A value stream that delivers value to consumers in the form the operating model intends."
  },
  {
   "id": "T114",
@@ -2039,7 +2039,7 @@
   "category": "VM",
   "name": "Enabling value stream",
   "whereItSits": "Value stream identification, mapping, and management",
-  "sourceRef": "Syllabus v5.0 criterion 5.1.1, 5.1.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 5.1.1, 5.1.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2049,7 +2049,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A value stream that supports the core value streams by serving internal customers."
  },
  {
   "id": "T115",
@@ -2057,7 +2057,7 @@
   "category": "VM",
   "name": "Value stream mapping",
   "whereItSits": "Value stream identification, mapping, and management",
-  "sourceRef": "Syllabus v5.0 criterion 5.1.2, 5.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 5.1.2, 5.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2067,7 +2067,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Drawing the steps, flow, dependencies and delays involved in creating and delivering value."
  },
  {
   "id": "T116",
@@ -2075,7 +2075,7 @@
   "category": "VM",
   "name": "Value stream management",
   "whereItSits": "Value stream identification, mapping, and management",
-  "sourceRef": "Syllabus v5.0 criterion 5.1.2, 5.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 5.1.2, 5.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2085,7 +2085,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Managing and improving value streams over time to improve flow, performance and value delivery."
  },
  {
   "id": "T117",
@@ -2093,7 +2093,7 @@
   "category": "VM",
   "name": "Complexity thinking",
   "whereItSits": "Value stream identification, mapping, and management",
-  "sourceRef": "Syllabus v5.0 criterion 5.1.3, 5.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 5.1.3, 5.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2103,7 +2103,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Analysing and deciding with the recognition that systems and their context have different levels of complexity."
  },
  {
   "id": "T118",
@@ -2111,7 +2111,7 @@
   "category": "VM",
   "name": "Elements of a value stream map",
   "whereItSits": "Value stream identification, mapping, and management",
-  "sourceRef": "Syllabus v5.0 criterion 5.3.3",
+  "sourceRef": "Syllabus copy v5.0 criterion 5.3.3",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2129,7 +2129,7 @@
   "category": "AI",
   "name": "Artificial Intelligence (AI)",
   "whereItSits": "ITIL and AI",
-  "sourceRef": "Syllabus v5.0 criterion 6.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 6.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2139,7 +2139,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Digital systems doing tasks that normally need human intelligence, such as learning from data, spotting patterns, predicting or supporting decisions."
  },
  {
   "id": "T120",
@@ -2147,7 +2147,7 @@
   "category": "AI",
   "name": "AI maturity",
   "whereItSits": "ITIL and AI",
-  "sourceRef": "Syllabus v5.0 criterion 6.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 6.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2157,7 +2157,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "How well an organization can use AI effectively, responsibly and consistently (governance, data quality, skills, processes, ethics)."
  },
  {
   "id": "T121",
@@ -2165,7 +2165,7 @@
   "category": "AI",
   "name": "Generative AI (GenAI)",
   "whereItSits": "ITIL and AI",
-  "sourceRef": "Syllabus v5.0 criterion 6.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 6.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2175,7 +2175,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "AI that creates new content, such as text, images or code, from patterns learned from existing data."
  },
  {
   "id": "T122",
@@ -2183,7 +2183,7 @@
   "category": "AI",
   "name": "Agentic AI",
   "whereItSits": "ITIL and AI",
-  "sourceRef": "Syllabus v5.0 criterion 6.1.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 6.1.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2193,7 +2193,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "AI that acts on a user's behalf, doing predefined tasks on its own within agreed boundaries, under human oversight and governance."
  },
  {
   "id": "T123",
@@ -2201,7 +2201,7 @@
   "category": "AI",
   "name": "AI governance",
   "whereItSits": "ITIL and AI / 6.2 ITIL AI Governance",
-  "sourceRef": "Syllabus v5.0 criterion 6.2.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 6.2.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2211,7 +2211,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "How the organization directs, controls and monitors AI use so AI-enabled products create value and stay ethical, secure and compliant."
  },
  {
   "id": "T124",
@@ -2219,7 +2219,7 @@
   "category": "AI",
   "name": "ITIL AI Capability Model",
   "whereItSits": "ITIL and AI / 6.2",
-  "sourceRef": "Syllabus v5.0 criterion 6.2.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 6.2.2",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2229,7 +2229,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "The 6C model. The guide names its six capability domains as creation, coordination, communication, cognition, clarification and curation."
  },
  {
   "id": "T125",
@@ -2237,7 +2237,7 @@
   "category": "AI",
   "name": "AI across the lifecycle and value chain",
   "whereItSits": "ITIL and AI / 6.1",
-  "sourceRef": "Syllabus v5.0 criterion 6.1.2-6.1.4",
+  "sourceRef": "Syllabus copy v5.0 criterion 6.1.2-6.1.4",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2255,7 +2255,7 @@
   "category": "FW",
   "name": "DevOps",
   "whereItSits": "ITIL and other frameworks / 7.1 ITIL and DevOps",
-  "sourceRef": "Syllabus v5.0 criterion 7.1",
+  "sourceRef": "Syllabus copy v5.0 criterion 7.1",
   "verified": true,
   "rung": 1,
   "box": 1,
@@ -2273,7 +2273,7 @@
   "category": "FW",
   "name": "PRINCE2",
   "whereItSits": "ITIL and other frameworks / 7.2 ITIL and PRINCE2",
-  "sourceRef": "Syllabus v5.0 criterion 7.2",
+  "sourceRef": "Syllabus copy v5.0 criterion 7.2",
   "verified": true,
   "rung": 1,
   "box": 1,
