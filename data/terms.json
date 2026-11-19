@@ -1275,7 +1275,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Checking something against requirements or expectations. The Master Glossary defines test environment only."
  },
  {
   "id": "T092",
@@ -1329,7 +1329,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "Every change that passes the automated tests is deployed to production automatically, with no extra authorization. It relies on continuous delivery."
  },
  {
   "id": "T095",
@@ -1401,7 +1401,7 @@
   "confusableWith": "Incident",
   "examTrap": "",
   "core": true,
-  "hint": "A request from a user for something agreed as a normal part of the service, such as access."
+  "hint": "A request from a user, or their authorized representative, that starts a service action agreed as a normal part of service delivery."
  },
  {
   "id": "T099",
@@ -1419,7 +1419,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A sudden, unplanned event that causes great damage or serious loss, so critical business functions can't be provided for a predetermined minimum period."
  },
  {
   "id": "T100",
@@ -1455,7 +1455,7 @@
   "confusableWith": "",
   "examTrap": "",
   "core": false,
-  "hint": ""
+  "hint": "A flaw or vulnerability that may cause incidents."
  },
  {
   "id": "T102",
@@ -1599,7 +1599,7 @@
   "confusableWith": "Critical success factor (CSF)",
   "examTrap": "",
   "core": true,
-  "hint": "A measurement or calculation that is monitored and reported to support decisions."
+  "hint": "A measurement or calculation that is monitored or reported for management and improvement."
  },
  {
   "id": "T110",
