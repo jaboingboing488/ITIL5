@@ -216,7 +216,7 @@
   "hint": "Assurance that a product or service keeps meeting its requirements for environmental, social and economic wellbeing."
  },
  {
-  "id": "T013",
+  "id": "T031",
   "module": "M1",
   "category": "KT",
   "name": "Service offering",
@@ -234,7 +234,7 @@
   "hint": "A formal description of one or more services, designed to meet the needs of a target consumer group."
  },
  {
-  "id": "T014",
+  "id": "T033",
   "module": "M1",
   "category": "KT",
   "name": "Service actions",
@@ -252,7 +252,7 @@
   "hint": "Actions performed by the provider, or by provider and consumer together."
  },
  {
-  "id": "T015",
+  "id": "T034",
   "module": "M1",
   "category": "KT",
   "name": "Transfer of goods",
@@ -270,7 +270,7 @@
   "hint": ""
  },
  {
-  "id": "T016",
+  "id": "T035",
   "module": "M1",
   "category": "KT",
   "name": "Access to resources",
@@ -288,7 +288,7 @@
   "hint": ""
  },
  {
-  "id": "T017",
+  "id": "T036",
   "module": "M1",
   "category": "KT",
   "name": "Value",
@@ -306,7 +306,7 @@
   "hint": "The perceived benefits, usefulness and importance of something."
  },
  {
-  "id": "T018",
+  "id": "T037",
   "module": "M1",
   "category": "KT",
   "name": "Value co-creation",
@@ -324,7 +324,7 @@
   "hint": "Value created jointly by providers, consumers and other stakeholders through products and services."
  },
  {
-  "id": "T019",
+  "id": "T038",
   "module": "M1",
   "category": "KT",
   "name": "Cost",
@@ -342,7 +342,7 @@
   "hint": "The money spent on an activity or resource, which the consumer is responsible for."
  },
  {
-  "id": "T020",
+  "id": "T039",
   "module": "M1",
   "category": "KT",
   "name": "Risk",
@@ -360,7 +360,7 @@
   "hint": "A possible event that could cause harm or loss, or make it harder to reach objectives."
  },
  {
-  "id": "T021",
+  "id": "T040",
   "module": "M1",
   "category": "KT",
   "name": "Output",
@@ -378,7 +378,7 @@
   "hint": "A tangible or intangible deliverable of an activity. What gets produced."
  },
  {
-  "id": "T022",
+  "id": "T041",
   "module": "M1",
   "category": "KT",
   "name": "Outcome",
@@ -396,7 +396,7 @@
   "hint": "A result for a stakeholder that one or more outputs help achieve. What the output makes happen."
  },
  {
-  "id": "T023",
+  "id": "T043",
   "module": "M1",
   "category": "KT",
   "name": "Organization",
@@ -414,7 +414,7 @@
   "hint": "A person or group with its own functions, responsibilities, authorities and relationships, working toward its objectives."
  },
  {
-  "id": "T024",
+  "id": "T044",
   "module": "M1",
   "category": "KT",
   "name": "Service provider",
@@ -432,7 +432,7 @@
   "hint": "The organization responsible for delivering services and supporting them."
  },
  {
-  "id": "T025",
+  "id": "T045",
   "module": "M1",
   "category": "KT",
   "name": "Service consumer",
@@ -450,7 +450,7 @@
   "hint": "The organization responsible for procuring and using services."
  },
  {
-  "id": "T026",
+  "id": "T046",
   "module": "M1",
   "category": "KT",
   "name": "Digital product vendor",
@@ -468,7 +468,7 @@
   "hint": "An organization responsible for creating and continually improving digital products and their related service offerings."
  },
  {
-  "id": "T027",
+  "id": "T047",
   "module": "M1",
   "category": "KT",
   "name": "Basic service relationship",
@@ -486,7 +486,7 @@
   "hint": "Limited interaction: the provider delivers, the consumer uses it, with little joint activity."
  },
  {
-  "id": "T028",
+  "id": "T048",
   "module": "M1",
   "category": "KT",
   "name": "Cooperative service relationship",
@@ -504,7 +504,7 @@
   "hint": "Provider and consumer coordinate, share information and work together to improve the outcomes."
  },
  {
-  "id": "T029",
+  "id": "T049",
   "module": "M1",
   "category": "KT",
   "name": "Collaborative service relationship",
@@ -522,7 +522,7 @@
   "hint": "A deeper partnership where provider and consumer plan together, improve together and co-create value."
  },
  {
-  "id": "T030",
+  "id": "T050",
   "module": "M1",
   "category": "KT",
   "name": "Service journey",
@@ -540,7 +540,7 @@
   "hint": "All the activities and interactions of the organizations in a service relationship, as each fulfils its role."
  },
  {
-  "id": "T031",
+  "id": "T051",
   "module": "M1",
   "category": "KT",
   "name": "Sponsor",
@@ -558,7 +558,7 @@
   "hint": "Authorizes the budget for service consumption."
  },
  {
-  "id": "T032",
+  "id": "T052",
   "module": "M1",
   "category": "KT",
   "name": "Customer",
@@ -576,7 +576,7 @@
   "hint": "Defines the requirements for a service and takes responsibility for the outcomes."
  },
  {
-  "id": "T033",
+  "id": "T053",
   "module": "M1",
   "category": "KT",
   "name": "User",
@@ -594,7 +594,7 @@
   "hint": "Uses the services."
  },
  {
-  "id": "T034",
+  "id": "T054",
   "module": "M1",
   "category": "KT",
   "name": "Service quality",
@@ -612,7 +612,7 @@
   "hint": "How well the characteristics of a service satisfy stated and implied needs."
  },
  {
-  "id": "T035",
+  "id": "T055",
   "module": "M1",
   "category": "KT",
   "name": "Service level",
@@ -630,7 +630,7 @@
   "hint": "A set of metrics describing the expected or achieved quality of a service."
  },
  {
-  "id": "T036",
+  "id": "T056",
   "module": "M1",
   "category": "KT",
   "name": "Service Level Agreement (SLA)",
@@ -648,7 +648,7 @@
   "hint": "A documented agreement between a provider and a consumer on the services required and the expected level of service."
  },
  {
-  "id": "T037",
+  "id": "T057",
   "module": "M5",
   "category": "FD",
   "name": "Organizations and people",
@@ -666,7 +666,7 @@
   "hint": ""
  },
  {
-  "id": "T038",
+  "id": "T058",
   "module": "M5",
   "category": "FD",
   "name": "Partners and suppliers",
@@ -684,7 +684,7 @@
   "hint": ""
  },
  {
-  "id": "T039",
+  "id": "T059",
   "module": "M5",
   "category": "FD",
   "name": "Information and technology",
@@ -702,7 +702,7 @@
   "hint": ""
  },
  {
-  "id": "T040",
+  "id": "T060",
   "module": "M5",
   "category": "FD",
   "name": "Value streams and processes",
@@ -720,7 +720,7 @@
   "hint": ""
  },
  {
-  "id": "T041",
+  "id": "T061",
   "module": "M5",
   "category": "FD",
   "name": "Holistic approach of the four dimensions",
@@ -738,7 +738,7 @@
   "hint": ""
  },
  {
-  "id": "T042",
+  "id": "T062",
   "module": "M5",
   "category": "FD",
   "name": "PESTLE",
@@ -756,7 +756,7 @@
   "hint": ""
  },
  {
-  "id": "T043",
+  "id": "T063",
   "module": "M5",
   "category": "LC",
   "name": "Discover (lifecycle activity)",
@@ -774,7 +774,7 @@
   "hint": "Find needs, opportunities, demand and possible value before anything is designed or changed."
  },
  {
-  "id": "T044",
+  "id": "T064",
   "module": "M5",
   "category": "LC",
   "name": "Design (lifecycle activity)",
@@ -792,7 +792,7 @@
   "hint": "Shape the product or service so it meets stakeholder needs and supports the expected outcomes."
  },
  {
-  "id": "T045",
+  "id": "T065",
   "module": "M5",
   "category": "LC",
   "name": "Acquire (lifecycle activity)",
@@ -810,7 +810,7 @@
   "hint": "Obtain the resources, components, products, services or supplier capabilities that are needed."
  },
  {
-  "id": "T046",
+  "id": "T066",
   "module": "M5",
   "category": "LC",
   "name": "Build (lifecycle activity)",
@@ -828,7 +828,7 @@
   "hint": "Create, configure, develop and integrate the components."
  },
  {
-  "id": "T047",
+  "id": "T067",
   "module": "M5",
   "category": "LC",
   "name": "Transition (lifecycle activity)",
@@ -846,7 +846,7 @@
   "hint": "Move new or changed products and services into controlled environments through release, testing and deployment."
  },
  {
-  "id": "T048",
+  "id": "T068",
   "module": "M5",
   "category": "LC",
   "name": "Operate (lifecycle activity)",
@@ -864,7 +864,7 @@
   "hint": "Keep live products and services running reliably and effectively."
  },
  {
-  "id": "T049",
+  "id": "T069",
   "module": "M5",
   "category": "LC",
   "name": "Deliver (lifecycle activity)",
@@ -882,7 +882,7 @@
   "hint": "Make products and services available to consumers so the agreed outcomes can happen."
  },
  {
-  "id": "T050",
+  "id": "T070",
   "module": "M5",
   "category": "LC",
   "name": "Support (lifecycle activity)",
@@ -900,7 +900,7 @@
   "hint": "Respond to user needs, incidents, problems, service requests and resilience issues."
  },
  {
-  "id": "T051",
+  "id": "T071",
   "module": "M5",
   "category": "LC",
   "name": "Lifecycle activities are not sequential or linear",
@@ -918,7 +918,7 @@
   "hint": "The eight activities can run in any order, in parallel and repeatedly. Work loops back as feedback arrives."
  },
  {
-  "id": "T052",
+  "id": "T072",
   "module": "M3",
   "category": "VS",
   "name": "ITIL Value System",
@@ -936,7 +936,7 @@
   "hint": "The overall model showing how the five components work together so the organization creates value."
  },
  {
-  "id": "T053",
+  "id": "T073",
   "module": "M3",
   "category": "VS",
   "name": "Guiding principles (component)",
@@ -954,7 +954,7 @@
   "hint": ""
  },
  {
-  "id": "T054",
+  "id": "T074",
   "module": "M3",
   "category": "VS",
   "name": "Governance",
@@ -972,7 +972,7 @@
   "hint": "The means by which an organization is directed and controlled."
  },
  {
-  "id": "T055",
+  "id": "T075",
   "module": "M3",
   "category": "VS",
   "name": "Value chain",
@@ -990,7 +990,7 @@
   "hint": "The operating model of activities an organization uses to create and deliver products and services."
  },
  {
-  "id": "T056",
+  "id": "T076",
   "module": "M3",
   "category": "VS",
   "name": "Management practices (component)",
@@ -1008,7 +1008,7 @@
   "hint": ""
  },
  {
-  "id": "T057",
+  "id": "T077",
   "module": "M3",
   "category": "VS",
   "name": "Continual improvement (component)",
@@ -1026,7 +1026,7 @@
   "hint": ""
  },
  {
-  "id": "T058",
+  "id": "T078",
   "module": "M2",
   "category": "VS",
   "name": "Focus on value",
@@ -1044,7 +1044,7 @@
   "hint": ""
  },
  {
-  "id": "T059",
+  "id": "T079",
   "module": "M2",
   "category": "VS",
   "name": "Start where you are",
@@ -1062,7 +1062,7 @@
   "hint": ""
  },
  {
-  "id": "T060",
+  "id": "T080",
   "module": "M2",
   "category": "VS",
   "name": "Progress iteratively with feedback",
@@ -1080,7 +1080,7 @@
   "hint": ""
  },
  {
-  "id": "T061",
+  "id": "T081",
   "module": "M2",
   "category": "VS",
   "name": "Collaborate and promote visibility",
@@ -1098,7 +1098,7 @@
   "hint": ""
  },
  {
-  "id": "T062",
+  "id": "T082",
   "module": "M2",
   "category": "VS",
   "name": "Think and work holistically",
@@ -1116,7 +1116,7 @@
   "hint": ""
  },
  {
-  "id": "T063",
+  "id": "T083",
   "module": "M2",
   "category": "VS",
   "name": "Keep it simple and practical",
@@ -1134,7 +1134,7 @@
   "hint": ""
  },
  {
-  "id": "T064",
+  "id": "T084",
   "module": "M2",
   "category": "VS",
   "name": "Optimize and automate",
@@ -1152,7 +1152,7 @@
   "hint": ""
  },
  {
-  "id": "T065",
+  "id": "T085",
   "module": "M2",
   "category": "VS",
   "name": "Interaction of the guiding principles",
@@ -1170,7 +1170,7 @@
   "hint": ""
  },
  {
-  "id": "T066",
+  "id": "T086",
   "module": "M3",
   "category": "VS",
   "name": "Product specification",
@@ -1188,7 +1188,7 @@
   "hint": "A written description of the properties, requirements and characteristics of a product, service or item."
  },
  {
-  "id": "T067",
+  "id": "T087",
   "module": "M3",
   "category": "VS",
   "name": "Product prototype",
@@ -1206,7 +1206,7 @@
   "hint": "An early version used to show form, function and operation before full development or release."
  },
  {
-  "id": "T068",
+  "id": "T088",
   "module": "M4",
   "category": "VS",
   "name": "Incident",
@@ -1224,7 +1224,7 @@
   "hint": "An unplanned interruption to a service, or a drop in its quality."
  },
  {
-  "id": "T069",
+  "id": "T089",
   "module": "M4",
   "category": "VS",
   "name": "Event",
@@ -1242,7 +1242,7 @@
   "hint": "Any change of state that matters for managing a service or other item."
  },
  {
-  "id": "T070",
+  "id": "T090",
   "module": "M3",
   "category": "VS",
   "name": "Release",
@@ -1260,7 +1260,7 @@
   "hint": "A version of a service or other item, or a group of them, made available for use."
  },
  {
-  "id": "T071",
+  "id": "T091",
   "module": "M3",
   "category": "VS",
   "name": "Test",
@@ -1278,7 +1278,7 @@
   "hint": ""
  },
  {
-  "id": "T072",
+  "id": "T092",
   "module": "M3",
   "category": "VS",
   "name": "Continuous integration",
@@ -1296,7 +1296,7 @@
   "hint": "Developers merge code often into a central repository, followed by automated builds and tests."
  },
  {
-  "id": "T073",
+  "id": "T093",
   "module": "M3",
   "category": "VS",
   "name": "Continuous delivery",
@@ -1314,7 +1314,7 @@
   "hint": "Updates can be deployed to production at any time, but each deployment is decided case by case."
  },
  {
-  "id": "T074",
+  "id": "T094",
   "module": "M3",
   "category": "VS",
   "name": "Continuous deployment",
@@ -1332,7 +1332,7 @@
   "hint": ""
  },
  {
-  "id": "T075",
+  "id": "T095",
   "module": "M3",
   "category": "VS",
   "name": "Reliability",
@@ -1350,7 +1350,7 @@
   "hint": "The ability to perform the intended function consistently, for a stated time, under stated conditions."
  },
  {
-  "id": "T076",
+  "id": "T096",
   "module": "M3",
   "category": "VS",
   "name": "Site Reliability Engineering (SRE)",
@@ -1368,7 +1368,7 @@
   "hint": "Applying software engineering to infrastructure and operations problems, to build scalable, highly reliable systems."
  },
  {
-  "id": "T077",
+  "id": "T097",
   "module": "M3",
   "category": "VS",
   "name": "Observability",
@@ -1386,7 +1386,7 @@
   "hint": "The ability to understand what is happening inside a system from the data it produces."
  },
  {
-  "id": "T078",
+  "id": "T098",
   "module": "M4",
   "category": "VS",
   "name": "Service request",
@@ -1404,7 +1404,7 @@
   "hint": "A request from a user for something agreed as a normal part of the service, such as access."
  },
  {
-  "id": "T079",
+  "id": "T099",
   "module": "M4",
   "category": "VS",
   "name": "Disaster",
@@ -1422,7 +1422,7 @@
   "hint": ""
  },
  {
-  "id": "T080",
+  "id": "T100",
   "module": "M4",
   "category": "VS",
   "name": "Problem",
@@ -1440,7 +1440,7 @@
   "hint": "A cause, or potential cause, of one or more incidents."
  },
  {
-  "id": "T081",
+  "id": "T101",
   "module": "M4",
   "category": "VS",
   "name": "Error",
@@ -1458,7 +1458,7 @@
   "hint": ""
  },
  {
-  "id": "T082",
+  "id": "T102",
   "module": "M4",
   "category": "VS",
   "name": "Known error",
@@ -1476,7 +1476,7 @@
   "hint": "A problem that has been analysed but not resolved."
  },
  {
-  "id": "T083",
+  "id": "T103",
   "module": "M3",
   "category": "VS",
   "name": "Operating model",
@@ -1494,7 +1494,7 @@
   "hint": ""
  },
  {
-  "id": "T084",
+  "id": "T104",
   "module": "M3",
   "category": "VS",
   "name": "Key success metrics of the value chain activities",
@@ -1512,7 +1512,7 @@
   "hint": ""
  },
  {
-  "id": "T085",
+  "id": "T105",
   "module": "M4",
   "category": "VS",
   "name": "Management practice",
@@ -1530,7 +1530,7 @@
   "hint": "An organizational capability for a defined purpose. The guide's Appendix B gives a purpose for each practice, for example incident management and change enablement."
  },
  {
-  "id": "T086",
+  "id": "T106",
   "module": "M4",
   "category": "VS",
   "name": "Management practice groups",
@@ -1548,7 +1548,7 @@
   "hint": ""
  },
  {
-  "id": "T087",
+  "id": "T107",
   "module": "M4",
   "category": "VS",
   "name": "Role of management practices in the value system",
@@ -1566,7 +1566,7 @@
   "hint": ""
  },
  {
-  "id": "T088",
+  "id": "T108",
   "module": "M4",
   "category": "VS",
   "name": "ITIL Practice Guides",
@@ -1584,7 +1584,7 @@
   "hint": ""
  },
  {
-  "id": "T089",
+  "id": "T109",
   "module": "M4",
   "category": "VS",
   "name": "Metric",
@@ -1602,7 +1602,7 @@
   "hint": "A measurement or calculation that is monitored and reported to support decisions."
  },
  {
-  "id": "T090",
+  "id": "T110",
   "module": "M4",
   "category": "VS",
   "name": "Critical success factor (CSF)",
@@ -1620,7 +1620,7 @@
   "hint": "A necessary precondition for achieving the intended results."
  },
  {
-  "id": "T091",
+  "id": "T111",
   "module": "M3",
   "category": "VS",
   "name": "ITIL Continual Improvement Model",
@@ -1638,7 +1638,7 @@
   "hint": ""
  },
  {
-  "id": "T092",
+  "id": "T112",
   "module": "M6",
   "category": "VM",
   "name": "Value stream",
@@ -1656,7 +1656,7 @@
   "hint": "The series of steps an organization takes to create and deliver products and services to consumers."
  },
  {
-  "id": "T093",
+  "id": "T113",
   "module": "M6",
   "category": "VM",
   "name": "Core value stream",
@@ -1674,7 +1674,7 @@
   "hint": "A value stream that delivers value to consumers in the form the operating model intends."
  },
  {
-  "id": "T094",
+  "id": "T114",
   "module": "M6",
   "category": "VM",
   "name": "Enabling value stream",
@@ -1692,7 +1692,7 @@
   "hint": "A value stream that supports the core value streams by serving internal customers."
  },
  {
-  "id": "T095",
+  "id": "T115",
   "module": "M6",
   "category": "VM",
   "name": "Value stream mapping",
@@ -1710,7 +1710,7 @@
   "hint": "Drawing the steps, flow, dependencies and delays involved in creating and delivering value."
  },
  {
-  "id": "T096",
+  "id": "T116",
   "module": "M6",
   "category": "VM",
   "name": "Value stream management",
@@ -1728,7 +1728,7 @@
   "hint": "Managing and improving value streams over time to improve flow, performance and value delivery."
  },
  {
-  "id": "T097",
+  "id": "T117",
   "module": "M6",
   "category": "VM",
   "name": "Complexity thinking",
@@ -1746,7 +1746,7 @@
   "hint": "Analysing and deciding with the recognition that systems and their context have different levels of complexity."
  },
  {
-  "id": "T098",
+  "id": "T118",
   "module": "M6",
   "category": "VM",
   "name": "Elements of a value stream map",
@@ -1764,7 +1764,7 @@
   "hint": ""
  },
  {
-  "id": "T099",
+  "id": "T119",
   "module": "M6",
   "category": "AI",
   "name": "Artificial Intelligence (AI)",
@@ -1782,7 +1782,7 @@
   "hint": "Digital systems doing tasks that normally need human intelligence, such as learning from data, spotting patterns, predicting or supporting decisions."
  },
  {
-  "id": "T100",
+  "id": "T120",
   "module": "M6",
   "category": "AI",
   "name": "AI maturity",
@@ -1800,7 +1800,7 @@
   "hint": "How well an organization can use AI effectively, responsibly and consistently (governance, data quality, skills, processes, ethics)."
  },
  {
-  "id": "T101",
+  "id": "T121",
   "module": "M6",
   "category": "AI",
   "name": "Generative AI (GenAI)",
@@ -1818,7 +1818,7 @@
   "hint": "AI that creates new content, such as text, images or code, from patterns learned from existing data."
  },
  {
-  "id": "T102",
+  "id": "T122",
   "module": "M6",
   "category": "AI",
   "name": "Agentic AI",
@@ -1836,7 +1836,7 @@
   "hint": "AI that acts on a user's behalf, doing predefined tasks on its own within agreed boundaries, under human oversight and governance."
  },
  {
-  "id": "T103",
+  "id": "T123",
   "module": "M6",
   "category": "AI",
   "name": "AI governance",
@@ -1854,7 +1854,7 @@
   "hint": "How the organization directs, controls and monitors AI use so AI-enabled products create value and stay ethical, secure and compliant."
  },
  {
-  "id": "T104",
+  "id": "T124",
   "module": "M6",
   "category": "AI",
   "name": "ITIL AI Capability Model",
@@ -1872,7 +1872,7 @@
   "hint": "The 6C model. The guide names its six capability domains as creation, coordination, communication, cognition, clarification and curation."
  },
  {
-  "id": "T105",
+  "id": "T125",
   "module": "M6",
   "category": "AI",
   "name": "AI across the lifecycle and value chain",
@@ -1890,7 +1890,7 @@
   "hint": ""
  },
  {
-  "id": "T106",
+  "id": "T126",
   "module": "M6",
   "category": "FW",
   "name": "DevOps",
@@ -1908,7 +1908,7 @@
   "hint": ""
  },
  {
-  "id": "T107",
+  "id": "T127",
   "module": "M6",
   "category": "FW",
   "name": "PRINCE2",

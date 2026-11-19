@@ -55,6 +55,11 @@ const srv = http.createServer((q, r) => {
     await pg.reload();
     return { ctx, pg, errs, tab: t => pg.click('nav button[data-v="' + t + '"]'), state: () => pg.evaluate(() => JSON.parse(localStorage.getItem("focus.v2"))) };
   }
+  async function syncNow(d) {
+    await d.pg.click("[data-a=syncnow]");
+    await d.pg.waitForTimeout(150);
+    await d.pg.evaluate(() => new Promise(r => { const t = setInterval(() => { if (!window.pbusy) { clearInterval(t); r(); } }, 50); }));
+  }
   const phone = await device();
   const pc = await device();
 
@@ -70,12 +75,13 @@ const srv = http.createServer((q, r) => {
   await phone.pg.fill("#tpw", "Phone words");
   await phone.pg.click("[data-a=tsave]");
   await phone.tab("learn");
-  await phone.pg.click("[data-a=syncnow]");
+  await syncNow(phone);
   await phone.pg.waitForSelector("text=/Progress (synced|up to date)/");
   ok(remote.puts >= 1 && !!remote.content, "phone pushed progress to the shared store");
 
   // pc: open, pull
   await pc.pg.reload();
+  await pc.pg.waitForTimeout(1500);
   let st = await pc.state();
   ok(st.log.workApps.some(w => w.what === "Event from the phone"), "pc received the phone's work event");
   ok(st.terms[0].rung === 3 && st.terms[0].plainWords === "Phone words", "pc received the phone's term update");
@@ -87,10 +93,10 @@ const srv = http.createServer((q, r) => {
   await pc.pg.fill("#wim", "Do Y");
   await pc.pg.click("[data-a=wsave]");
   await pc.tab("learn");
-  await pc.pg.click("[data-a=syncnow]");
+  await syncNow(pc);
   await pc.pg.waitForSelector("text=/Progress (synced|up to date)/");
   await phone.tab("learn");
-  await phone.pg.click("[data-a=syncnow]");
+  await syncNow(phone);
   await phone.pg.waitForSelector("text=/Progress (synced|up to date)/");
   await phone.pg.waitForTimeout(800);
   st = await phone.state();
@@ -108,9 +114,9 @@ const srv = http.createServer((q, r) => {
   await pc.pg.selectOption("#wst", "Operate"); await pc.pg.selectOption("#wpr", "Focus on value");
   await pc.pg.fill("#wim", "W");
   await pc.pg.click("[data-a=wsave]");
-  await pc.tab("learn"); await pc.pg.click("[data-a=syncnow]"); await pc.pg.waitForSelector("text=/Progress (synced|up to date)/");
-  await phone.tab("learn"); await phone.pg.click("[data-a=syncnow]"); await phone.pg.waitForSelector("text=/Progress (synced|up to date)/");
-  await pc.pg.click("[data-a=syncnow]"); await pc.pg.waitForTimeout(800);
+  await pc.tab("learn"); await syncNow(pc); await pc.pg.waitForSelector("text=/Progress (synced|up to date)/");
+  await phone.tab("learn"); await syncNow(phone); await phone.pg.waitForSelector("text=/Progress (synced|up to date)/");
+  await syncNow(pc); await pc.pg.waitForTimeout(2500);
   const a = (await phone.state()).log.workApps.length, c = (await pc.state()).log.workApps.length;
   ok(a === 4 && c === 4, "concurrent edits on both devices merged to the same four events");
   ok(phone.errs.length === 0 && pc.errs.length === 0, "no page errors on either device");
